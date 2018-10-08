@@ -850,6 +850,7 @@ if __name__ == "__main__":
         sys.exit("Pass config file")
     config_file = sys.argv[1]
     params = read_config(config_file)
+    use_morpheme_names = True
     if "train_file" in params:
         n = params.get("n_train") # число слов в обучающей+развивающей выборке
         inputs, targets = read_BMES(params["train_file"], n=n)
