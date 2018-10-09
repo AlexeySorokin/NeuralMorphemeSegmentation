@@ -1,0 +1,1000 @@
+CIkarsanIz	CIk +TNS_ar +TNS_sa +PER2P_niz, CIk +TNS_ar +if_SUF +PER2P_niz, CIkar +TNS_sa +PER2P_niz, CIkar +if_SUF +PER2P_niz
+CIkmazIna	CIkmaz +POS2S +DAT, CIkmaz +POS3 +DAT3
+COlU	COl +ACC, COl +POS3
+COmleGi	COmleG +ACC, COmleG +POS3
+COplUGUnde	COp +DER_lHg +POS2S +LOC, COp +DER_lHg +POS3 +LOC3
+COzUmU	COz +POS1S +ACC, COz +im_DER +ACC, COz +im_DER +POS3
+CaGan	CaG yan, CaGa +POS2S
+CaGlIyorlar	CaG +la_TNS_yor +PER3P, CaGl +TNS_yor +PER3P
+CaGlayanlarI	CaG +la_DER yan +PL +ACC, CaG +la_DER yan +PL +POS3, CaG +la_DER yan +POS3S, CaGla yan +PL +ACC, CaGla yan +PL +POS3, CaGla yan +POS3S, CaGlayan +PL +ACC, CaGlayan +PL +POS3, CaGlayan +POS3S
+CabalarImIn	Caba +PL +POS1S +GEN
+CakmIStI	Cak +TNS_mis +PAST_hikaye
+CalISIyorum	Cal yis +TNS_yor +PER1S, CalIS +TNS_yor +PER1S
+CalISacaklarInI	Cal yis yacak +PL +POS2S +ACC, Cal yis yacak +PL +POS3 +ACC3, Cal yis yacak +POS3S +ACC3, CalIS yacak +PL +POS2S +ACC, CalIS yacak +PL +POS3 +ACC3, CalIS yacak +POS3S +ACC3
+CalISmalarda	Cal yis +NOUN_ma +PL +LOC, CalIS +NOUN_ma +PL +LOC
+CalgIlarla	Cal +gi_DER +PL +REL
+Camlarla	Cam +PL +REL
+CatIlIr	Cat +PSS_Hl +TNS_ir
+CeaS	CeaS
+Cevrilmelidir	Cevril +NOUN_ma +ADJ_SUF_lH +DEF, Cevril +TNS_mali +DEF
+Cilingirin	Cilingir +GEN, Cilingir +POS2S
+Cimentolar	Cimento +PER3P, Cimento +PL, Cimento +la_DER_TNS_ar, Cimento +la_DER_TNS_ir
+Cizgiden	Ciz +gi_DER +ABL
+Cizgisinden	Ciz +gi_DER +POS3 +ABL3
+CoGaltImI	CoGal +CAU_t +im_DER +ACC, CoGal +CAU_t +im_DER +POS3, CoGaltIm +ACC, CoGaltIm +POS3
+In	I +POS2S
+Internetini	Internet +POS2S +ACC, Internet +POS3 +ACC3
+Islanmak	Is +la_DER_PSS_Hn mak, Is +la_DER_RFL mak, Isla +PSS_Hn mak, Isla +RFL mak
+IslanmanIn	Is +la_DER_PSS_Hn +NOUN_ma +GEN, Is +la_DER_PSS_Hn +NOUN_ma_POS2S +GEN, Is +la_DER_RFL +NOUN_ma +GEN, Is +la_DER_RFL +NOUN_ma_POS2S +GEN, Isla +PSS_Hn +NOUN_ma +GEN, Isla +PSS_Hn +NOUN_ma_POS2S +GEN, Isla +RFL +NOUN_ma +GEN, Isla +RFL +NOUN_ma_POS2S +GEN
+OGrenmesidir	OGren +NOUN_ma +POS3 +DEF
+OdUnC	OdUnC
+OdediGine	Ode +ADJ_dig +POS2S +DAT, Ode +ADJ_dig +POS3 +DAT3
+Odemezlerse	Od +NEG_yama +PER3P_NEG +TNS_sa, Od +NEG_yama +PER3P_NEG +if_SUF, Ode +NEG_ma +PER3P_NEG +TNS_sa, Ode +NEG_ma +PER3P_NEG +if_SUF
+Oderiz	Od +TNS_ar +PER1P, Ode +TNS_ar +PER1P, Ode +TNS_ir +PER1P
+OfkelenmiSti	Ofke +la_DER_PSS_Hn +TNS_mis +PAST_hikaye, Ofke +la_DER_RFL +TNS_mis +PAST_hikaye
+OlCeGine	OlCeG +POS2S +DAT, OlCeG +POS3 +DAT3
+OldUrUnUz	Ol +CAU_dir +P2_PL_iz
+OldUrUrler	Ol +CAU_dir +TNS_ir +PER3P
+OldUrUrlerdi	Ol +CAU_dir +TNS_ir +PER3P +PAST_hikaye, Ol +CAU_dir +TNS_ir +PER3P +TNS_di
+OldUrene	Ol +CAU_dir yan +DAT
+OlecekmiS	Ol yacak +PAST_rivayet
+Onderleri	Onder +PL +ACC, Onder +PL +POS3, Onder +POS3S
+OnereceGimiz	Oner yacag +POS1P, Oner yacag +POS1S +PER1P
+Orme	Or +NEG_ma, Or +NOUN_ma
+Ornekti	Ornek +PAST_hikaye
+OrtUlmesi	Or +CAU_t +PSS_Hl +NOUN_ma +POS3, Ort +PSS_Hl +NOUN_ma +POS3
+OtUSUp	Ot yis yip
+OvUyorlar	Ov +TNS_yor +PER3P
+OveCler	OveC +PER3P, OveC +PL, OveC +la_DER_TNS_ar, OveC +la_DER_TNS_ir
+OzelleSmeye	Ozel lAs +NEG_ma +OPT, Ozel lAs +NOUN_ma +DAT
+Ozendirecek	Oze +RFL +CAU_dir yacak, Ozen +CAU_dir yacak
+Ozendirilerek	Oze +RFL +CAU_dir +PSS_Hl yarak, Ozen +CAU_dir +PSS_Hl yarak
+OzgUrlUGUmU	OzgUr +DER_lHg +POS1S +ACC
+Ozlersem	Oz +PL +if_SUF +PER1S_m, Oz +la_DER_TNS_ar +TNS_sa +PER1S_m, Oz +la_DER_TNS_ar +if_SUF +PER1S_m, Oz +la_DER_TNS_ir +TNS_sa +PER1S_m, Oz +la_DER_TNS_ir +if_SUF +PER1S_m, Ozle +TNS_ar +TNS_sa +PER1S_m, Ozle +TNS_ar +if_SUF +PER1S_m, Ozle +TNS_ir +TNS_sa +PER1S_m, Ozle +TNS_ir +if_SUF +PER1S_m
+SaftlarI	Saft +PL +ACC, Saft +PL +POS3, Saft +POS3S
+Sartsa	Sart +if_SUF
+Seflerinden	Sef +PL +POS2S +ABL, Sef +PL +POS3 +ABL3, Sef +POS3S +ABL3
+Seyine	Sey +POS2S +DAT, Sey +POS3 +DAT3
+Seylerde	Sey +PL +LOC
+SiarInIn	Siar +POS2S +GEN, Siar +POS3 +GEN
+Subelerden	Sube +PL +ABL
+USUdUGUnU	USU +ADJ_dig +POS2S +ACC, USU +ADJ_dig +POS3 +ACC3
+Ulkeli	Ulke +ADJ_SUF_lH
+Ulkemizdeki	Ulke +POS1P +LOC +REL_SUF_ki
+UnaydIn	UnaydIn
+Unite	Unite
+Uredi	Ure +TNS_di
+UremiSti	Ure +TNS_mis +PAST_hikaye
+UzUlmUyorum	Uz +PSS_Hl +NEG_ma_TNS_yor +PER1S
+aCIklamalarIdIr	aCIk +la_DER +NOUN_ma +PL +POS3 +DEF, aCIk +la_DER +NOUN_ma +POS3S +DEF
+aCIklamasIna	aCIk +la_DER +NOUN_ma +POS3 +DAT3
+aCIklanabilmiS	aCIk +la_DER_PSS_Hn yabil +TNS_mis, aCIk +la_DER_RFL yabil +TNS_mis
+aCIlISInIn	aC +PSS_Hl yis +POS2S +GEN, aC +PSS_Hl yis +POS3 +GEN, aCIlIS +POS2S +GEN, aCIlIS +POS3 +GEN
+aCIlImlarIndan	aC +PSS_Hl +im_DER +PL +POS2S +ABL, aC +PSS_Hl +im_DER +PL +POS3 +ABL3, aC +PSS_Hl +im_DER +POS3S +ABL3
+aCmasIna	aC +NOUN_ma +POS3 +DAT3
+aGaClandIrIlmasI	aGaC +la_DER_RFL +CAU_dir +PSS_Hl +NOUN_ma +POS3
+aGlarInda	aG +PL +POS2S +LOC, aG +PL +POS3 +LOC3, aG +POS3S +LOC3
+aGlarlar	aG +PL +PER3P, aG +la_DER_TNS_ar +PER3P, aG +la_DER_TNS_ir +PER3P, aGla +TNS_ar +PER3P, aGla +TNS_ir +PER3P
+aGlarmIS	aG +PL +PAST_rivayet, aG +la_DER_TNS_ar +PAST_rivayet, aG +la_DER_TNS_ir +PAST_rivayet, aGla +TNS_ar +PAST_rivayet, aGla +TNS_ir +PAST_rivayet
+aGustos	aGustos
+aSIlabilmektedir	aS +PSS_Hl yabil +TNS_makta +DEF, aS +PSS_Hl yabil mak +LOC +DEF
+aSIlarInda	aSI +PL +POS2S +LOC, aSI +PL +POS3 +LOC3, aSI +POS3S +LOC3
+aSinalIk	aSina +DER_lHk
+aSmamIz	aS +NOUN_ma +POS1P, aS +NOUN_ma_POS1S +PER1P
+adImlarInda	ad +im_DER +PL +POS2S +LOC, ad +im_DER +PL +POS3 +LOC3, ad +im_DER +POS3S +LOC3, adIm +PL +POS2S +LOC, adIm +PL +POS3 +LOC3, adIm +POS3S +LOC3
+adIysa	ad +ACC +if_SUF, ad +POS3 +if_SUF
+adaletCi	adalet +DER_cH
+adeleler	adele +PER3P, adele +PL, adele +la_DER_TNS_ar, adele +la_DER_TNS_ir
+adlandIrmak	ad +la_DER_RFL +CAU_dir mak
+adlarda	ad +PL +LOC
+adler	adler
+adliyeyi	adliye +ACC
+ahlakImIza	ahlak +POS1P +DAT
+akIllarda	akIl +PL +LOC
+akrepleri	akrep +PL +ACC, akrep +PL +POS3, akrep +POS3S
+akrobatlar	akrobat +PER3P, akrobat +PL, akrobat +la_DER_TNS_ar, akrobat +la_DER_TNS_ir
+aksIyor	aks +TNS_yor
+alabileceGimiz	al yabil yacag +POS1P, al yabil yacag +POS1S +PER1P
+aletine	alet +POS2S +DAT, alet +POS3 +DAT3
+algIlanmIyor	al +gi_DER +la_DER_PSS_Hn +NEG_ma_TNS_yor, al +gi_DER +la_DER_RFL +NEG_ma_TNS_yor, algI +la_DER_PSS_Hn +NEG_ma_TNS_yor, algI +la_DER_RFL +NEG_ma_TNS_yor
+almayalIm	al +NEG_ma +OPT +PER1P_lHm
+amaClamasI	amaC +la_DER +NOUN_ma +POS3
+ambalajIn	ambalaj +GEN, ambalaj +POS2S
+ambargoya	ambargo +DAT
+ameliyatta	ameliyat +LOC
+anImsatmakla	anImsa +CAU_t mak +REL
+anadolusu	anadolu +POS3
+anketten	anket +ABL
+anlatabiliyorlardI	an +la_DER_CAU_t yabil +TNS_yor +PER3P +PAST_hikaye, an +la_DER_CAU_t yabil +TNS_yor +PER3P +TNS_di, anla +CAU_t yabil +TNS_yor +PER3P +PAST_hikaye, anla +CAU_t yabil +TNS_yor +PER3P +TNS_di
+anlatabilmeleri	an +la_DER_CAU_t yabil +NOUN_ma +PL +ACC, an +la_DER_CAU_t yabil +NOUN_ma +PL +POS3, an +la_DER_CAU_t yabil +NOUN_ma +POS3S, anla +CAU_t yabil +NOUN_ma +PL +ACC, anla +CAU_t yabil +NOUN_ma +PL +POS3, anla +CAU_t yabil +NOUN_ma +POS3S
+anlayabildiGim	an +la_DER yabil +ADJ_dig +PER1S, an +la_DER yabil +ADJ_dig +POS1S, anla yabil +ADJ_dig +PER1S, anla yabil +ADJ_dig +POS1S
+anneleriyle	anne +PL +POS3 +REL, anne +POS3S +REL
+apoletleri	apolet +PL +ACC, apolet +PL +POS3, apolet +POS3S
+araStIrabiliriz	araStIr yabil +TNS_ir +PER1P
+araStIran	araStIr yan
+aramalarI	ara +NOUN_ma +PL +ACC, ara +NOUN_ma +PL +POS3, ara +NOUN_ma +POS3S
+arayanlarInda	ara yan +PL +POS2S +LOC, ara yan +PL +POS3 +LOC3, ara yan +POS3S +LOC3
+arkadaki	arka +LOC +REL_SUF_ki
+armaGanmIS	armaGan +PAST_rivayet
+arsIzca	ar +ADJ_SUF_sHz +ADV_SUF_cA
+artIrabilmek	artIr yabil mak
+artIracaklarInI	artIr yacak +PL +POS2S +ACC, artIr yacak +PL +POS3 +ACC3, artIr yacak +POS3S +ACC3
+arttIrIlmIStIr	art +CAU_dir +PSS_Hl +TNS_mis +DEF
+arttIrmIyor	art +CAU_dir +NEG_ma_TNS_yor
+arzuluyorsunuz	arzu +la_TNS_yor +PER2P
+asbaSkanI	asbaSkan +ACC, asbaSkan +POS3
+asetilen	asetilen
+askeriyede	askeriye +LOC
+atIldIGIndan	at +PSS_Hl +ADJ_dig +POS2S +ABL, at +PSS_Hl +ADJ_dig +POS3 +ABL3
+atIldInIz	at +PSS_Hl +TNS_di +PER2P_niz, atIl +PAST_hikaye +PER2P_niz
+atIlmanIn	at +PSS_Hl +NOUN_ma +GEN, at +PSS_Hl +NOUN_ma_POS2S +GEN
+atacaktI	at yacak +PAST_hikaye
+atlIya	at +ADJ_SUF_lH +DAT
+ayIrIrsak	ayIr +TNS_ir +TNS_sa +PER1P_k, ayIr +TNS_ir +if_SUF +PER1P_k
+ayIrmasInI	ayIr +NOUN_ma +POS3 +ACC3
+ayIrt	ayIr +CAU_t, ayIrt
+aydInlatIlmasInI	aydIn +la_DER_CAU_t +PSS_Hl +NOUN_ma +POS3 +ACC3
+aynalardan	ayna +PL +ABL
+ayrISan	ayr yis yan, ayrIS yan
+ayrImcIlIGIn	ayr +im_DER +DER_cH +DER_lHg +GEN, ayr +im_DER +DER_cH +DER_lHg +POS2S, ayrIm +DER_cH +DER_lHg +GEN, ayrIm +DER_cH +DER_lHg +POS2S
+azaltmasI	azal +CAU_t +NOUN_ma +POS3
+azizler	aziz +PER3P, aziz +PL, aziz +la_DER_TNS_ar, aziz +la_DER_TNS_ir
+azmiyle	azm +POS3 +REL
+bOlUmleri	bOl +im_DER +PL +ACC, bOl +im_DER +PL +POS3, bOl +im_DER +POS3S, bOlUm +PL +ACC, bOlUm +PL +POS3, bOlUm +POS3S
+bUromuz	bUro +POS1P, bUro +POS1S +PER1P
+bUyUmelidir	bUyU +NOUN_ma +ADJ_SUF_lH +DEF
+baGImsIzlIGIndan	baG +im_DER +ADJ_SUF_sHz +DER_lHg +POS2S +ABL, baG +im_DER +ADJ_SUF_sHz +DER_lHg +POS3 +ABL3, baGIm +ADJ_SUF_sHz +DER_lHg +POS2S +ABL, baGIm +ADJ_SUF_sHz +DER_lHg +POS3 +ABL3
+baGlanIyoruz	baG +la_DER_PSS_Hn +TNS_yor +PER1P, baG +la_DER_RFL +TNS_yor +PER1P
+baGlanabilmek	baG +la_DER_PSS_Hn yabil mak, baG +la_DER_RFL yabil mak
+baGlanmamIz	baG +la_DER_PSS_Hn +NOUN_ma +POS1P, baG +la_DER_PSS_Hn +NOUN_ma_POS1S +PER1P, baG +la_DER_RFL +NOUN_ma +POS1P, baG +la_DER_RFL +NOUN_ma_POS1S +PER1P
+baGlantIlardaki	baGlantI +PL +LOC +REL_SUF_ki
+baGlantIsInda	baGlantI +POS3 +LOC3
+baSaralIm	baSar +OPT +PER1P_lHm
+baSardIktan	baSar +ADJ_dik +ABL
+baSarmak	baSar mak
+baSbakanInIn	baSbakan +POS2S +GEN, baSbakan +POS3 +GEN
+baSbakanIydI	baSbakan +POS3 +PAST_hikaye
+baSlanIlmasI	baS +la_DER_RFL +PSS_Hl +NOUN_ma +POS3, baSla +RFL +PSS_Hl +NOUN_ma +POS3
+baSparmaGIn	baSparmaG +GEN, baSparmaG +POS2S
+baSvurunuz	baSvur +P2_PL_iz, baSvuru +POS2P, baSvuru +POS2S +PER1P
+baSvuruyu	baSvuru +ACC
+babayla	baba +REL
+bagajlarInda	bagaj +PL +POS2S +LOC, bagaj +PL +POS3 +LOC3, bagaj +POS3S +LOC3
+bagetle	baget +REL, baget +la_DER
+bakanlIGIn	bak yan +DER_lHg +GEN, bak yan +DER_lHg +POS2S, bakan +DER_lHg +GEN, bakan +DER_lHg +POS2S
+bakanlIklarIn	bak yan +DER_lHk +PL +GEN, bak yan +DER_lHk +PL +POS2S, bakan +DER_lHk +PL +GEN, bakan +DER_lHk +PL +POS2S
+bakman	bak +NOUN_ma_POS2S
+balCIkla	balCIk +REL, balCIk +la_DER
+bankalardan	banka +PL +ABL
+barIndIrIyordu	barI +RFL +CAU_dir +TNS_yor +PAST_hikaye, barIn +CAU_dir +TNS_yor +PAST_hikaye
+bara	bar +DAT
+bastIrma	bas +CAU_dir +NEG_ma, bas +CAU_dir +NOUN_ma
+beSiGi	beSiG +ACC, beSiG +POS3
+beSin	beS +GEN, beS +POS2S
+bedavacI	bedava +DER_cH
+bedensel	bedensel
+beklendiGi	bek +la_DER_PSS_Hn +ADJ_dig +ACC, bek +la_DER_PSS_Hn +ADJ_dig +POS3, bek +la_DER_RFL +ADJ_dig +ACC, bek +la_DER_RFL +ADJ_dig +POS3, bekle +PSS_Hn +ADJ_dig +ACC, bekle +PSS_Hn +ADJ_dig +POS3, bekle +RFL +ADJ_dig +ACC, bekle +RFL +ADJ_dig +POS3
+bekliyorlarmIS	bek +la_TNS_yor +PER3P +PAST_rivayet, bek +la_TNS_yor +PER3P +TNS_mis, bekl +TNS_yor +PER3P +PAST_rivayet, bekl +TNS_yor +PER3P +TNS_mis
+belirlemektir	belirle mak +DEF
+belirlenirdi	belirle +PSS_Hn +TNS_ir +PAST_hikaye, belirle +RFL +TNS_ir +PAST_hikaye
+belirtilmiS	belir +CAU_t +PSS_Hl +TNS_mis
+benimkisi	benimki +POS3
+benimseyebileceGi	benimse yabil yacag +ACC, benimse yabil yacag +POS3
+benzemesini	benze +NOUN_ma +POS3 +ACC3
+berin	beri +POS2S
+besinlerden	besin +PL +ABL
+beslendi	bes +la_DER_PSS_Hn +TNS_di, bes +la_DER_RFL +TNS_di, besle +PSS_Hn +TNS_di, besle +RFL +TNS_di
+besleyebilecek	bes +la_DER yabil yacak, besle yabil yacak
+bilebilirdik	bil yabil +TNS_ir +PAST_hikaye +PER1P_k
+biletle	bilet +REL, bilet +la_DER
+bilinenden	bil +PSS_Hn yan +ABL, bil +RFL yan +ABL
+bilmiSler	bil +TNS_mis +PER3P, bil +TNS_mis +PL, bil +TNS_mis +la_DER_TNS_ar, bil +TNS_mis +la_DER_TNS_ir
+bireyleri	birey +PL +ACC, birey +PL +POS3, birey +POS3S
+birleSmeli	bir lAs +NOUN_ma +ADJ_SUF_lH, bir lAs +TNS_mali
+bitirmiStik	bitir +TNS_mis +PAST_hikaye +PER1P_k
+boGazlara	boGaz +PL +DAT
+boSalmasIndan	boSa +PSS_Hl +NOUN_ma +POS3 +ABL3, boSal +NOUN_ma +POS3 +ABL3
+boSboGazlIk	boSboGaz +DER_lHk
+boyanmalarI	boya +PSS_Hn +NOUN_ma +PL +ACC, boya +PSS_Hn +NOUN_ma +PL +POS3, boya +PSS_Hn +NOUN_ma +POS3S, boya +RFL +NOUN_ma +PL +ACC, boya +RFL +NOUN_ma +PL +POS3, boya +RFL +NOUN_ma +POS3S
+boyladI	boy +la_DER +TNS_di, boyla +TNS_di
+boyunuzun	boy +POS2P +GEN
+bozukluGun	bozuk +DER_lHg +GEN, bozuk +DER_lHg +POS2S
+budaklara	budak +PL +DAT
+bulaSabilmektedir	bu lAs yabil +TNS_makta +DEF, bu lAs yabil mak +LOC +DEF, bulaS yabil +TNS_makta +DEF, bulaS yabil mak +LOC +DEF
+buldozerlerle	buldozer +PL +REL
+bulgularIyla	bul +gi_DER +PL +POS3 +REL, bul +gi_DER +POS3S +REL
+bulsanIz	bul +TNS_sa +PER2P_niz, bul +if_SUF +PER2P_niz
+buluSuna	bul yis +POS2S +DAT, bul yis +POS3 +DAT3, bul yis +PSS_Hn +OPT, buluS +PSS_Hn +OPT, buluS +RFL +OPT
+bulunabilmelerini	bul +PSS_Hn yabil +NOUN_ma +PL +POS2S +ACC, bul +PSS_Hn yabil +NOUN_ma +PL +POS3 +ACC3, bul +PSS_Hn yabil +NOUN_ma +POS3S +ACC3, bul +RFL yabil +NOUN_ma +PL +POS2S +ACC, bul +RFL yabil +NOUN_ma +PL +POS3 +ACC3, bul +RFL yabil +NOUN_ma +POS3S +ACC3
+bulunamamIStIr	bul +PSS_Hn +NEG_yama +TNS_mis +DEF, bul +RFL +NEG_yama +TNS_mis +DEF
+cUmlesidir	cUmle +POS3 +DEF
+cahiliz	cahil +PER1P
+cerrahlara	cerrah +PL +DAT
+cevabInda	cevab +POS2S +LOC, cevab +POS3 +LOC3
+cezalandIrIlmaz	ceza +la_DER_RFL +CAU_dir +PSS_Hl +NEG_ma_NEG_AOR
+cimbom	cimbom
+cipe	cip +DAT
+cumbalar	cumba +PER3P, cumba +PL, cumba +la_DER_TNS_ar, cumba +la_DER_TNS_ir
+dISsatImcI	dISsatIm +DER_cH
+dOnUStUrmeye	dOn yis +CAU_dir +NEG_ma +OPT, dOn yis +CAU_dir +NOUN_ma +DAT
+dOnUlecekti	dOn +PSS_Hl yacak +PAST_hikaye
+dUSUSten	dUS yis +ABL, dUS yis +CAU_t yan
+dUSUnUlmediGi	dUS +RFL +PSS_Hl +NEG_ma +ADJ_dig +ACC, dUS +RFL +PSS_Hl +NEG_ma +ADJ_dig +POS3, dUSUn +PSS_Hl +NEG_ma +ADJ_dig +ACC, dUSUn +PSS_Hl +NEG_ma +ADJ_dig +POS3
+dUSUrmedi	dUSUr +NEG_ma +TNS_di
+dUSeceGiz	dUS yacag +PER1P
+dUSmeden	dUS +NOUN_ma +ABL, dUS madan
+dUSmesi	dUS +NOUN_ma +POS3
+dUdUGUnU	dUdUG +POS2S +ACC, dUdUG +POS3 +ACC3
+dUnler	dUn +PER3P, dUn +PL, dUn +la_DER_TNS_ar, dUn +la_DER_TNS_ir
+dUzenlemektedir	dUz yan +la_DER +TNS_makta +DEF, dUz yan +la_DER mak +LOC +DEF, dUzen +la_DER +TNS_makta +DEF, dUzen +la_DER mak +LOC +DEF
+daGIlmalar	daGIl +NOUN_ma +PER3P, daGIl +NOUN_ma +PL, daGIl +NOUN_ma +la_DER_TNS_ar, daGIl +NOUN_ma +la_DER_TNS_ir
+daGIlmazsa	daGIl +NEG_ma_NEG_AOR +TNS_sa, daGIl +NEG_ma_NEG_AOR +if_SUF
+daGItacaklarInI	daGIt yacak +PL +POS2S +ACC, daGIt yacak +PL +POS3 +ACC3, daGIt yacak +POS3S +ACC3
+dairede	daire +LOC
+dallarIndan	dal +PL +POS2S +ABL, dal +PL +POS3 +ABL3, dal +POS3S +ABL3
+damadIyla	damad +POS3 +REL
+darUlacezeye	darUlaceze +DAT
+darbesini	darbe +POS3 +ACC3
+davetlilerce	davet +ADJ_SUF_lH +PL +ADV_SUF_cA
+dayanamaz	daya +PSS_Hn +NEG_yama_NEG_AOR, daya +RFL +NEG_yama_NEG_AOR, dayan +NEG_yama_NEG_AOR
+deGerlendiremediGimiz	deGer +la_DER_RFL +CAU_dir +NEG_yama +ADJ_dig +POS1P, deGer +la_DER_RFL +CAU_dir +NEG_yama +ADJ_dig +POS1S +PER1P
+deGerlendirilebilirdi	deGer +la_DER_RFL +CAU_dir +PSS_Hl yabil +TNS_ir +PAST_hikaye
+deGerlendirilirler	deGer +la_DER_RFL +CAU_dir +PSS_Hl +TNS_ir +PER3P
+deGerlendirmemizin	deGer +la_DER_RFL +CAU_dir +NOUN_ma +POS1P +GEN
+deGiSmemeli	deG yis +NEG_ma +NOUN_ma +ADJ_SUF_lH, deG yis +NEG_ma +TNS_mali, deGiS +NEG_ma +NOUN_ma +ADJ_SUF_lH, deGiS +NEG_ma +TNS_mali
+deGinilmekte	deG +RFL +PSS_Hl +TNS_makta, deG +RFL +PSS_Hl mak +LOC, deGin +PSS_Hl +TNS_makta, deGin +PSS_Hl mak +LOC
+dedikCe	de +ADJ_dik +ADV_SUF_cA, de dikca
+defaten	defaten
+defterdarlIk	defterdar +DER_lHk
+dejenerasyonun	dejenerasyon +GEN, dejenerasyon +POS2S
+dekardIr	dekar +DEF
+delegesini	delege +POS3 +ACC3
+demediGim	de +NEG_ma +ADJ_dig +PER1S, de +NEG_ma +ADJ_dig +POS1S
+demokrasileri	demokrasi +PL +ACC, demokrasi +PL +POS3, demokrasi +POS3S
+denediklerini	dene +ADJ_dik +PL +POS2S +ACC, dene +ADJ_dik +PL +POS3 +ACC3, dene +ADJ_dik +POS3S +ACC3
+denetimiyle	dene +CAU_t +im_DER +POS3 +REL
+dengesizlikler	denge +ADJ_SUF_sHz +DER_lHk +PER3P, denge +ADJ_SUF_sHz +DER_lHk +PL, denge +ADJ_SUF_sHz +DER_lHk +la_DER_TNS_ar, denge +ADJ_SUF_sHz +DER_lHk +la_DER_TNS_ir
+depolanmaz	depo +la_DER_PSS_Hn +NEG_ma_NEG_AOR, depo +la_DER_RFL +NEG_ma_NEG_AOR
+derbente	derbent +DAT
+derecelerine	derece +PL +POS2S +DAT, derece +PL +POS3 +DAT3, derece +POS3S +DAT3
+dergahlarI	dergah +PL +ACC, dergah +PL +POS3, dergah +POS3S
+derneGine	derneG +POS2S +DAT, derneG +POS3 +DAT3
+dernekleSme	dernek lAs +NEG_ma, dernek lAs +NOUN_ma
+derslerle	ders +PL +REL
+dertlenip	dert +la_DER_PSS_Hn yip, dert +la_DER_RFL yip
+desteklemiSler	destek +la_DER +TNS_mis +PER3P, destek +la_DER +TNS_mis +PL, destek +la_DER +TNS_mis +la_DER_TNS_ar, destek +la_DER +TNS_mis +la_DER_TNS_ir
+devSiren	devSir yan
+devrilebilecek	devril yabil yacak
+dikkatlerinin	dikkat +PL +POS2S +GEN, dikkat +PL +POS3 +GEN, dikkat +POS3S +GEN
+diktirdiGi	dik +CAU_dir +ADJ_dig +ACC, dik +CAU_dir +ADJ_dig +POS3
+dilerlerse	di +PSS_Hl +TNS_ar +PER3P +TNS_sa, di +PSS_Hl +TNS_ar +PER3P +if_SUF, dil +TNS_ar +PER3P +TNS_sa, dil +TNS_ar +PER3P +if_SUF, dile +TNS_ar +PER3P +TNS_sa, dile +TNS_ar +PER3P +if_SUF, dile +TNS_ir +PER3P +TNS_sa, dile +TNS_ir +PER3P +if_SUF
+dillendirmek	dil +la_DER_RFL +CAU_dir mak
+dinlemek	din +la_DER mak, dinle mak
+dinlemiyorsa	din +la_DER +NEG_ma_TNS_yor +TNS_sa, din +la_DER +NEG_ma_TNS_yor +if_SUF, dinle +NEG_ma_TNS_yor +TNS_sa, dinle +NEG_ma_TNS_yor +if_SUF
+dinleyecek	din +la_DER yacak, dinle yacak
+dinleyip	din +la_DER yip, dinle yip
+direneceklerdir	dire +PSS_Hn yacak +PER3P +DEF, dire +PSS_Hn yacak +PL +DEF, dire +PSS_Hn yacak +la_DER_TNS_ar +DEF, dire +PSS_Hn yacak +la_DER_TNS_ir +DEF, dire +RFL yacak +PER3P +DEF, dire +RFL yacak +PL +DEF, dire +RFL yacak +la_DER_TNS_ar +DEF, dire +RFL yacak +la_DER_TNS_ir +DEF
+diyebilirler	di yabil +TNS_ir +PER3P
+dizaynInI	dizayn +POS2S +ACC, dizayn +POS3 +ACC3
+doGmazdI	doG +NEG_ma_NEG_AOR +PAST_hikaye
+doGrulandIGInI	doGru +la_DER_PSS_Hn +ADJ_dig +POS2S +ACC, doGru +la_DER_PSS_Hn +ADJ_dig +POS3 +ACC3, doGru +la_DER_RFL +ADJ_dig +POS2S +ACC, doGru +la_DER_RFL +ADJ_dig +POS3 +ACC3
+dokUmanla	dokUman +REL, dokUman +la_DER
+doktrinler	doktrin +PER3P, doktrin +PL, doktrin +la_DER_TNS_ar, doktrin +la_DER_TNS_ir
+dokunacaGIna	doku +PSS_Hn yacag +POS2S +DAT, doku +PSS_Hn yacag +POS3 +DAT3, doku +RFL yacag +POS2S +DAT, doku +RFL yacag +POS3 +DAT3, dokun yacag +POS2S +DAT, dokun yacag +POS3 +DAT3
+dokundurma	doku +RFL +CAU_dir +NEG_ma, doku +RFL +CAU_dir +NOUN_ma, dokun +CAU_dir +NEG_ma, dokun +CAU_dir +NOUN_ma
+dokunmayla	doku +PSS_Hn +NOUN_ma +REL, doku +RFL +NOUN_ma +REL, dokun +NOUN_ma +REL
+dokunuSunu	doku +PSS_Hn yis +POS2S +ACC, doku +PSS_Hn yis +POS3 +ACC3, doku +RFL yis +POS2S +ACC, doku +RFL yis +POS3 +ACC3, dokun yis +POS2S +ACC, dokun yis +POS3 +ACC3
+dolaSIyorsa	do lAs +TNS_yor +TNS_sa, do lAs +TNS_yor +if_SUF, dolaS +TNS_yor +TNS_sa, dolaS +TNS_yor +if_SUF
+doldurulmuStur	dol +CAU_dir +PSS_Hl +TNS_mis +DEF
+dolunayda	dolunay +LOC
+dolusunu	do +ADJ_SUF_lH +POS3 +ACC3, dolu +POS3 +ACC3
+dominantlIGI	dominant +DER_lHg +ACC, dominant +DER_lHg +POS3
+donanImInIzIn	dona +PSS_Hn +im_DER +POS2P +GEN, dona +RFL +im_DER +POS2P +GEN
+doyur	doy +TNS_ir, doyur
+dramalar	dram +DAT +PER3P, drama +PER3P, drama +PL, drama +la_DER_TNS_ar, drama +la_DER_TNS_ir
+durdurduGuna	dur +CAU_dir +ADJ_dig +POS2S +DAT, dur +CAU_dir +ADJ_dig +POS3 +DAT3
+durdurmayI	dur +CAU_dir +NOUN_ma +ACC
+durdurulmuS	dur +CAU_dir +PSS_Hl +TNS_mis
+durmasI	dur +NOUN_ma +POS3
+duyarlIlIklarInIzI	duyar +ADJ_SUF_lH +DER_lHk +PL +POS2P +ACC, duyarlI +DER_lHk +PL +POS2P +ACC
+duymamanIn	duy +NEG_ma +NOUN_ma +GEN, duy +NEG_ma +NOUN_ma_POS2S +GEN
+duymasInI	duy +NOUN_ma +POS3 +ACC3
+duyularImIzIn	duyu +PL +POS1P +GEN
+eGitilmelidir	eG +CAU_t +PSS_Hl +NOUN_ma +ADJ_SUF_lH +DEF, eG +CAU_t +PSS_Hl +TNS_mali +DEF, eGit +PSS_Hl +NOUN_ma +ADJ_SUF_lH +DEF, eGit +PSS_Hl +TNS_mali +DEF
+eGitmekten	eG +CAU_t mak +ABL, eGit mak +ABL
+eSimi	eS +POS1S +ACC, eS +im_DER +ACC, eS +im_DER +POS3
+eSleStirir	eS lAs +CAU_dir +TNS_ir
+edasInda	eda +POS3 +LOC3
+edebildiGimiz	ed yabil +ADJ_dig +POS1P, ed yabil +ADJ_dig +POS1S +PER1P
+edebiliyoruz	ed yabil +TNS_yor +PER1P, edebi +la_TNS_yor +PER1P
+edebilmekte	ed yabil +TNS_makta, ed yabil mak +LOC
+edebiyatImIz	edebiyat +POS1P, edebiyat +POS1S +PER1P
+edemezlerse	ed +NEG_yama +PER3P_NEG +TNS_sa, ed +NEG_yama +PER3P_NEG +if_SUF
+edemezsek	ed +NEG_yama_NEG_AOR +TNS_sa +PER1P_k, ed +NEG_yama_NEG_AOR +if_SUF +PER1P_k
+edilemeden	ed +PSS_Hl yamadan
+efendilerimizden	efendi +PL +POS1P +ABL
+efendilerini	efendi +PL +POS2S +ACC, efendi +PL +POS3 +ACC3, efendi +POS3S +ACC3
+efesi	efe +POS3, efes +ACC, efes +POS3
+ekollere	ekol +PL +DAT
+eldivenlerle	eldiven +PL +REL
+eleStirim	e lAs +CAU_dir +im_DER, e lAs +CAU_t +TNS_ir +PER1S, eleStir +im_DER, eleStiri +POS1S
+emanetCi	emanet +DER_cH
+emsalleri	emsal +PL +ACC, emsal +PL +POS3, emsal +POS3S
+endoderm	endoderm
+engelleyeceklerinden	engel +la_DER yacak +PL +POS2S +ABL, engel +la_DER yacak +PL +POS3 +ABL3, engel +la_DER yacak +POS3S +ABL3
+ensest	ensest
+eriSilebilecek	er yis +PSS_Hl yabil yacak, eriS +PSS_Hl yabil yacak
+esinlenerek	esin +la_DER_PSS_Hn yarak, esin +la_DER_RFL yarak
+esinlenilen	esin +la_DER_RFL +PSS_Hl yan
+eteGine	eteG +POS2S +DAT, eteG +POS3 +DAT3
+etikle	etik +REL, etik +la_DER
+etkenlerin	etken +PL +GEN, etken +PL +POS2S
+etkilemesine	et +gi_DER +la_DER +NOUN_ma +POS3 +DAT3, etki +la_DER +NOUN_ma +POS3 +DAT3
+etkilese	et +gi_DER +la_DER +TNS_sa, etki +la_DER +TNS_sa
+etmedikleri	et +NEG_ma +ADJ_dik +PL +ACC, et +NEG_ma +ADJ_dik +PL +POS3, et +NEG_ma +ADJ_dik +POS3S
+etmiyorum	et +NEG_ma_TNS_yor +PER1S
+ettirebilir	et +CAU_dir yabil +TNS_ir
+ettirilmeleri	et +CAU_dir +PSS_Hl +NOUN_ma +PL +ACC, et +CAU_dir +PSS_Hl +NOUN_ma +PL +POS3, et +CAU_dir +PSS_Hl +NOUN_ma +POS3S
+eylemlerimizle	eylem +PL +POS1P +REL
+ezelde	ezel +LOC
+fUzelerine	fUze +PL +POS2S +DAT, fUze +PL +POS3 +DAT3, fUze +POS3S +DAT3
+falI	fa +ADJ_SUF_lH, fal +ACC, fal +POS3
+farkIndaydIk	fark +POS2S +LOC +PAST_hikaye +PER1P_k, fark +POS3 +LOC3 +PAST_hikaye +PER1P_k
+fatihinin	fatih +POS2S +GEN, fatih +POS3 +GEN
+fazlalaStIkCa	fazla lAs +ADJ_dik +ADV_SUF_cA, fazla lAs dikca
+fedakarlIGI	fedakar +DER_lHg +ACC, fedakar +DER_lHg +POS3
+felsefesine	felsefe +POS3 +DAT3
+fenerlerin	fener +PL +GEN, fener +PL +POS2S
+fetihler	fetih +PER3P, fetih +PL, fetih +la_DER_TNS_ar, fetih +la_DER_TNS_ir
+figUranlar	figUran +PER3P, figUran +PL, figUran +la_DER_TNS_ar, figUran +la_DER_TNS_ir
+figUrleri	figUr +PL +ACC, figUr +PL +POS3, figUr +POS3S
+fikirlerinizi	fikir +PL +POS2P +ACC
+filizlenmeye	filiz +la_DER_PSS_Hn +NEG_ma +OPT, filiz +la_DER_PSS_Hn +NOUN_ma +DAT, filiz +la_DER_RFL +NEG_ma +OPT, filiz +la_DER_RFL +NOUN_ma +DAT
+filomuz	filo +POS1P, filo +POS1S +PER1P
+finaldeki	final +LOC +REL_SUF_ki
+finansmanda	finansman +LOC
+fonksiyonlarIna	fonksiyon +PL +POS2S +DAT, fonksiyon +PL +POS3 +DAT3, fonksiyon +POS3S +DAT3
+formUlden	formUl +ABL
+fotoGrafCIlIk	fotoGraf +DER_cH +DER_lHk
+frekanslar	frekans +PER3P, frekans +PL, frekans +la_DER_TNS_ar, frekans +la_DER_TNS_ir
+fukarasI	fukara +POS3
+gOkyUzUyle	gOkyUzU +REL
+gOlgeyi	gOlge +ACC
+gOllerinde	gOl +PL +POS2S +LOC, gOl +PL +POS3 +LOC3, gOl +POS3S +LOC3
+gOmUlmUStU	gOm +PSS_Hl +TNS_mis +PAST_hikaye
+gOnderilecek	gOnder +PSS_Hl yacak
+gOrUStUklerini	gOr yis +ADJ_dik +PL +POS2S +ACC, gOr yis +ADJ_dik +PL +POS3 +ACC3, gOr yis +ADJ_dik +POS3S +ACC3
+gOrUlebilir	gOr +PSS_Hl yabil +TNS_ir
+gOrUlmekten	gOr +PSS_Hl mak +ABL
+gOrUlmeyenler	gOr +PSS_Hl +NEG_ma yan +PER3P, gOr +PSS_Hl +NEG_ma yan +PL, gOr +PSS_Hl +NEG_ma yan +la_DER_TNS_ar, gOr +PSS_Hl +NEG_ma yan +la_DER_TNS_ir
+gOrUnmediGinden	gOr +PSS_Hn +NEG_ma +ADJ_dig +POS2S +ABL, gOr +PSS_Hn +NEG_ma +ADJ_dig +POS3 +ABL3, gOr +RFL +NEG_ma +ADJ_dig +POS2S +ABL, gOr +RFL +NEG_ma +ADJ_dig +POS3 +ABL3
+gOrUsUnU	gOrU +POS3 +ACC3
+gOrUyUm	gOrU +PER1S
+gOrdUk	gOr +ADJ_dik, gOr +TNS_di +PER1P_k
+gOrgUlerini	gOr +gi_DER +PL +POS2S +ACC, gOr +gi_DER +PL +POS3 +ACC3, gOr +gi_DER +POS3S +ACC3
+gOrmeyin	gOr +NEG_ma +P2_PL
+gOsterisi	gOsteri +POS3
+gOtUrUcU	gOtUr yici, gOtUrU +DER_cH
+gOtUrUldUGU	gOtUr +PSS_Hl +ADJ_dig +ACC, gOtUr +PSS_Hl +ADJ_dig +POS3
+gOzUkebilir	gOzUk yabil +TNS_ir
+gUClendirirken	gUC +la_DER_RFL +CAU_dir +TNS_ir iken_e
+gUClendirmekti	gUC +la_DER_RFL +CAU_dir mak +PAST_hikaye
+gUdU	gUdU
+gUlUmsUyor	gUlUms +TNS_yor
+gUlme	gUl +NEG_ma, gUl +NOUN_ma
+gUrUltUdUr	gUrUltU +DEF
+gUvencesinin	gUvence +POS3 +GEN
+gabari	gabari
+galibiyete	galibiyet +DAT
+garibi	garib +ACC, garib +POS3
+gazeteciydi	gazete +DER_cH +PAST_hikaye
+geCeni	geC yan +ACC, geC yan +POS3, geCe +POS2S +ACC
+geCerlidir	geCer +ADJ_SUF_lH +DEF, geCerli +DEF
+geCilemeyeceGini	geC +PSS_Hl +NEG_yama yacag +POS2S +ACC, geC +PSS_Hl +NEG_yama yacag +POS3 +ACC3
+geCirilmiStir	geCir +PSS_Hl +TNS_mis +DEF
+geCmedikleri	geC +NEG_ma +ADJ_dik +PL +ACC, geC +NEG_ma +ADJ_dik +PL +POS3, geC +NEG_ma +ADJ_dik +POS3S
+geCmeyen	geC +NEG_ma yan
+gecesinde	gec +yasi_POS2S +LOC, gece +POS3 +LOC3
+gelenekte	gelenek +LOC
+geliSimle	gel yis +POS1S +REL, gel yis +im_DER +REL, gel yis +im_DER +la_DER, geliS +im_DER +REL, geliS +im_DER +la_DER
+geliStiGinde	gel yis +ADJ_dig +POS2S +LOC, gel yis +ADJ_dig +POS3 +LOC3, geliS +ADJ_dig +POS2S +LOC, geliS +ADJ_dig +POS3 +LOC3
+geliStirilirken	gel yis +CAU_dir +PSS_Hl +TNS_ir iken_e, geliS +CAU_dir +PSS_Hl +TNS_ir iken_e
+geliStirmedikleri	gel yis +CAU_dir +NEG_ma +ADJ_dik +PL +ACC, gel yis +CAU_dir +NEG_ma +ADJ_dik +PL +POS3, gel yis +CAU_dir +NEG_ma +ADJ_dik +POS3S, geliS +CAU_dir +NEG_ma +ADJ_dik +PL +ACC, geliS +CAU_dir +NEG_ma +ADJ_dik +PL +POS3, geliS +CAU_dir +NEG_ma +ADJ_dik +POS3S
+genellik	genel +DER_lHk
+gerCeGiydi	gerCeG +POS3 +PAST_hikaye
+gerCekleSemeyecek	gerCek lAs +NEG_yama yacak
+gerCekleSmez	gerCek lAs +NEG_ma_NEG_AOR
+gerCekleStirdikten	gerCek lAs +CAU_dir +ADJ_dik +ABL
+gerCekleStirilebileceGine	gerCek lAs +CAU_dir +PSS_Hl yabil yacag +POS2S +DAT, gerCek lAs +CAU_dir +PSS_Hl yabil yacag +POS3 +DAT3
+gerCekleStirmemiS	gerCek lAs +CAU_dir +NEG_ma +TNS_mis
+gerekCeyle	gerekCe +REL
+gerekmez	gerek +NEG_ma_NEG_AOR
+gerilimden	ger +PSS_Hl +im_DER +ABL, geri +ADJ_SUF_lH_POS1S +ABL
+geriliminin	ger +PSS_Hl +im_DER +POS2S +GEN, ger +PSS_Hl +im_DER +POS3 +GEN
+gerisi	geri +POS3
+germeyi	ger +NOUN_ma +ACC
+getirdiGidir	getir +ADJ_dig +POS3 +DEF
+getirdiGinden	getir +ADJ_dig +POS2S +ABL, getir +ADJ_dig +POS3 +ABL3
+getirenlerin	getir yan +PL +GEN, getir yan +PL +POS2S
+getirmemeye	getir +NEG_ma +NOUN_ma +DAT
+gidebiliyor	gid yabil +TNS_yor
+giderek	gid yarak, gider +OPT +PER1P_k2
+gidiSlerine	gidiS +PL +POS2S +DAT, gidiS +PL +POS3 +DAT3, gidiS +POS3S +DAT3
+gireceksin	gir yacak +PER2S
+giriSimcilik	gir yis +im_DER +DER_cH +DER_lHk, giriS +im_DER +DER_cH +DER_lHk
+giriSiminin	gir yis +im_DER +POS2S +GEN, gir yis +im_DER +POS3 +GEN, giriS +im_DER +POS2S +GEN, giriS +im_DER +POS3 +GEN
+giymeyin	giy +NEG_ma +P2_PL
+gizlemiyorlar	giz +la_DER +NEG_ma_TNS_yor +PER3P
+greviydi	grev +POS3 +PAST_hikaye
+hIrslar	hIrs +PER3P, hIrs +PL, hIrs +la_DER_TNS_ar, hIrs +la_DER_TNS_ir
+hIzlandIrabilmek	hIz +la_DER_RFL +CAU_dir yabil mak
+hIzlanmanIn	hIz +la_DER_PSS_Hn +NOUN_ma +GEN, hIz +la_DER_PSS_Hn +NOUN_ma_POS2S +GEN, hIz +la_DER_RFL +NOUN_ma +GEN, hIz +la_DER_RFL +NOUN_ma_POS2S +GEN
+hIzlarIn	hIz +PL +GEN, hIz +PL +POS2S
+hacze	hacz +DAT
+hainidirler	hain +POS3 +DEF +PER3P
+hakimliGince	hakim +DER_lHg +POS2S +ADV_SUF_cA
+halis	halis
+halkImIza	halk +POS1P +DAT
+hallerini	hal +PL +POS2S +ACC, hal +PL +POS3 +ACC3, hal +POS3S +ACC3
+halletmesi	hal +la_DER_CAU_t +NOUN_ma +POS3, hallet +NOUN_ma +POS3
+hasIrIn	hasIr +GEN, hasIr +POS2S
+hasadInI	hasad +POS2S +ACC, hasad +POS3 +ACC3
+hasadIndan	hasad +POS2S +ABL, hasad +POS3 +ABL3
+hasarInda	hasar +POS2S +LOC, hasar +POS3 +LOC3
+hastanesi	hastane +POS3
+hatIranIn	hatIra +GEN, hatIra +POS2S +GEN
+hatIrlatmayI	hatIr +la_DER_CAU_t +NOUN_ma +ACC
+hatunu	hatun +ACC, hatun +POS3
+hayaletinden	hayalet +POS2S +ABL, hayalet +POS3 +ABL3
+haydutlarIn	haydut +PL +GEN, haydut +PL +POS2S
+hazIrlanmadan	hazIr +la_DER_PSS_Hn +NOUN_ma +ABL, hazIr +la_DER_PSS_Hn madan, hazIr +la_DER_RFL +NOUN_ma +ABL, hazIr +la_DER_RFL madan
+hazinelerini	hazine +PL +POS2S +ACC, hazine +PL +POS3 +ACC3, hazine +POS3S +ACC3
+hazzI	hazz +ACC, hazz +POS3
+hekimce	hekim +ADV_SUF_cA
+helyuma	helyum +DAT
+hesaplamasI	hesap +la_DER +NOUN_ma +POS3
+hesaplamasIna	hesap +la_DER +NOUN_ma +POS3 +DAT3
+heyecanImI	heyecan +POS1S +ACC
+hissettiklerini	hisset +ADJ_dik +PL +POS2S +ACC, hisset +ADJ_dik +PL +POS3 +ACC3, hisset +ADJ_dik +POS3S +ACC3
+hitama	hitam +DAT
+hortumlandIGInI	hortum +la_DER_PSS_Hn +ADJ_dig +POS2S +ACC, hortum +la_DER_PSS_Hn +ADJ_dig +POS3 +ACC3, hortum +la_DER_RFL +ADJ_dig +POS2S +ACC, hortum +la_DER_RFL +ADJ_dig +POS3 +ACC3
+hot	hot
+hristiyanlar	hristiyan +PER3P, hristiyan +PL, hristiyan +la_DER_TNS_ar, hristiyan +la_DER_TNS_ir
+huriye	huri +DAT
+iCerikle	iCerik +REL, iCerik +la_DER
+iCinde	iC +POS2S +LOC, iC +POS3 +LOC3, iCin +LOC, iCinde
+iCinizde	iC +POS2P +LOC
+iCkilere	iC +gi_DER +PL +DAT
+iCselleStirir	iCsel lAs +CAU_dir +TNS_ir
+iSaretlerin	iSaret +PL +GEN, iSaret +PL +POS2S
+iSitmiyoruz	iSit +NEG_ma_TNS_yor +PER1P
+iSlemelerinin	iS +la_DER +NOUN_ma +PL +POS2S +GEN, iS +la_DER +NOUN_ma +PL +POS3 +GEN, iS +la_DER +NOUN_ma +POS3S +GEN, iSle +NOUN_ma +PL +POS2S +GEN, iSle +NOUN_ma +PL +POS3 +GEN, iSle +NOUN_ma +POS3S +GEN
+iSlemelerle	iS +la_DER +NOUN_ma +PL +REL, iSle +NOUN_ma +PL +REL
+iSletiyordu	iS +la_DER_CAU_t +TNS_yor +PAST_hikaye, iSle +CAU_t +TNS_yor +PAST_hikaye
+ibadetine	ibadet +POS2S +DAT, ibadet +POS3 +DAT3
+iddialarInda	iddia +PL +POS2S +LOC, iddia +PL +POS3 +LOC3, iddia +POS3S +LOC3
+ihtilalini	ihtilal +POS2S +ACC, ihtilal +POS3 +ACC3
+ihtilaller	ihtilal +PER3P, ihtilal +PL, ihtilal +la_DER_TNS_ar, ihtilal +la_DER_TNS_ir
+ihtiyaClarImIza	ihtiyaC +PL +POS1P +DAT
+ilerisinde	ileri +POS3 +LOC3
+ilerliyorduk	ilerl +TNS_yor +PAST_hikaye +PER1P_k
+ilgilenmenin	il +gi_DER +la_DER_PSS_Hn +NOUN_ma +GEN, il +gi_DER +la_DER_PSS_Hn +NOUN_ma_POS2S +GEN, il +gi_DER +la_DER_RFL +NOUN_ma +GEN, il +gi_DER +la_DER_RFL +NOUN_ma_POS2S +GEN, ilgi +la_DER_PSS_Hn +NOUN_ma +GEN, ilgi +la_DER_PSS_Hn +NOUN_ma_POS2S +GEN, ilgi +la_DER_RFL +NOUN_ma +GEN, ilgi +la_DER_RFL +NOUN_ma_POS2S +GEN
+ilimlerle	il +im_DER +PL +REL, ilim +PL +REL
+imparatorluklarInI	imparator +DER_lHk +PL +POS2S +ACC, imparator +DER_lHk +PL +POS3 +ACC3, imparator +DER_lHk +POS3S +ACC3
+imtihanlarla	imtihan +PL +REL
+imzalamISlardI	imza +la_DER +TNS_mis +PER3P +PAST_hikaye, imza +la_DER +TNS_mis +PER3P +TNS_di, imza +la_DER +TNS_mis +PL +PAST_hikaye, imza +la_DER +TNS_mis +la_DER_TNS_ar +PAST_hikaye, imza +la_DER +TNS_mis +la_DER_TNS_ir +PAST_hikaye
+imzalayabilmektedir	imza +la_DER yabil +TNS_makta +DEF, imza +la_DER yabil mak +LOC +DEF
+inanmamIStIr	inan +NEG_ma +TNS_mis +DEF
+incelemedir	ince +la_DER +NOUN_ma +DEF
+iradesiyle	irade +POS3 +REL
+irkilen	irk +PSS_Hl yan
+issizlik	is +ADJ_SUF_sHz +DER_lHk
+istatistiklerimiz	istatistik +PL +POS1P, istatistik +PL +POS1S +PER1P
+isteGindedir	isteG +POS2S +LOC +DEF, isteG +POS3 +LOC3 +DEF
+istemem	iste +NEG_ma +PER1S_m, iste +NOUN_ma_POS1S
+isteyecekler	iste yacak +PER3P, iste yacak +PL, iste yacak +la_DER_TNS_ar, iste yacak +la_DER_TNS_ir
+istikamettedir	istikamet +LOC +DEF
+ithalinden	ithal +POS2S +ABL, ithal +POS3 +ABL3
+iyileSmeyle	iyi lAs +NOUN_ma +REL
+izahInIn	izah +POS2S +GEN, izah +POS3 +GEN
+izindir	iz +GEN +DEF, iz +POS2S +DEF, izin +DEF
+izlememden	iz +la_DER +NOUN_ma_POS1S +ABL, izle +NOUN_ma_POS1S +ABL
+kISkIrtIldIGI	kISkIr +CAU_t +PSS_Hl +ADJ_dig +ACC, kISkIr +CAU_t +PSS_Hl +ADJ_dig +POS3, kISkIrt +PSS_Hl +ADJ_dig +ACC, kISkIrt +PSS_Hl +ADJ_dig +POS3
+kIlavuzlu	kIlavuz +ADJ_SUF_lH
+kIlmadI	kIl +NEG_ma +TNS_di
+kIrkI	kIrk +ACC, kIrk +POS3, kIrkI
+kIrmIzIya	kIrmIzI +DAT
+kIsItlIlIk	kIsIt +ADJ_SUF_lH +DER_lHk
+kIsmete	kIsmet +DAT
+kIyImInI	kIy +im_DER +POS2S +ACC, kIy +im_DER +POS3 +ACC3
+kOkenleri	kOken +PL +ACC, kOken +PL +POS3, kOken +POS3S
+kOylUmUze	kOy +ADJ_SUF_lH +POS1P +DAT
+kUfUrdUr	kUfUr +DEF
+kUlhandan	kUlhan +ABL
+kUnefe	kUnefe
+kaCmayIn	kaC +NEG_ma +P2_PL
+kaGanlarI	kaG yan +PL +ACC, kaG yan +PL +POS3, kaG yan +POS3S, kaGan +PL +ACC, kaGan +PL +POS3, kaGan +POS3S
+kaSIkta	kaSIk +LOC
+kabartIp	kabar +CAU_t yip
+kabarttIlar	kabar +CAU_t +TNS_di +PER3P
+kabullenmiSlerdi	kabul +la_DER_PSS_Hn +TNS_mis +PER3P +PAST_hikaye, kabul +la_DER_PSS_Hn +TNS_mis +PER3P +TNS_di, kabul +la_DER_PSS_Hn +TNS_mis +PL +PAST_hikaye, kabul +la_DER_PSS_Hn +TNS_mis +la_DER_TNS_ar +PAST_hikaye, kabul +la_DER_PSS_Hn +TNS_mis +la_DER_TNS_ir +PAST_hikaye, kabul +la_DER_RFL +TNS_mis +PER3P +PAST_hikaye, kabul +la_DER_RFL +TNS_mis +PER3P +TNS_di, kabul +la_DER_RFL +TNS_mis +PL +PAST_hikaye, kabul +la_DER_RFL +TNS_mis +la_DER_TNS_ar +PAST_hikaye, kabul +la_DER_RFL +TNS_mis +la_DER_TNS_ir +PAST_hikaye
+kadardI	kad +TNS_ar +PAST_hikaye, kadar +PAST_hikaye
+kahramanlarImIzIn	kahraman +PL +POS1P +GEN
+kalIndIGInda	kal +PSS_Hn +ADJ_dig +POS2S +LOC, kal +PSS_Hn +ADJ_dig +POS3 +LOC3, kal +RFL +ADJ_dig +POS2S +LOC, kal +RFL +ADJ_dig +POS3 +LOC3
+kalemlerinin	kalem +PL +POS2S +GEN, kalem +PL +POS3 +GEN, kalem +POS3S +GEN
+kalfalarI	kalfa +PL +ACC, kalfa +PL +POS3, kalfa +POS3S
+kalitelidir	kalite +ADJ_SUF_lH +DEF
+kalktIGInda	kalk +ADJ_dig +POS2S +LOC, kalk +ADJ_dig +POS3 +LOC3
+kalmakla	kal mak +REL
+kamCIsIdIr	kamCI +POS3 +DEF
+kanaatlarInIn	kanaat +PL +POS2S +GEN, kanaat +PL +POS3 +GEN, kanaat +POS3S +GEN
+kanmaz	kan +NEG_ma_NEG_AOR
+kapanISIna	kapa +PSS_Hn yis +POS2S +DAT, kapa +PSS_Hn yis +POS3 +DAT3, kapa +RFL yis +POS2S +DAT, kapa +RFL yis +POS3 +DAT3
+kapasitelerini	kapasite +PL +POS2S +ACC, kapasite +PL +POS3 +ACC3, kapasite +POS3S +ACC3
+kaplamIStI	kap +la_DER +TNS_mis +PAST_hikaye
+kaplanan	kap +la_DER_PSS_Hn yan, kap +la_DER_RFL yan
+karIsInIn	karI +POS3 +GEN
+karSIlaSIyorlar	karSI lAs +TNS_yor +PER3P
+karSIlaSmadIGImIzI	karSI lAs +NEG_ma +ADJ_dig +POS1P +ACC
+karSIlaStIGImIzI	karSI lAs +ADJ_dig +POS1P +ACC
+karSIlayabilir	karSI +la_DER yabil +TNS_ir
+karSIlayacaktI	karSI +la_DER yacak +PAST_hikaye
+karSItIn	karSIt +GEN, karSIt +POS2S
+karakeCili	karakeCi +ADJ_SUF_lH
+karalanIp	kara +la_DER_PSS_Hn yip, kara +la_DER_RFL yip
+karamsar	karamsar
+kararlIlIGI	karar +ADJ_SUF_lH +DER_lHg +ACC, karar +ADJ_SUF_lH +DER_lHg +POS3
+karataSI	karataS +ACC, karataS +POS3
+kardeSlerinizle	kardeS +PL +POS2P +REL
+karsa	kar +TNS_sa, kar +if_SUF, kars +DAT
+kartla	kart +REL, kart +la_DER
+karyaGdI	karyaGdI
+kasabamIz	kasaba +POS1P, kasaba +POS1S +PER1P
+kasetten	kaset +ABL
+kategorilerden	kategori +PL +ABL
+kavuStuktan	kavuS +ADJ_dik +ABL
+kayIsIda	kayIsI +LOC
+kayarlar	kay +TNS_ar +PER3P, kayar +PER3P, kayar +PL, kayar +la_DER_TNS_ar, kayar +la_DER_TNS_ir
+kaybettin	kaybet +CAU_t +P2_PL, kaybet +CAU_t +PSS_Hn, kaybet +TNS_di +PER2S_n
+kaynadIGI	kayna +ADJ_dig +ACC, kayna +ADJ_dig +POS3
+kazanIlanIn	kazan +PSS_Hl yan +GEN, kazan +PSS_Hl yan +POS2S
+kazanIrlardI	kazan +TNS_ir +PER3P +PAST_hikaye, kazan +TNS_ir +PER3P +TNS_di
+kazandIysam	kazan +TNS_di +if_SUF +PER1S_m
+kazanmalarInI	kazan +NOUN_ma +PL +POS2S +ACC, kazan +NOUN_ma +PL +POS3 +ACC3, kazan +NOUN_ma +POS3S +ACC3
+kazanmanIza	kazan +NOUN_ma +POS2P +DAT
+keSfedeceGimiz	keSfed yacag +POS1P, keSfed yacag +POS1S +PER1P
+keSfediliyor	keSfed +PSS_Hl +TNS_yor
+keSfinin	keSf +POS2S +GEN, keSf +POS3 +GEN
+kelimeleriyle	kelime +PL +POS3 +REL, kelime +POS3S +REL
+kemoterapiye	kemoterapi +DAT
+kendir	kendir
+kesilip	kes +PSS_Hl yip
+kesilmemeli	kes +PSS_Hl +NEG_ma +NOUN_ma +ADJ_SUF_lH, kes +PSS_Hl +NEG_ma +TNS_mali
+kesinleSen	kesin lAs yan
+kesinti	kesinti
+kesintilerden	kesinti +PL +ABL
+kesmesin	kes +NEG_ma +PER2S, kes +NOUN_ma +PER2S
+kiSinin	kiSi +GEN, kiSi +POS2S +GEN
+kilimcilik	kilim +DER_cH +DER_lHk
+kilitlenme	kilit +la_DER_PSS_Hn +NEG_ma, kilit +la_DER_PSS_Hn +NOUN_ma, kilit +la_DER_RFL +NEG_ma, kilit +la_DER_RFL +NOUN_ma
+koSabilmek	koS yabil mak
+kodlu	kod +ADJ_SUF_lH
+koliti	kolit +ACC, kolit +POS3
+konaklamalarI	konak +la_DER +NOUN_ma +PL +ACC, konak +la_DER +NOUN_ma +PL +POS3, konak +la_DER +NOUN_ma +POS3S
+konmuStur	kon +TNS_mis +DEF
+konsepti	konsept +ACC, konsept +POS3
+konseyinin	konsey +POS2S +GEN, konsey +POS3 +GEN
+konteynere	konteyner +DAT
+kontra	kontra
+konuGumu	konuG +POS1S +ACC
+konuSamayIz	kon yis +NEG_yama +PER1P, konuS +NEG_yama +PER1P
+konuStunuz	kon yis +CAU_t +P2_PL_iz, kon yis +PAST_hikaye +PER2P_niz, kon yis +TNS_di +PER2P_niz, konuS +CAU_t +P2_PL_iz, konuS +TNS_di +PER2P_niz
+konumlanmIS	kon +im_DER +la_DER_PSS_Hn +TNS_mis, kon +im_DER +la_DER_RFL +TNS_mis, konum +la_DER_PSS_Hn +TNS_mis, konum +la_DER_RFL +TNS_mis
+konuttur	kon +CAU_t +CAU_dir, kon +CAU_t +CAU_t +TNS_ir, konut +DEF
+konyaspor	konyaspor
+kopyalarI	kopya +PL +ACC, kopya +PL +POS3, kopya +POS3S
+koridorlara	koridor +PL +DAT
+korkmaktadIr	kork +TNS_makta +DEF, kork mak +LOC +DEF
+korkunC	korkunC
+korunmalIdIrlar	koru +PSS_Hn +NOUN_ma +ADJ_SUF_lH +DEF +PER3P, koru +RFL +NOUN_ma +ADJ_SUF_lH +DEF +PER3P
+kuSatIcIlIGI	kuSat yici +DER_lHg +ACC, kuSat yici +DER_lHg +POS3
+kulUbecik	kulUbe +DER_cHk
+kullan	kul +la_DER_PSS_Hn, kul +la_DER_RFL, kullan
+kullanabiliyordu	kul +la_DER_PSS_Hn yabil +TNS_yor +PAST_hikaye, kul +la_DER_RFL yabil +TNS_yor +PAST_hikaye, kullan yabil +TNS_yor +PAST_hikaye
+kurbanInIn	kurban +POS2S +GEN, kurban +POS3 +GEN
+kurulamamIStI	kur +PSS_Hl +NEG_yama +TNS_mis +PAST_hikaye, kuru +PSS_Hl +NEG_yama +TNS_mis +PAST_hikaye, kuru +la_DER +NEG_ma +TNS_mis +PAST_hikaye, kurul +NEG_yama +TNS_mis +PAST_hikaye
+kurulda	kurul +LOC
+kuruluSunuzda	kur +PSS_Hl yis +POS2P +LOC, kuru +PSS_Hl yis +POS2P +LOC, kurul yis +POS2P +LOC
+kurutulan	kur +CAU_t +PSS_Hl yan, kuru +CAU_t +PSS_Hl yan, kurut +PSS_Hl yan
+kusurlarIn	kusur +PL +GEN, kusur +PL +POS2S
+lastiGiyle	lastiG +POS3 +REL
+lavman	lavman
+lavrion	lavrion
+lifi	lif +ACC, lif +POS3
+ligin	lig +GEN, lig +POS2S
+listedeki	liste +LOC +REL_SUF_ki
+literatUr	literatUr
+lokmasI	lokma +POS3
+mUSahit	mUSahit
+mUdahaleler	mUdahale +PER3P, mUdahale +PL, mUdahale +la_DER_TNS_ar, mUdahale +la_DER_TNS_ir
+mUkelleflerinden	mUkellef +PL +POS2S +ABL, mUkellef +PL +POS3 +ABL3, mUkellef +POS3S +ABL3
+mUktesebatInI	mUktesebat +POS2S +ACC, mUktesebat +POS3 +ACC3
+mUmessillere	mUmessil +PL +DAT
+mUminleri	mUmin +PL +ACC, mUmin +PL +POS3, mUmin +POS3S
+mUsabakalarda	mUsabaka +PL +LOC
+mUslUmanlIGa	mUslUman +DER_lHg +DAT
+mUzisyenleriyle	mUzisyen +PL +POS3 +REL, mUzisyen +POS3S +REL
+maGlupken	maGlup iken_e
+maddelerdir	madde +PER3P +DEF, madde +PL +DEF, madde +la_DER_TNS_ar +DEF, madde +la_DER_TNS_ir +DEF
+mahiyetindedir	mahiyet +POS2S +LOC +DEF, mahiyet +POS3 +LOC3 +DEF
+maili	mai +ADJ_SUF_lH, mail +ACC, mail +POS3
+makalelere	makale +PL +DAT
+malatyalI	malatya +ADJ_SUF_lH
+manileri	mani +PL +ACC, mani +PL +POS3, mani +POS3S
+mankenlerden	manken +PL +ABL
+mansIz	mansIz
+marketlere	market +PL +DAT
+marklarIn	mark +PL +GEN, mark +PL +POS2S
+matematikCidir	matematik +DER_cH +DEF
+mazur	mazur
+meSgulsUnUz	meSgul +PER2P
+meSrulaStIrIlIr	meSru lAs +CAU_dir +PSS_Hl +TNS_ir
+medeniyetlerine	medeniyet +PL +POS2S +DAT, medeniyet +PL +POS3 +DAT3, medeniyet +POS3S +DAT3
+mekandaki	meka +POS2S +LOC +REL_SUF_ki, mekan +LOC +REL_SUF_ki
+mektuplaSmalar	mektup lAs +NOUN_ma +PER3P, mektup lAs +NOUN_ma +PL, mektup lAs +NOUN_ma +la_DER_TNS_ar, mektup lAs +NOUN_ma +la_DER_TNS_ir
+memeliler	meme +ADJ_SUF_lH +PER3P, meme +ADJ_SUF_lH +PL, meme +ADJ_SUF_lH +la_DER_TNS_ar, meme +ADJ_SUF_lH +la_DER_TNS_ir
+menUler	menU +PER3P, menU +PL, menU +la_DER_TNS_ar, menU +la_DER_TNS_ir
+mendille	mendil +REL, mendil +la_DER
+mermerinden	mermer +POS2S +ABL, mermer +POS3 +ABL3
+mesleklerini	meslek +PL +POS2S +ACC, meslek +PL +POS3 +ACC3, meslek +POS3S +ACC3
+meteorolojiye	meteoroloji +DAT
+meydanInda	meydan +POS2S +LOC, meydan +POS3 +LOC3
+midyenin	midye +GEN, midye +POS2S +GEN
+mimiklerin	mimik +PL +GEN, mimik +PL +POS2S
+mineli	mi +PSS_Hn yali, mi +RFL yali, mine +ADJ_SUF_lH
+minerallerin	mineral +PL +GEN, mineral +PL +POS2S
+modernleSmeden	modern lAs +NOUN_ma +ABL, modern lAs madan
+modernleStiriyor	modern lAs +CAU_dir +TNS_yor
+monitOrlUk	monitOr +DER_lHk
+moralinizi	moral +POS2P +ACC
+muSta	muS +LOC, muSta
+muarrem	muarrem
+muayenede	muayene +LOC
+muayenehaneye	muayenehane +DAT
+mubayaasI	mubayaa +POS3
+mucizeydi	mucize +PAST_hikaye
+mutfaklar	mutfak +PER3P, mutfak +PL, mutfak +la_DER_TNS_ar, mutfak +la_DER_TNS_ir
+nahiyelerinde	nahiye +PL +POS2S +LOC, nahiye +PL +POS3 +LOC3, nahiye +POS3S +LOC3
+nama	na +POS1S +DAT, nam +DAT
+neSriyat	neSriyat
+nebzede	nebze +LOC
+nedenlerine	neden +PL +POS2S +DAT, neden +PL +POS3 +DAT3, neden +POS3S +DAT3
+nehrine	nehr +POS2S +DAT, nehr +POS3 +DAT3
+nevrim	nevr +PER1S, nevr +POS1S
+nidasInI	nida +POS3 +ACC3
+nikahlI	nikah +ADJ_SUF_lH
+nuha	nuh +DAT
+obje	obje
+ocaksIz	ocak +ADJ_SUF_sHz
+odaya	oda +DAT
+okSasIn	okSa +PER2S
+oksijensiz	oksijen +ADJ_SUF_sHz
+oktan	ok +ABL, ok +CAU_t yan, oktan
+okuduGumu	oku +ADJ_dig +POS1S +ACC
+okuyamayan	oku +NEG_yama yan
+okuyucularImIz	oku yici +PL +POS1P, oku yici +PL +POS1S +PER1P
+olamadIGInI	o +la_DER +NEG_ma +ADJ_dig +POS2S +ACC, o +la_DER +NEG_ma +ADJ_dig +POS3 +ACC3, ol +NEG_yama +ADJ_dig +POS2S +ACC, ol +NEG_yama +ADJ_dig +POS3 +ACC3
+olgunlaSmasInIn	olgun lAs +NOUN_ma +POS3 +GEN
+olmazlardI	ol +NEG_ma +PER3P_NEG +PAST_hikaye, olmaz +PL +PAST_hikaye, olmaz +la_DER_TNS_ar +PAST_hikaye, olmaz +la_DER_TNS_ir +PAST_hikaye
+oluGa	o +DER_lHg +DAT, oluG +DAT
+oluSturuyorsunuz	ol yis +CAU_dir +TNS_yor +PER2P, oluS +CAU_dir +TNS_yor +PER2P
+oluSumlar	ol yis +POS1S +PER3P, ol yis +im_DER +PER3P, ol yis +im_DER +PL, ol yis +im_DER +la_DER_TNS_ar, ol yis +im_DER +la_DER_TNS_ir, oluS +im_DER +PER3P, oluS +im_DER +PL, oluS +im_DER +la_DER_TNS_ar, oluS +im_DER +la_DER_TNS_ir
+olumlanan	ol +im_DER +la_DER_PSS_Hn yan, ol +im_DER +la_DER_RFL yan
+onarIlmIS	onar +PSS_Hl +TNS_mis
+onayIna	onay +POS2S +DAT, onay +POS3 +DAT3
+orkestrasInI	orkestra +POS3 +ACC3
+orospuluk	orospu +DER_lHk
+otlarla	ot +PL +REL
+oturtulmasIna	otur +CAU_t +PSS_Hl +NOUN_ma +POS3 +DAT3
+oynatabilen	oyna +CAU_t yabil yan
+oynayacaGImIz	oyna yacag +POS1P, oyna yacag +POS1S +PER1P
+pakete	paket +DAT
+palazlanIyor	palaz +la_DER_PSS_Hn +TNS_yor, palaz +la_DER_RFL +TNS_yor
+parCacI	parCa +DER_cH
+parCala	parCa +la_DER
+parolalarI	parola +PL +ACC, parola +PL +POS3, parola +POS3S
+parolaydI	parola +PAST_hikaye
+partisinde	parti +POS3 +LOC3
+partisine	parti +POS3 +DAT3
+pas	pas
+pasifikteki	pasifik +LOC +REL_SUF_ki
+passionu	passion +ACC, passion +POS3
+patlIcanlarI	patlIcan +PL +ACC, patlIcan +PL +POS3, patlIcan +POS3S
+patlamIStI	pat +la_DER +TNS_mis +PAST_hikaye, patla +TNS_mis +PAST_hikaye
+payeler	paye +PER3P, paye +PL, paye +la_DER_TNS_ar, paye +la_DER_TNS_ir
+pazI	pazI
+pazarIndaki	pazar +POS2S +LOC +REL_SUF_ki, pazar +POS3 +LOC3 +REL_SUF_ki
+pazarlamacIlIGI	pazar +la_DER +NOUN_ma +DER_cH +DER_lHg +ACC, pazar +la_DER +NOUN_ma +DER_cH +DER_lHg +POS3
+pedikUr	pedikUr
+penCeleri	penCe +PL +ACC, penCe +PL +POS3, penCe +POS3S
+perdede	perde +LOC
+pervazIn	pervaz +GEN, pervaz +POS2S
+pestil	pestil
+piSmiS	piS +TNS_mis
+plaketini	plaket +POS2S +ACC, plaket +POS3 +ACC3
+planlamasInda	plan +la_DER +NOUN_ma +POS3 +LOC3
+poliCede	poliCe +LOC
+pozisyonu	pozisyon +ACC, pozisyon +POS3
+prensesle	prenses +REL, prenses +la_DER
+primlerini	prim +PL +POS2S +ACC, prim +PL +POS3 +ACC3, prim +POS3S +ACC3
+profesyonelliGi	profesyonel +DER_lHg +ACC, profesyonel +DER_lHg +POS3
+psikoanalizle	psikoanaliz +REL, psikoanaliz +la_DER
+rakipler	rakip +PER3P, rakip +PL, rakip +la_DER_TNS_ar, rakip +la_DER_TNS_ir
+reddetmeye	reddet +NEG_ma +OPT, reddet +NOUN_ma +DAT
+reisliGe	reis +DER_lHg +DAT
+reyinizi	rey +POS2P +ACC
+rezerv	rezerv
+robotun	robot +GEN, robot +POS2S
+rotalarI	rota +PL +ACC, rota +PL +POS3, rota +POS3S
+sIhhIye	sIhhIye
+sIkIStIrIlIp	sIk yis +CAU_dir +PSS_Hl yip
+sIkmaz	sIk +NEG_ma_NEG_AOR
+sInIflandIrIlIp	sInIf +la_DER_RFL +CAU_dir +PSS_Hl yip
+sIralamada	sIra +la_DER +NOUN_ma +LOC
+sIralanmasInda	sIra +la_DER_PSS_Hn +NOUN_ma +POS3 +LOC3, sIra +la_DER_RFL +NOUN_ma +POS3 +LOC3
+sIralarIn	sIra +PL +GEN, sIra +PL +POS2S
+sIyIrma	sIyIr +NEG_ma, sIyIr +NOUN_ma
+sOkUl	sOk +PSS_Hl
+sOndUrUcU	sOn +CAU_dir yici
+sOyleyemeyeceGim	sOyle +NEG_yama yacag +PER1S, sOyle +NEG_yama yacag +POS1S
+sOzUmUzUn	sOz +POS1P +GEN
+sOzlerimiz	sOz +PL +POS1P, sOz +PL +POS1S +PER1P
+sUmbUl	sUmbUl
+sUnger	sUnger
+sUrUkleyebileceGini	sUrUkle yabil yacag +POS2S +ACC, sUrUkle yabil yacag +POS3 +ACC3
+sUrUlmesidir	sUr +PSS_Hl +NOUN_ma +POS3 +DEF, sUrU +PSS_Hl +NOUN_ma +POS3 +DEF
+sUrdUrebilmesine	sUr +CAU_dir yabil +NOUN_ma +POS3 +DAT3, sUrdUr yabil +NOUN_ma +POS3 +DAT3
+sUrdUreceklerdir	sUr +CAU_dir yacak +PER3P +DEF, sUr +CAU_dir yacak +PL +DEF, sUr +CAU_dir yacak +la_DER_TNS_ar +DEF, sUr +CAU_dir yacak +la_DER_TNS_ir +DEF, sUrdUr yacak +PER3P +DEF, sUrdUr yacak +PL +DEF, sUrdUr yacak +la_DER_TNS_ar +DEF, sUrdUr yacak +la_DER_TNS_ir +DEF
+sUremi	sUre +POS1S +ACC
+sUresizdir	sUre +ADJ_SUF_sHz +DEF
+sUrprizli	sUrpriz +ADJ_SUF_lH
+sUtunlara	sUtun +PL +DAT
+saGImI	saG +POS1S +ACC, saG +im_DER +ACC, saG +im_DER +POS3, saGI +POS1S +ACC, saGIm +ACC, saGIm +POS3
+saGlanamayacaGIna	saG +la_DER_PSS_Hn +NEG_yama yacag +POS2S +DAT, saG +la_DER_PSS_Hn +NEG_yama yacag +POS3 +DAT3, saG +la_DER_RFL +NEG_yama yacag +POS2S +DAT, saG +la_DER_RFL +NEG_yama yacag +POS3 +DAT3, saGla +PSS_Hn +NEG_yama yacag +POS2S +DAT, saGla +PSS_Hn +NEG_yama yacag +POS3 +DAT3, saGla +RFL +NEG_yama yacag +POS2S +DAT, saGla +RFL +NEG_yama yacag +POS3 +DAT3
+saGlayIcIlarInIn	saG +la_DER yici +PL +POS2S +GEN, saG +la_DER yici +PL +POS3 +GEN, saG +la_DER yici +POS3S +GEN, saGla yici +PL +POS2S +GEN, saGla yici +PL +POS3 +GEN, saGla yici +POS3S +GEN
+saatlerinden	saat +PL +POS2S +ABL, saat +PL +POS3 +ABL3, saat +POS3S +ABL3
+saatleriydi	saat +PL +POS3 +PAST_hikaye, saat +POS3S +PAST_hikaye
+sabotaj	sabotaj
+sahili	sahi +ADJ_SUF_lH, sahil +ACC, sahil +POS3
+sahipleridirler	sahip +PL +POS3 +DEF +PER3P, sahip +POS3S +DEF +PER3P
+sakInIm	sak +GEN +PER1S, sak +POS2S +PER1S, sakIn +PER1S, sakIn +POS1S, sakIn +im_DER
+sakallI	sakal +ADJ_SUF_lH
+sakinlerini	sakin +PL +POS2S +ACC, sakin +PL +POS3 +ACC3, sakin +POS3S +ACC3
+saklanabileceGi	sak +la_DER_PSS_Hn yabil yacag +ACC, sak +la_DER_PSS_Hn yabil yacag +POS3, sak +la_DER_RFL yabil yacag +ACC, sak +la_DER_RFL yabil yacag +POS3, sakla +PSS_Hn yabil yacag +ACC, sakla +PSS_Hn yabil yacag +POS3, sakla +RFL yabil yacag +ACC, sakla +RFL yabil yacag +POS3
+saldIrgan	saldIrgan
+saldIrganlIkla	saldIrgan +DER_lHk +la_DER
+salgInlara	salgIn +PL +DAT
+sandalyelerini	sandalye +PL +POS2S +ACC, sandalye +PL +POS3 +ACC3, sandalye +POS3S +ACC3
+sanrIlar	sanrI +PER3P, sanrI +PL, sanrI +la_DER_TNS_ar, sanrI +la_DER_TNS_ir
+santrallerinin	santral +PL +POS2S +GEN, santral +PL +POS3 +GEN, santral +POS3S +GEN
+sarICam	sarICam
+sarImsaGIn	sarImsaG +GEN, sarImsaG +POS2S
+sarIyormuS	sar +TNS_yor +PAST_rivayet
+satIyorum	sat +TNS_yor +PER1S
+savaSmanIn	savaS +NOUN_ma +GEN, savaS +NOUN_ma_POS2S +GEN
+savaSta	savaS +CAU_t +OPT, savaS +LOC
+sayardI	say +TNS_ar +PAST_hikaye
+seCmenleri	seCmen +PL +ACC, seCmen +PL +POS3, seCmen +POS3S
+sebebin	sebep +GEN, sebep +POS2S
+sebzede	sebze +LOC
+seden	se +ABL
+selimi	se +ADJ_SUF_lH_POS1S +ACC, sel +POS1S +ACC, selim +ACC, selim +POS3
+semantik	semantik
+semih	semih
+sempozyumu	sempozyum +ACC, sempozyum +POS3
+semtini	semt +POS2S +ACC, semt +POS3 +ACC3
+sendromu	sendrom +ACC, sendrom +POS3
+sergilenip	ser +gi_DER +la_DER_PSS_Hn yip, ser +gi_DER +la_DER_RFL yip
+sergimizi	ser +gi_DER +POS1P +ACC
+serilerini	seri +PL +POS2S +ACC, seri +PL +POS3 +ACC3, seri +POS3S +ACC3
+serpintisini	serpinti +POS3 +ACC3
+sertleSme	sert lAs +NEG_ma, sert lAs +NOUN_ma
+sevilmiS	sev +PSS_Hl +TNS_mis
+sevindirmiStir	sev +RFL +CAU_dir +TNS_mis +DEF
+seviyormuSuz	sev +TNS_yor +PAST_rivayet +PER1P
+seyrettim	seyret +CAU_t +im_DER, seyret +TNS_di +PER1S_m
+silinmemiSti	sil +PSS_Hn +NEG_ma +TNS_mis +PAST_hikaye, sil +RFL +NEG_ma +TNS_mis +PAST_hikaye
+simitlerin	simit +PL +GEN, simit +PL +POS2S
+sipariSleriniz	sipariS +PL +GEN +PER1P, sipariS +PL +POS2P, sipariS +PL +POS2S +PER1P
+soGukkanlIlIGInIzI	soGukkanlI +DER_lHg +POS2P +ACC
+sohbetimizi	sohbet +POS1P +ACC
+solladIk	sol +la_DER +ADJ_dik, sol +la_DER +TNS_di +PER1P_k
+solukdur	soluk +DEF
+somut	somut
+sopalarInI	sopa +PL +POS2S +ACC, sopa +PL +POS3 +ACC3, sopa +POS3S +ACC3
+sorabilirler	sor yabil +TNS_ir +PER3P
+soruSturulmalIdIr	sor yis +CAU_dir +PSS_Hl +NOUN_ma +ADJ_SUF_lH +DEF, soruS +CAU_dir +PSS_Hl +NOUN_ma +ADJ_SUF_lH +DEF, soruStur +PSS_Hl +NOUN_ma +ADJ_SUF_lH +DEF
+sorulur	sor +PSS_Hl +TNS_ir, soru +PSS_Hl +TNS_ir
+sorununu	sorun +POS2S +ACC, sorun +POS3 +ACC3
+sorununun	sor +RFL +PSS_Hn +P2_PL, soru +RFL +PSS_Hn +P2_PL, sorun +POS2S +GEN, sorun +POS3 +GEN
+soyadIyla	soyad +POS3 +REL, soyadI +REL
+soyucu	soy yici
+stokun	stok +GEN, stok +POS2S
+stratejisinin	strateji +POS3 +GEN
+suClamaktan	suC +la_DER mak +ABL
+suClandIrIlIrlar	suC +la_DER_RFL +CAU_dir +PSS_Hl +TNS_ir +PER3P
+sulanInca	su +la_DER_PSS_Hn yinca, su +la_DER_RFL yinca
+sulandIrIlmamIS	su +la_DER_RFL +CAU_dir +PSS_Hl +NEG_ma +TNS_mis
+sullivan	sullivan
+sunacaGI	sun yacag +ACC, sun yacag +POS3
+sunmuS	su +POS2S +PAST_rivayet, sun +TNS_mis
+tIkamakta	tIka +TNS_makta, tIka mak +LOC
+tIrlar	tIr +PER3P, tIr +PL, tIr +la_DER_TNS_ar, tIr +la_DER_TNS_ir
+tIrmanmIStIlar	tIrman +TNS_mis +PAST_hikaye +PER3P
+tOreninde	tOren +POS2S +LOC, tOren +POS3 +LOC3
+tUfeGimiz	tUfeG +POS1P, tUfeG +POS1S +PER1P
+tUkenecek	tUken yacak
+tUmen	tUmen
+tUmlUGUnUn	tUm +DER_lHg +POS2S +GEN, tUm +DER_lHg +POS3 +GEN
+tUrediGini	tUre +ADJ_dig +POS2S +ACC, tUre +ADJ_dig +POS3 +ACC3
+tabakadaki	tabaka +LOC +REL_SUF_ki
+takacak	tak yacak
+taksidi	taksid +ACC, taksid +POS3
+talimatlarInI	talimat +PL +POS2S +ACC, talimat +PL +POS3 +ACC3, talimat +POS3S +ACC3
+tanIStIracak	tan yis +CAU_dir yacak
+tanImlayabileceGimizi	tan +im_DER +la_DER yabil yacag +POS1P +ACC, tanIm +la_DER yabil yacag +POS1P +ACC
+tanIrlar	tan +TNS_ir +PER3P, tanI +TNS_ar +PER3P, tanI +TNS_ir +PER3P
+tanItIyorum	tan +CAU_t +TNS_yor +PER1S, tanI +CAU_t +TNS_yor +PER1S
+tarlalar	tarla +PER3P, tarla +PL, tarla +la_DER_TNS_ar, tarla +la_DER_TNS_ir
+tartISIlmadIGInI	tart yis +PSS_Hl +NEG_ma +ADJ_dig +POS2S +ACC, tart yis +PSS_Hl +NEG_ma +ADJ_dig +POS3 +ACC3, tartIS +PSS_Hl +NEG_ma +ADJ_dig +POS2S +ACC, tartIS +PSS_Hl +NEG_ma +ADJ_dig +POS3 +ACC3
+tasarlanamaz	tasar +la_DER_PSS_Hn +NEG_yama_NEG_AOR, tasar +la_DER_RFL +NEG_yama_NEG_AOR
+tasarlayabilir	tasar +la_DER yabil +TNS_ir
+tasfiyeden	tasfiye +ABL
+taslaktaki	taslak +LOC +REL_SUF_ki
+tavdIr	tav +DEF
+teSvikleriyle	teSvik +PL +POS3 +REL, teSvik +POS3S +REL
+tecrUbeleriyle	tecrUbe +PL +POS3 +REL, tecrUbe +POS3S +REL
+tedarikCisi	tedarik +DER_cH +POS3
+tedmer	tedmer
+tehlikelidir	tehlike +ADJ_SUF_lH +DEF
+tehlikenin	tehlike +GEN, tehlike +POS2S +GEN
+teknelerden	tekne +PL +ABL
+teknesini	tekne +POS3 +ACC3
+teknolojileri	teknoloji +PL +ACC, teknoloji +PL +POS3, teknoloji +POS3S
+tekrarlanmalIdIr	tekrar +la_DER_PSS_Hn +NOUN_ma +ADJ_SUF_lH +DEF, tekrar +la_DER_PSS_Hn +TNS_mali +DEF, tekrar +la_DER_RFL +NOUN_ma +ADJ_SUF_lH +DEF, tekrar +la_DER_RFL +TNS_mali +DEF
+tekstilinin	tekstil +POS2S +GEN, tekstil +POS3 +GEN
+temada	tema +LOC
+temizlemesini	temiz +la_DER +NOUN_ma +POS3 +ACC3
+tempoyu	tempo +ACC
+tenteli	tente +ADJ_SUF_lH
+terminaline	terminal +POS2S +DAT, terminal +POS3 +DAT3
+tertibatIn	tertibat +GEN, tertibat +POS2S
+tesadUflerin	tesadUf +PL +GEN, tesadUf +PL +POS2S
+tezgahIndaki	tezgah +POS2S +LOC +REL_SUF_ki, tezgah +POS3 +LOC3 +REL_SUF_ki
+ticaretimizi	ticaret +POS1P +ACC
+titreyerek	titre yarak
+titriyor	titr +TNS_yor
+tiyatrolarda	tiyatro +PL +LOC
+tiyatrosuna	tiyatro +POS3 +DAT3
+topallayarak	topal +la_DER yarak
+toplanamadI	top +la_DER_PSS_Hn +NEG_yama +TNS_di, top +la_DER_RFL +NEG_yama +TNS_di, topla +PSS_Hn +NEG_yama +TNS_di, topla +RFL +NEG_yama +TNS_di
+toplusOzleSmeli	toplusOzleSme +ADJ_SUF_lH
+torunlarInI	torun +PL +POS2S +ACC, torun +PL +POS3 +ACC3, torun +POS3S +ACC3
+trajedilere	trajedi +PL +DAT
+trajedileri	trajedi +PL +ACC, trajedi +PL +POS3, trajedi +POS3S
+trajedisine	trajedi +POS3 +DAT3
+trombon	trombon
+turcas	turcas
+tuttururlar	tut +CAU_dir +TNS_ir +PER3P
+tutulma	tut +PSS_Hl +NEG_ma, tut +PSS_Hl +NOUN_ma
+tutulmalI	tut +PSS_Hl +NOUN_ma +ADJ_SUF_lH
+tuvali	tuval +ACC, tuval +POS3
+uGradIk	uGra +ADJ_dik, uGra +TNS_di +PER1P_k
+uGurladIGImIz	uGur +la_DER +ADJ_dig +POS1P, uGur +la_DER +ADJ_dig +POS1S +PER1P
+ufalanma	ufa +la_DER_PSS_Hn +NEG_ma, ufa +la_DER_PSS_Hn +NOUN_ma, ufa +la_DER_RFL +NEG_ma, ufa +la_DER_RFL +NOUN_ma, ufala +PSS_Hn +NEG_ma, ufala +PSS_Hn +NOUN_ma, ufala +RFL +NEG_ma, ufala +RFL +NOUN_ma
+ulaSmamIza	u lAs +NOUN_ma +POS1P +DAT, ulaS +NOUN_ma +POS1P +DAT
+ulaSmasIndan	u lAs +NOUN_ma +POS3 +ABL3, ulaS +NOUN_ma +POS3 +ABL3
+ulumanIn	ulu +NOUN_ma +GEN, ulu +NOUN_ma_POS2S +GEN
+umursamadIGI	umursa +NEG_ma +ADJ_dig +ACC, umursa +NEG_ma +ADJ_dig +POS3
+unsurlarIna	unsur +PL +POS2S +DAT, unsur +PL +POS3 +DAT3, unsur +POS3S +DAT3
+unutabilir	unut yabil +TNS_ir
+unutabiliriz	unut yabil +TNS_ir +PER1P
+unvanlarIyla	unvan +PL +POS3 +REL, unvan +POS3S +REL
+uyanIrdIk	uyan +TNS_ir +PAST_hikaye +PER1P_k
+uyaranIn	uyar yan +GEN, uyar yan +POS2S
+uzamIS	uza +TNS_mis
+uzatmazdI	uza +CAU_t +NEG_ma_NEG_AOR +PAST_hikaye
+uzayInda	uzay +POS2S +LOC, uzay +POS3 +LOC3
+uzlaSarak	uz lAs yarak, uzlaS yarak
+uzmanlaStIGI	uzman lAs +ADJ_dig +ACC, uzman lAs +ADJ_dig +POS3
+vahSetleri	vahSet +PL +ACC, vahSet +PL +POS3, vahSet +POS3S
+vahSiliGi	vahSi +DER_lHg +ACC, vahSi +DER_lHg +POS3
+vakanUvis	vakanUvis
+varacaktIr	var yacak +DEF
+varislerden	varis +PL +ABL
+vasiyetnameden	vasiyetname +ABL
+vatandaSlarIn	vatandaS +PL +GEN, vatandaS +PL +POS2S
+vekilini	vekil +POS2S +ACC, vekil +POS3 +ACC3
+venden	ve +POS2S +ABL
+verdiGinizi	ver +ADJ_dig +POS2P +ACC
+verdiren	ver +CAU_dir yan
+verebilmelerini	ver yabil +NOUN_ma +PL +POS2S +ACC, ver yabil +NOUN_ma +PL +POS3 +ACC3, ver yabil +NOUN_ma +POS3S +ACC3
+verebilmelidir	ver yabil +NOUN_ma +ADJ_SUF_lH +DEF, ver yabil +TNS_mali +DEF
+vergisini	ver +gi_DER +POS3 +ACC3, vergi +POS3 +ACC3
+verilerinizi	veri +PL +POS2P +ACC
+verilmekte	ver +PSS_Hl +TNS_makta, ver +PSS_Hl mak +LOC
+veritabanlarIyla	veritaban +PL +POS3 +REL, veritaban +POS3S +REL
+vermeseydim	ver +NEG_ma +TNS_sa +PAST_hikaye +PER1S_m
+verniGi	verniG +ACC, verniG +POS3
+vurabilecek	vur yabil yacak
+yOnelmektedir	yOnel +TNS_makta +DEF, yOnel mak +LOC +DEF
+yOneltebilirler	yOnel +CAU_t yabil +TNS_ir +PER3P
+yOneltilebilecek	yOnel +CAU_t +PSS_Hl yabil yacak
+yOnlendirin	yOn +la_DER_RFL +CAU_dir +P2_PL, yOn +la_DER_RFL +CAU_dir +PSS_Hn
+yOnlendirmelerini	yOn +la_DER_RFL +CAU_dir +NOUN_ma +PL +POS2S +ACC, yOn +la_DER_RFL +CAU_dir +NOUN_ma +PL +POS3 +ACC3, yOn +la_DER_RFL +CAU_dir +NOUN_ma +POS3S +ACC3
+yUceltmeleridir	yUcel +CAU_t +NOUN_ma +PL +POS3 +DEF, yUcel +CAU_t +NOUN_ma +POS3S +DEF
+yUrUmeden	yUrU +NOUN_ma +ABL, yUrU madan
+yUrUtUlmesiyle	yUrU +CAU_t +PSS_Hl +NOUN_ma +POS3 +REL, yUrUt +PSS_Hl +NOUN_ma +POS3 +REL
+yUrUyenleri	yUrU yan +PL +ACC, yUrU yan +PL +POS3, yUrU yan +POS3S
+yaSadIGInIzI	yaSa +ADJ_dig +POS2P +ACC
+yaSanIlIr	yaSa +RFL +PSS_Hl +TNS_ir
+yaSandIysa	yaSa +PSS_Hn +TNS_di +if_SUF, yaSa +RFL +TNS_di +if_SUF
+yaSantImdan	yaSa +RFL +CAU_t +im_DER +ABL, yaSantI +POS1S +ABL
+yaSarlarken	yaSa +TNS_ar +PER3P iken_e, yaSa +TNS_ir +PER3P iken_e
+yaSayabiliyorlar	yaSa yabil +TNS_yor +PER3P
+yakInlarInIzla	yakIn +PL +POS2P +REL
+yakItIna	yak +CAU_t +PSS_Hn +OPT, yakIt +POS2S +DAT, yakIt +POS3 +DAT3
+yakItIyla	yakIt +POS3 +REL
+yakanIzda	yaka +POS2P +LOC
+yandaysa	ya +POS2S +LOC +if_SUF, yan +LOC +if_SUF
+yangInla	yan +gi_DER_POS2S +REL, yang +POS2S +REL, yangI +POS2S +REL, yangIn +REL, yangIn +la_DER
+yanlISlarI	yanlIS +PL +ACC, yanlIS +PL +POS3, yanlIS +POS3S
+yanlISlarInIzI	yanlIS +PL +POS2P +ACC
+yapIStIrdIk	yap yis +CAU_dir +ADJ_dik, yap yis +CAU_dir +TNS_di +PER1P_k, yap yis +CAU_t +TNS_ir +PAST_hikaye +PER1P_k, yapIS +CAU_dir +ADJ_dik, yapIS +CAU_dir +TNS_di +PER1P_k, yapIS +CAU_t +TNS_ir +PAST_hikaye +PER1P_k
+yapIlanmadan	yapI +la_DER_PSS_Hn +NOUN_ma +ABL, yapI +la_DER_PSS_Hn madan, yapI +la_DER_RFL +NOUN_ma +ABL, yapI +la_DER_RFL madan
+yapIlmISsa	yap +PSS_Hl +TNS_mis +TNS_sa, yap +PSS_Hl +TNS_mis +if_SUF
+yapImIn	yap +im_DER +GEN, yap +im_DER +POS2S, yapI +POS1S +GEN, yapIm +GEN, yapIm +POS2S
+yapInca	yap yinca, yapI +POS2S +ADV_SUF_cA
+yapItlardan	yapIt +PL +ABL
+yapamayacaGImI	yap +NEG_yama yacag +POS1S +ACC
+yapmadIGImIzI	yap +NEG_ma +ADJ_dig +POS1P +ACC
+yaptIrdIGInIz	yap +CAU_dir +ADJ_dig +GEN +PER1P, yap +CAU_dir +ADJ_dig +POS2P, yap +CAU_dir +ADJ_dig +POS2S +PER1P
+yarIcI	yar yici, yarI +DER_cH
+yararlanamayacak	yarar +la_DER_PSS_Hn +NEG_yama yacak, yarar +la_DER_RFL +NEG_yama yacak
+yarasaydI	yara +TNS_sa +PAST_hikaye, yarasa +PAST_hikaye
+yaratamadIGI	yara +CAU_t +NEG_yama +ADJ_dig +ACC, yara +CAU_t +NEG_yama +ADJ_dig +POS3, yarat +NEG_yama +ADJ_dig +ACC, yarat +NEG_yama +ADJ_dig +POS3
+yaratmalarInda	yara +CAU_t +NOUN_ma +PL +POS2S +LOC, yara +CAU_t +NOUN_ma +PL +POS3 +LOC3, yara +CAU_t +NOUN_ma +POS3S +LOC3, yarat +NOUN_ma +PL +POS2S +LOC, yarat +NOUN_ma +PL +POS3 +LOC3, yarat +NOUN_ma +POS3S +LOC3
+yasaklanmasInIn	yasak +la_DER_PSS_Hn +NOUN_ma +POS3 +GEN, yasak +la_DER_RFL +NOUN_ma +POS3 +GEN
+yasasInI	yas +yasi_POS2S +ACC, yasa +POS3 +ACC3
+yaslayarak	yas +la_DER yarak
+yatIrIlacaktIr	yatIr +PSS_Hl yacak +DEF
+yavaSlI	yavaS +ADJ_SUF_lH
+yayImlandIGInI	yay +im_DER +la_DER_PSS_Hn +ADJ_dig +POS2S +ACC, yay +im_DER +la_DER_PSS_Hn +ADJ_dig +POS3 +ACC3, yay +im_DER +la_DER_RFL +ADJ_dig +POS2S +ACC, yay +im_DER +la_DER_RFL +ADJ_dig +POS3 +ACC3, yayIm +la_DER_PSS_Hn +ADJ_dig +POS2S +ACC, yayIm +la_DER_PSS_Hn +ADJ_dig +POS3 +ACC3, yayIm +la_DER_RFL +ADJ_dig +POS2S +ACC, yayIm +la_DER_RFL +ADJ_dig +POS3 +ACC3
+yaygInca	yay +gi_DER_POS2S +ADV_SUF_cA, yaygIn +ADV_SUF_cA
+yaygInlaStIrmanIn	yaygIn lAs +CAU_dir +NOUN_ma +GEN, yaygIn lAs +CAU_dir +NOUN_ma_POS2S +GEN
+yazImIza	yaz +POS1P +DAT, yazI +POS1P +DAT
+yazdIr	yaz +CAU_dir, yaz +DEF
+yazmamasI	yaz +NEG_ma +NOUN_ma +POS3
+yazmayla	yaz +NOUN_ma +REL
+yeGliyorlardI	yeG +la_TNS_yor +PER3P +PAST_hikaye, yeG +la_TNS_yor +PER3P +TNS_di
+yeSereceGini	yeSer yacag +POS2S +ACC, yeSer yacag +POS3 +ACC3
+yemekhanesi	yemekhane +POS3
+yenilikCilerine	yeni +DER_lHk +DER_cH +PL +POS2S +DAT, yeni +DER_lHk +DER_cH +PL +POS3 +DAT3, yeni +DER_lHk +DER_cH +POS3S +DAT3
+yeralmamIz	yeral +NOUN_ma +POS1P, yeral +NOUN_ma_POS1S +PER1P
+yerkUrede	yerkUre +LOC
+yetiSkinlik	yetiSkin +DER_lHk
+yetkimizi	yet +gi_DER +POS1P +ACC, yetki +POS1P +ACC
+yirmilerin	yirmi +PL +GEN, yirmi +PL +POS2S
+yiyemez	yi +NEG_yama_NEG_AOR
+yom	yo +POS1S, yom
+yugoslavlar	yugoslav +PER3P, yugoslav +PL, yugoslav +la_DER_TNS_ar, yugoslav +la_DER_TNS_ir
+yurtseveri	yurtsever +ACC, yurtsever +POS3
+yurttaSlarImIza	yurttaS +PL +POS1P +DAT
+yutarken	yu +CAU_t +TNS_ar iken_e, yut +TNS_ar iken_e
+zIlgItlarla	zIlgIt +PL +REL
+zamanlamayla	zaman +la_DER +NOUN_ma +REL
+zeminde	zem +POS2S +LOC, zem +POS3 +LOC3, zemin +LOC
+zenginleSmiSti	zengin lAs +TNS_mis +PAST_hikaye
+zevklerle	zevk +PL +REL
+zinciriyle	zincir +POS3 +REL
+zorlaStIrdIGI	zor lAs +CAU_dir +ADJ_dig +ACC, zor lAs +CAU_dir +ADJ_dig +POS3

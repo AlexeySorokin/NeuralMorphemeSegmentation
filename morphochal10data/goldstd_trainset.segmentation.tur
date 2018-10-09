@@ -1,0 +1,1000 @@
+CIkarsanIz	CIk:CIk ar:+TNS_ar sa:+if_SUF nIz:+PER2P_niz, CIkar:CIkar sa:+TNS_sa nIz:+PER2P_niz, CIkar:CIkar sa:+if_SUF nIz:+PER2P_niz, CIk:CIk ar:+TNS_ar sa:+TNS_sa nIz:+PER2P_niz
+CIkmazIna	CIkmaz:CIkmaz I:+POS3 na:+DAT3, CIkmaz:CIkmaz In:+POS2S a:+DAT
+COlU	COl:COl U:+POS3, COl:COl U:+ACC
+COmleGi	COmleG:COmleG i:+POS3, COmleG:COmleG i:+ACC
+COplUGUnde	COp:COp lUG:+DER_lHg U:+POS3 nde:+LOC3, COp:COp lUG:+DER_lHg Un:+POS2S de:+LOC
+COzUmU	COz:COz Um:+POS1S U:+ACC, COz:COz Um:+im_DER U:+POS3, COz:COz Um:+im_DER U:+ACC
+CaGan	CaGa:CaGa n:+POS2S, CaG:CaG an:yan
+CaGlIyorlar	CaG:CaG lIyor:+la_TNS_yor lar:+PER3P, CaGl:CaGl Iyor:+TNS_yor lar:+PER3P
+CaGlayanlarI	CaG:CaG la:+la_DER yan:yan lar:+PL I:+ACC, CaGla:CaGla yan:yan lar:+PL I:+POS3, CaG:CaG la:+la_DER yan:yan larI:+POS3S, CaGlayan:CaGlayan lar:+PL I:+ACC, CaGla:CaGla yan:yan lar:+PL I:+ACC, CaGla:CaGla yan:yan larI:+POS3S, CaG:CaG la:+la_DER yan:yan lar:+PL I:+POS3, CaGlayan:CaGlayan larI:+POS3S, CaGlayan:CaGlayan lar:+PL I:+POS3
+CabalarImIn	Caba:Caba lar:+PL Im:+POS1S In:+GEN
+CakmIStI	Cak:Cak mIS:+TNS_mis tI:+PAST_hikaye
+CalISIyorum	CalIS:CalIS Iyor:+TNS_yor um:+PER1S, Cal:Cal IS:yis Iyor:+TNS_yor um:+PER1S
+CalISacaklarInI	CalIS:CalIS acak:yacak lar:+PL I:+POS3 nI:+ACC3, Cal:Cal IS:yis acak:yacak lar:+PL In:+POS2S I:+ACC, CalIS:CalIS acak:yacak larI:+POS3S nI:+ACC3, Cal:Cal IS:yis acak:yacak lar:+PL I:+POS3 nI:+ACC3, Cal:Cal IS:yis acak:yacak larI:+POS3S nI:+ACC3, CalIS:CalIS acak:yacak lar:+PL In:+POS2S I:+ACC
+CalISmalarda	Cal:Cal IS:yis ma:+NOUN_ma lar:+PL da:+LOC, CalIS:CalIS ma:+NOUN_ma lar:+PL da:+LOC
+CalgIlarla	Cal:Cal gI:+gi_DER lar:+PL la:+REL
+Camlarla	Cam:Cam lar:+PL la:+REL
+CatIlIr	Cat:Cat Il:+PSS_Hl Ir:+TNS_ir
+CeaS	CeaS:CeaS
+Cevrilmelidir	Cevril:Cevril me:+NOUN_ma li:+ADJ_SUF_lH dir:+DEF, Cevril:Cevril meli:+TNS_mali dir:+DEF
+Cilingirin	Cilingir:Cilingir in:+POS2S, Cilingir:Cilingir in:+GEN
+Cimentolar	Cimento:Cimento lar:+PL, Cimento:Cimento lar:+la_DER_TNS_ar, Cimento:Cimento lar:+PER3P, Cimento:Cimento lar:+la_DER_TNS_ir
+Cizgiden	Ciz:Ciz gi:+gi_DER den:+ABL
+Cizgisinden	Ciz:Ciz gi:+gi_DER si:+POS3 nden:+ABL3
+CoGaltImI	CoGaltIm:CoGaltIm I:+POS3, CoGaltIm:CoGaltIm I:+ACC, CoGal:CoGal t:+CAU_t Im:+im_DER I:+POS3, CoGal:CoGal t:+CAU_t Im:+im_DER I:+ACC
+In	I:I n:+POS2S
+Internetini	Internet:Internet i:+POS3 ni:+ACC3, Internet:Internet in:+POS2S i:+ACC
+Islanmak	Is:Is lan:+la_DER_RFL mak:mak, Isla:Isla n:+RFL mak:mak, Isla:Isla n:+PSS_Hn mak:mak, Is:Is lan:+la_DER_PSS_Hn mak:mak
+IslanmanIn	Is:Is lan:+la_DER_RFL ma:+NOUN_ma nIn:+GEN, Isla:Isla n:+RFL ma:+NOUN_ma nIn:+GEN, Is:Is lan:+la_DER_PSS_Hn man:+NOUN_ma_POS2S In:+GEN, Isla:Isla n:+PSS_Hn ma:+NOUN_ma nIn:+GEN, Is:Is lan:+la_DER_RFL man:+NOUN_ma_POS2S In:+GEN, Isla:Isla n:+PSS_Hn man:+NOUN_ma_POS2S In:+GEN, Isla:Isla n:+RFL man:+NOUN_ma_POS2S In:+GEN, Is:Is lan:+la_DER_PSS_Hn ma:+NOUN_ma nIn:+GEN
+OGrenmesidir	OGren:OGren me:+NOUN_ma si:+POS3 dir:+DEF
+OdUnC	OdUnC:OdUnC
+OdediGine	Ode:Ode diG:+ADJ_dig in:+POS2S e:+DAT, Ode:Ode diG:+ADJ_dig i:+POS3 ne:+DAT3
+Odemezlerse	Od:Od eme:+NEG_yama zler:+PER3P_NEG se:+TNS_sa, Ode:Ode me:+NEG_ma zler:+PER3P_NEG se:+TNS_sa, Od:Od eme:+NEG_yama zler:+PER3P_NEG se:+if_SUF, Ode:Ode me:+NEG_ma zler:+PER3P_NEG se:+if_SUF
+Oderiz	Od:Od er:+TNS_ar iz:+PER1P, Ode:Ode r:+TNS_ar iz:+PER1P, Ode:Ode r:+TNS_ir iz:+PER1P
+OfkelenmiSti	Ofke:Ofke len:+la_DER_RFL miS:+TNS_mis ti:+PAST_hikaye, Ofke:Ofke len:+la_DER_PSS_Hn miS:+TNS_mis ti:+PAST_hikaye
+OlCeGine	OlCeG:OlCeG in:+POS2S e:+DAT, OlCeG:OlCeG i:+POS3 ne:+DAT3
+OldUrUnUz	Ol:Ol dUr:+CAU_dir UnUz:+P2_PL_iz
+OldUrUrler	Ol:Ol dUr:+CAU_dir Ur:+TNS_ir ler:+PER3P
+OldUrUrlerdi	Ol:Ol dUr:+CAU_dir Ur:+TNS_ir ler:+PER3P di:+TNS_di, Ol:Ol dUr:+CAU_dir Ur:+TNS_ir ler:+PER3P di:+PAST_hikaye
+OldUrene	Ol:Ol dUr:+CAU_dir en:yan e:+DAT
+OlecekmiS	Ol:Ol ecek:yacak miS:+PAST_rivayet
+Onderleri	Onder:Onder ler:+PL i:+POS3, Onder:Onder ler:+PL i:+ACC, Onder:Onder leri:+POS3S
+OnereceGimiz	Oner:Oner eceG:yacag im:+POS1S iz:+PER1P, Oner:Oner eceG:yacag imiz:+POS1P
+Orme	Or:Or me:+NEG_ma, Or:Or me:+NOUN_ma
+Ornekti	Ornek:Ornek ti:+PAST_hikaye
+OrtUlmesi	Or:Or t:+CAU_t Ul:+PSS_Hl me:+NOUN_ma si:+POS3, Ort:Ort Ul:+PSS_Hl me:+NOUN_ma si:+POS3
+OtUSUp	Ot:Ot US:yis Up:yip
+OvUyorlar	Ov:Ov Uyor:+TNS_yor lar:+PER3P
+OveCler	OveC:OveC ler:+PER3P, OveC:OveC ler:+PL, OveC:OveC ler:+la_DER_TNS_ir, OveC:OveC ler:+la_DER_TNS_ar
+OzelleSmeye	Ozel:Ozel leS:lAs me:+NOUN_ma ye:+DAT, Ozel:Ozel leS:lAs me:+NEG_ma ye:+OPT
+Ozendirecek	Oze:Oze n:+RFL dir:+CAU_dir ecek:yacak, Ozen:Ozen dir:+CAU_dir ecek:yacak
+Ozendirilerek	Oze:Oze n:+RFL dir:+CAU_dir il:+PSS_Hl erek:yarak, Ozen:Ozen dir:+CAU_dir il:+PSS_Hl erek:yarak
+OzgUrlUGUmU	OzgUr:OzgUr lUG:+DER_lHg Um:+POS1S U:+ACC
+Ozlersem	Oz:Oz ler:+la_DER_TNS_ar se:+TNS_sa m:+PER1S_m, Oz:Oz ler:+la_DER_TNS_ar se:+if_SUF m:+PER1S_m, Oz:Oz ler:+la_DER_TNS_ir se:+if_SUF m:+PER1S_m, Ozle:Ozle r:+TNS_ar se:+if_SUF m:+PER1S_m, Ozle:Ozle r:+TNS_ar se:+TNS_sa m:+PER1S_m, Ozle:Ozle r:+TNS_ir se:+TNS_sa m:+PER1S_m, Ozle:Ozle r:+TNS_ir se:+if_SUF m:+PER1S_m, Oz:Oz ler:+PL se:+if_SUF m:+PER1S_m, Oz:Oz ler:+la_DER_TNS_ir se:+TNS_sa m:+PER1S_m
+SaftlarI	Saft:Saft lar:+PL I:+ACC, Saft:Saft lar:+PL I:+POS3, Saft:Saft larI:+POS3S
+Sartsa	Sart:Sart sa:+if_SUF
+Seflerinden	Sef:Sef ler:+PL i:+POS3 nden:+ABL3, Sef:Sef ler:+PL in:+POS2S den:+ABL, Sef:Sef leri:+POS3S nden:+ABL3
+Seyine	Sey:Sey i:+POS3 ne:+DAT3, Sey:Sey in:+POS2S e:+DAT
+Seylerde	Sey:Sey ler:+PL de:+LOC
+SiarInIn	Siar:Siar In:+POS2S In:+GEN, Siar:Siar I:+POS3 nIn:+GEN
+Subelerden	Sube:Sube ler:+PL den:+ABL
+USUdUGUnU	USU:USU dUG:+ADJ_dig U:+POS3 nU:+ACC3, USU:USU dUG:+ADJ_dig Un:+POS2S U:+ACC
+Ulkeli	Ulke:Ulke li:+ADJ_SUF_lH
+Ulkemizdeki	Ulke:Ulke miz:+POS1P de:+LOC ki:+REL_SUF_ki
+UnaydIn	UnaydIn:UnaydIn
+Unite	Unite:Unite
+Uredi	Ure:Ure di:+TNS_di
+UremiSti	Ure:Ure miS:+TNS_mis ti:+PAST_hikaye
+UzUlmUyorum	Uz:Uz Ul:+PSS_Hl mUyor:+NEG_ma_TNS_yor um:+PER1S
+aCIklamalarIdIr	aCIk:aCIk la:+la_DER ma:+NOUN_ma lar:+PL I:+POS3 dIr:+DEF, aCIk:aCIk la:+la_DER ma:+NOUN_ma larI:+POS3S dIr:+DEF
+aCIklamasIna	aCIk:aCIk la:+la_DER ma:+NOUN_ma sI:+POS3 na:+DAT3
+aCIklanabilmiS	aCIk:aCIk lan:+la_DER_PSS_Hn abil:yabil miS:+TNS_mis, aCIk:aCIk lan:+la_DER_RFL abil:yabil miS:+TNS_mis
+aCIlISInIn	aCIlIS:aCIlIS In:+POS2S In:+GEN, aCIlIS:aCIlIS I:+POS3 nIn:+GEN, aC:aC Il:+PSS_Hl IS:yis In:+POS2S In:+GEN, aC:aC Il:+PSS_Hl IS:yis I:+POS3 nIn:+GEN
+aCIlImlarIndan	aC:aC Il:+PSS_Hl Im:+im_DER larI:+POS3S ndan:+ABL3, aC:aC Il:+PSS_Hl Im:+im_DER lar:+PL I:+POS3 ndan:+ABL3, aC:aC Il:+PSS_Hl Im:+im_DER lar:+PL In:+POS2S dan:+ABL
+aCmasIna	aC:aC ma:+NOUN_ma sI:+POS3 na:+DAT3
+aGaClandIrIlmasI	aGaC:aGaC lan:+la_DER_RFL dIr:+CAU_dir Il:+PSS_Hl ma:+NOUN_ma sI:+POS3
+aGlarInda	aG:aG lar:+PL I:+POS3 nda:+LOC3, aG:aG lar:+PL In:+POS2S da:+LOC, aG:aG larI:+POS3S nda:+LOC3
+aGlarlar	aGla:aGla r:+TNS_ir lar:+PER3P, aG:aG lar:+la_DER_TNS_ar lar:+PER3P, aG:aG lar:+la_DER_TNS_ir lar:+PER3P, aG:aG lar:+PL lar:+PER3P, aGla:aGla r:+TNS_ar lar:+PER3P
+aGlarmIS	aG:aG lar:+PL mIS:+PAST_rivayet, aGla:aGla r:+TNS_ar mIS:+PAST_rivayet, aG:aG lar:+la_DER_TNS_ar mIS:+PAST_rivayet, aGla:aGla r:+TNS_ir mIS:+PAST_rivayet, aG:aG lar:+la_DER_TNS_ir mIS:+PAST_rivayet
+aGustos	aGustos:aGustos
+aSIlabilmektedir	aS:aS Il:+PSS_Hl abil:yabil mek:mak te:+LOC dir:+DEF, aS:aS Il:+PSS_Hl abil:yabil mekte:+TNS_makta dir:+DEF
+aSIlarInda	aSI:aSI lar:+PL I:+POS3 nda:+LOC3, aSI:aSI lar:+PL In:+POS2S da:+LOC, aSI:aSI larI:+POS3S nda:+LOC3
+aSinalIk	aSina:aSina lIk:+DER_lHk
+aSmamIz	aS:aS mam:+NOUN_ma_POS1S Iz:+PER1P, aS:aS ma:+NOUN_ma mIz:+POS1P
+adImlarInda	adIm:adIm lar:+PL I:+POS3 nda:+LOC3, ad:ad Im:+im_DER lar:+PL I:+POS3 nda:+LOC3, ad:ad Im:+im_DER lar:+PL In:+POS2S da:+LOC, ad:ad Im:+im_DER larI:+POS3S nda:+LOC3, adIm:adIm larI:+POS3S nda:+LOC3, adIm:adIm lar:+PL In:+POS2S da:+LOC
+adIysa	ad:ad I:+POS3 ysa:+if_SUF, ad:ad I:+ACC ysa:+if_SUF
+adaletCi	adalet:adalet Ci:+DER_cH
+adeleler	adele:adele ler:+la_DER_TNS_ar, adele:adele ler:+la_DER_TNS_ir, adele:adele ler:+PER3P, adele:adele ler:+PL
+adlandIrmak	ad:ad lan:+la_DER_RFL dIr:+CAU_dir mak:mak
+adlarda	ad:ad lar:+PL da:+LOC
+adler	adler:adler
+adliyeyi	adliye:adliye yi:+ACC
+ahlakImIza	ahlak:ahlak ImIz:+POS1P a:+DAT
+akIllarda	akIl:akIl lar:+PL da:+LOC
+akrepleri	akrep:akrep ler:+PL i:+ACC, akrep:akrep ler:+PL i:+POS3, akrep:akrep leri:+POS3S
+akrobatlar	akrobat:akrobat lar:+PL, akrobat:akrobat lar:+la_DER_TNS_ir, akrobat:akrobat lar:+la_DER_TNS_ar, akrobat:akrobat lar:+PER3P
+aksIyor	aks:aks Iyor:+TNS_yor
+alabileceGimiz	al:al abil:yabil eceG:yacag imiz:+POS1P, al:al abil:yabil eceG:yacag im:+POS1S iz:+PER1P
+aletine	alet:alet in:+POS2S e:+DAT, alet:alet i:+POS3 ne:+DAT3
+algIlanmIyor	al:al gI:+gi_DER lan:+la_DER_PSS_Hn mIyor:+NEG_ma_TNS_yor, al:al gI:+gi_DER lan:+la_DER_RFL mIyor:+NEG_ma_TNS_yor, algI:algI lan:+la_DER_PSS_Hn mIyor:+NEG_ma_TNS_yor, algI:algI lan:+la_DER_RFL mIyor:+NEG_ma_TNS_yor
+almayalIm	al:al ma:+NEG_ma ya:+OPT lIm:+PER1P_lHm
+amaClamasI	amaC:amaC la:+la_DER ma:+NOUN_ma sI:+POS3
+ambalajIn	ambalaj:ambalaj In:+GEN, ambalaj:ambalaj In:+POS2S
+ambargoya	ambargo:ambargo ya:+DAT
+ameliyatta	ameliyat:ameliyat ta:+LOC
+anImsatmakla	anImsa:anImsa t:+CAU_t mak:mak la:+REL
+anadolusu	anadolu:anadolu su:+POS3
+anketten	anket:anket ten:+ABL
+anlatabiliyorlardI	an:an lat:+la_DER_CAU_t abil:yabil iyor:+TNS_yor lar:+PER3P dI:+PAST_hikaye, an:an lat:+la_DER_CAU_t abil:yabil iyor:+TNS_yor lar:+PER3P dI:+TNS_di, anla:anla t:+CAU_t abil:yabil iyor:+TNS_yor lar:+PER3P dI:+PAST_hikaye, anla:anla t:+CAU_t abil:yabil iyor:+TNS_yor lar:+PER3P dI:+TNS_di
+anlatabilmeleri	an:an lat:+la_DER_CAU_t abil:yabil me:+NOUN_ma ler:+PL i:+POS3, an:an lat:+la_DER_CAU_t abil:yabil me:+NOUN_ma ler:+PL i:+ACC, anla:anla t:+CAU_t abil:yabil me:+NOUN_ma ler:+PL i:+POS3, anla:anla t:+CAU_t abil:yabil me:+NOUN_ma ler:+PL i:+ACC, an:an lat:+la_DER_CAU_t abil:yabil me:+NOUN_ma leri:+POS3S, anla:anla t:+CAU_t abil:yabil me:+NOUN_ma leri:+POS3S
+anlayabildiGim	anla:anla yabil:yabil diG:+ADJ_dig im:+PER1S, anla:anla yabil:yabil diG:+ADJ_dig im:+POS1S, an:an la:+la_DER yabil:yabil diG:+ADJ_dig im:+POS1S, an:an la:+la_DER yabil:yabil diG:+ADJ_dig im:+PER1S
+anneleriyle	anne:anne leri:+POS3S yle:+REL, anne:anne ler:+PL i:+POS3 yle:+REL
+apoletleri	apolet:apolet ler:+PL i:+POS3, apolet:apolet ler:+PL i:+ACC, apolet:apolet leri:+POS3S
+araStIrabiliriz	araStIr:araStIr abil:yabil ir:+TNS_ir iz:+PER1P
+araStIran	araStIr:araStIr an:yan
+aramalarI	ara:ara ma:+NOUN_ma lar:+PL I:+POS3, ara:ara ma:+NOUN_ma larI:+POS3S, ara:ara ma:+NOUN_ma lar:+PL I:+ACC
+arayanlarInda	ara:ara yan:yan larI:+POS3S nda:+LOC3, ara:ara yan:yan lar:+PL I:+POS3 nda:+LOC3, ara:ara yan:yan lar:+PL In:+POS2S da:+LOC
+arkadaki	arka:arka da:+LOC ki:+REL_SUF_ki
+armaGanmIS	armaGan:armaGan mIS:+PAST_rivayet
+arsIzca	ar:ar sIz:+ADJ_SUF_sHz ca:+ADV_SUF_cA
+artIrabilmek	artIr:artIr abil:yabil mek:mak
+artIracaklarInI	artIr:artIr acak:yacak lar:+PL I:+POS3 nI:+ACC3, artIr:artIr acak:yacak larI:+POS3S nI:+ACC3, artIr:artIr acak:yacak lar:+PL In:+POS2S I:+ACC
+arttIrIlmIStIr	art:art tIr:+CAU_dir Il:+PSS_Hl mIS:+TNS_mis tIr:+DEF
+arttIrmIyor	art:art tIr:+CAU_dir mIyor:+NEG_ma_TNS_yor
+arzuluyorsunuz	arzu:arzu luyor:+la_TNS_yor sunuz:+PER2P
+asbaSkanI	asbaSkan:asbaSkan I:+POS3, asbaSkan:asbaSkan I:+ACC
+asetilen	asetilen:asetilen
+askeriyede	askeriye:askeriye de:+LOC
+atIldIGIndan	at:at Il:+PSS_Hl dIG:+ADJ_dig In:+POS2S dan:+ABL, at:at Il:+PSS_Hl dIG:+ADJ_dig I:+POS3 ndan:+ABL3
+atIldInIz	at:at Il:+PSS_Hl dI:+TNS_di nIz:+PER2P_niz, atIl:atIl dI:+PAST_hikaye nIz:+PER2P_niz
+atIlmanIn	at:at Il:+PSS_Hl man:+NOUN_ma_POS2S In:+GEN, at:at Il:+PSS_Hl ma:+NOUN_ma nIn:+GEN
+atacaktI	at:at acak:yacak tI:+PAST_hikaye
+atlIya	at:at lI:+ADJ_SUF_lH ya:+DAT
+ayIrIrsak	ayIr:ayIr Ir:+TNS_ir sa:+TNS_sa k:+PER1P_k, ayIr:ayIr Ir:+TNS_ir sa:+if_SUF k:+PER1P_k
+ayIrmasInI	ayIr:ayIr ma:+NOUN_ma sI:+POS3 nI:+ACC3
+ayIrt	ayIr:ayIr t:+CAU_t, ayIrt:ayIrt
+aydInlatIlmasInI	aydIn:aydIn lat:+la_DER_CAU_t Il:+PSS_Hl ma:+NOUN_ma sI:+POS3 nI:+ACC3
+aynalardan	ayna:ayna lar:+PL dan:+ABL
+ayrISan	ayr:ayr IS:yis an:yan, ayrIS:ayrIS an:yan
+ayrImcIlIGIn	ayrIm:ayrIm cI:+DER_cH lIG:+DER_lHg In:+POS2S, ayrIm:ayrIm cI:+DER_cH lIG:+DER_lHg In:+GEN, ayr:ayr Im:+im_DER cI:+DER_cH lIG:+DER_lHg In:+GEN, ayr:ayr Im:+im_DER cI:+DER_cH lIG:+DER_lHg In:+POS2S
+azaltmasI	azal:azal t:+CAU_t ma:+NOUN_ma sI:+POS3
+azizler	aziz:aziz ler:+PL, aziz:aziz ler:+la_DER_TNS_ar, aziz:aziz ler:+PER3P, aziz:aziz ler:+la_DER_TNS_ir
+azmiyle	azm:azm i:+POS3 yle:+REL
+bOlUmleri	bOlUm:bOlUm leri:+POS3S, bOlUm:bOlUm ler:+PL i:+ACC, bOlUm:bOlUm ler:+PL i:+POS3, bOl:bOl Um:+im_DER leri:+POS3S, bOl:bOl Um:+im_DER ler:+PL i:+ACC, bOl:bOl Um:+im_DER ler:+PL i:+POS3
+bUromuz	bUro:bUro m:+POS1S uz:+PER1P, bUro:bUro muz:+POS1P
+bUyUmelidir	bUyU:bUyU me:+NOUN_ma li:+ADJ_SUF_lH dir:+DEF
+baGImsIzlIGIndan	baG:baG Im:+im_DER sIz:+ADJ_SUF_sHz lIG:+DER_lHg In:+POS2S dan:+ABL, baG:baG Im:+im_DER sIz:+ADJ_SUF_sHz lIG:+DER_lHg I:+POS3 ndan:+ABL3, baGIm:baGIm sIz:+ADJ_SUF_sHz lIG:+DER_lHg In:+POS2S dan:+ABL, baGIm:baGIm sIz:+ADJ_SUF_sHz lIG:+DER_lHg I:+POS3 ndan:+ABL3
+baGlanIyoruz	baG:baG lan:+la_DER_PSS_Hn Iyor:+TNS_yor uz:+PER1P, baG:baG lan:+la_DER_RFL Iyor:+TNS_yor uz:+PER1P
+baGlanabilmek	baG:baG lan:+la_DER_PSS_Hn abil:yabil mek:mak, baG:baG lan:+la_DER_RFL abil:yabil mek:mak
+baGlanmamIz	baG:baG lan:+la_DER_PSS_Hn ma:+NOUN_ma mIz:+POS1P, baG:baG lan:+la_DER_RFL mam:+NOUN_ma_POS1S Iz:+PER1P, baG:baG lan:+la_DER_RFL ma:+NOUN_ma mIz:+POS1P, baG:baG lan:+la_DER_PSS_Hn mam:+NOUN_ma_POS1S Iz:+PER1P
+baGlantIlardaki	baGlantI:baGlantI lar:+PL da:+LOC ki:+REL_SUF_ki
+baGlantIsInda	baGlantI:baGlantI sI:+POS3 nda:+LOC3
+baSaralIm	baSar:baSar a:+OPT lIm:+PER1P_lHm
+baSardIktan	baSar:baSar dIk:+ADJ_dik tan:+ABL
+baSarmak	baSar:baSar mak:mak
+baSbakanInIn	baSbakan:baSbakan In:+POS2S In:+GEN, baSbakan:baSbakan I:+POS3 nIn:+GEN
+baSbakanIydI	baSbakan:baSbakan I:+POS3 ydI:+PAST_hikaye
+baSlanIlmasI	baSla:baSla n:+RFL Il:+PSS_Hl ma:+NOUN_ma sI:+POS3, baS:baS lan:+la_DER_RFL Il:+PSS_Hl ma:+NOUN_ma sI:+POS3
+baSparmaGIn	baSparmaG:baSparmaG In:+GEN, baSparmaG:baSparmaG In:+POS2S
+baSvurunuz	baSvuru:baSvuru nuz:+POS2P, baSvur:baSvur unuz:+P2_PL_iz, baSvuru:baSvuru n:+POS2S uz:+PER1P
+baSvuruyu	baSvuru:baSvuru yu:+ACC
+babayla	baba:baba yla:+REL
+bagajlarInda	bagaj:bagaj lar:+PL I:+POS3 nda:+LOC3, bagaj:bagaj larI:+POS3S nda:+LOC3, bagaj:bagaj lar:+PL In:+POS2S da:+LOC
+bagetle	baget:baget le:+la_DER, baget:baget le:+REL
+bakanlIGIn	bakan:bakan lIG:+DER_lHg In:+POS2S, bak:bak an:yan lIG:+DER_lHg In:+GEN, bakan:bakan lIG:+DER_lHg In:+GEN, bak:bak an:yan lIG:+DER_lHg In:+POS2S
+bakanlIklarIn	bakan:bakan lIk:+DER_lHk lar:+PL In:+GEN, bakan:bakan lIk:+DER_lHk lar:+PL In:+POS2S, bak:bak an:yan lIk:+DER_lHk lar:+PL In:+GEN, bak:bak an:yan lIk:+DER_lHk lar:+PL In:+POS2S
+bakman	bak:bak man:+NOUN_ma_POS2S
+balCIkla	balCIk:balCIk la:+la_DER, balCIk:balCIk la:+REL
+bankalardan	banka:banka lar:+PL dan:+ABL
+barIndIrIyordu	barIn:barIn dIr:+CAU_dir Iyor:+TNS_yor du:+PAST_hikaye, barI:barI n:+RFL dIr:+CAU_dir Iyor:+TNS_yor du:+PAST_hikaye
+bara	bar:bar a:+DAT
+bastIrma	bas:bas tIr:+CAU_dir ma:+NEG_ma, bas:bas tIr:+CAU_dir ma:+NOUN_ma
+beSiGi	beSiG:beSiG i:+POS3, beSiG:beSiG i:+ACC
+beSin	beS:beS in:+GEN, beS:beS in:+POS2S
+bedavacI	bedava:bedava cI:+DER_cH
+bedensel	bedensel:bedensel
+beklendiGi	bek:bek len:+la_DER_RFL diG:+ADJ_dig i:+ACC, bekle:bekle n:+RFL diG:+ADJ_dig i:+ACC, bekle:bekle n:+PSS_Hn diG:+ADJ_dig i:+POS3, bek:bek len:+la_DER_RFL diG:+ADJ_dig i:+POS3, bek:bek len:+la_DER_PSS_Hn diG:+ADJ_dig i:+POS3, bek:bek len:+la_DER_PSS_Hn diG:+ADJ_dig i:+ACC, bekle:bekle n:+PSS_Hn diG:+ADJ_dig i:+ACC, bekle:bekle n:+RFL diG:+ADJ_dig i:+POS3
+bekliyorlarmIS	bekl:bekl iyor:+TNS_yor lar:+PER3P mIS:+PAST_rivayet, bek:bek liyor:+la_TNS_yor lar:+PER3P mIS:+PAST_rivayet, bekl:bekl iyor:+TNS_yor lar:+PER3P mIS:+TNS_mis, bek:bek liyor:+la_TNS_yor lar:+PER3P mIS:+TNS_mis
+belirlemektir	belirle:belirle mek:mak tir:+DEF
+belirlenirdi	belirle:belirle n:+RFL ir:+TNS_ir di:+PAST_hikaye, belirle:belirle n:+PSS_Hn ir:+TNS_ir di:+PAST_hikaye
+belirtilmiS	belir:belir t:+CAU_t il:+PSS_Hl miS:+TNS_mis
+benimkisi	benimki:benimki si:+POS3
+benimseyebileceGi	benimse:benimse yebil:yabil eceG:yacag i:+POS3, benimse:benimse yebil:yabil eceG:yacag i:+ACC
+benzemesini	benze:benze me:+NOUN_ma si:+POS3 ni:+ACC3
+berin	beri:beri n:+POS2S
+besinlerden	besin:besin ler:+PL den:+ABL
+beslendi	bes:bes len:+la_DER_PSS_Hn di:+TNS_di, bes:bes len:+la_DER_RFL di:+TNS_di, besle:besle n:+PSS_Hn di:+TNS_di, besle:besle n:+RFL di:+TNS_di
+besleyebilecek	bes:bes le:+la_DER yebil:yabil ecek:yacak, besle:besle yebil:yabil ecek:yacak
+bilebilirdik	bil:bil ebil:yabil ir:+TNS_ir di:+PAST_hikaye k:+PER1P_k
+biletle	bilet:bilet le:+REL, bilet:bilet le:+la_DER
+bilinenden	bil:bil in:+RFL en:yan den:+ABL, bil:bil in:+PSS_Hn en:yan den:+ABL
+bilmiSler	bil:bil miS:+TNS_mis ler:+la_DER_TNS_ar, bil:bil miS:+TNS_mis ler:+PL, bil:bil miS:+TNS_mis ler:+la_DER_TNS_ir, bil:bil miS:+TNS_mis ler:+PER3P
+bireyleri	birey:birey leri:+POS3S, birey:birey ler:+PL i:+POS3, birey:birey ler:+PL i:+ACC
+birleSmeli	bir:bir leS:lAs meli:+TNS_mali, bir:bir leS:lAs me:+NOUN_ma li:+ADJ_SUF_lH
+bitirmiStik	bitir:bitir miS:+TNS_mis ti:+PAST_hikaye k:+PER1P_k
+boGazlara	boGaz:boGaz lar:+PL a:+DAT
+boSalmasIndan	boSa:boSa l:+PSS_Hl ma:+NOUN_ma sI:+POS3 ndan:+ABL3, boSal:boSal ma:+NOUN_ma sI:+POS3 ndan:+ABL3
+boSboGazlIk	boSboGaz:boSboGaz lIk:+DER_lHk
+boyanmalarI	boya:boya n:+RFL ma:+NOUN_ma lar:+PL I:+ACC, boya:boya n:+PSS_Hn ma:+NOUN_ma larI:+POS3S, boya:boya n:+PSS_Hn ma:+NOUN_ma lar:+PL I:+POS3, boya:boya n:+RFL ma:+NOUN_ma larI:+POS3S, boya:boya n:+PSS_Hn ma:+NOUN_ma lar:+PL I:+ACC, boya:boya n:+RFL ma:+NOUN_ma lar:+PL I:+POS3
+boyladI	boy:boy la:+la_DER dI:+TNS_di, boyla:boyla dI:+TNS_di
+boyunuzun	boy:boy unuz:+POS2P un:+GEN
+bozukluGun	bozuk:bozuk luG:+DER_lHg un:+GEN, bozuk:bozuk luG:+DER_lHg un:+POS2S
+budaklara	budak:budak lar:+PL a:+DAT
+bulaSabilmektedir	bu:bu laS:lAs abil:yabil mekte:+TNS_makta dir:+DEF, bulaS:bulaS abil:yabil mekte:+TNS_makta dir:+DEF, bulaS:bulaS abil:yabil mek:mak te:+LOC dir:+DEF, bu:bu laS:lAs abil:yabil mek:mak te:+LOC dir:+DEF
+buldozerlerle	buldozer:buldozer ler:+PL le:+REL
+bulgularIyla	bul:bul gu:+gi_DER lar:+PL I:+POS3 yla:+REL, bul:bul gu:+gi_DER larI:+POS3S yla:+REL
+bulsanIz	bul:bul sa:+TNS_sa nIz:+PER2P_niz, bul:bul sa:+if_SUF nIz:+PER2P_niz
+buluSuna	bul:bul uS:yis un:+PSS_Hn a:+OPT, bul:bul uS:yis un:+POS2S a:+DAT, buluS:buluS un:+RFL a:+OPT, bul:bul uS:yis u:+POS3 na:+DAT3, buluS:buluS un:+PSS_Hn a:+OPT
+bulunabilmelerini	bul:bul un:+PSS_Hn abil:yabil me:+NOUN_ma ler:+PL in:+POS2S i:+ACC, bul:bul un:+RFL abil:yabil me:+NOUN_ma ler:+PL in:+POS2S i:+ACC, bul:bul un:+RFL abil:yabil me:+NOUN_ma ler:+PL i:+POS3 ni:+ACC3, bul:bul un:+PSS_Hn abil:yabil me:+NOUN_ma ler:+PL i:+POS3 ni:+ACC3, bul:bul un:+PSS_Hn abil:yabil me:+NOUN_ma leri:+POS3S ni:+ACC3, bul:bul un:+RFL abil:yabil me:+NOUN_ma leri:+POS3S ni:+ACC3
+bulunamamIStIr	bul:bul un:+PSS_Hn ama:+NEG_yama mIS:+TNS_mis tIr:+DEF, bul:bul un:+RFL ama:+NEG_yama mIS:+TNS_mis tIr:+DEF
+cUmlesidir	cUmle:cUmle si:+POS3 dir:+DEF
+cahiliz	cahil:cahil iz:+PER1P
+cerrahlara	cerrah:cerrah lar:+PL a:+DAT
+cevabInda	cevab:cevab I:+POS3 nda:+LOC3, cevab:cevab In:+POS2S da:+LOC
+cezalandIrIlmaz	ceza:ceza lan:+la_DER_RFL dIr:+CAU_dir Il:+PSS_Hl maz:+NEG_ma_NEG_AOR
+cimbom	cimbom:cimbom
+cipe	cip:cip e:+DAT
+cumbalar	cumba:cumba lar:+PL, cumba:cumba lar:+la_DER_TNS_ar, cumba:cumba lar:+PER3P, cumba:cumba lar:+la_DER_TNS_ir
+dISsatImcI	dISsatIm:dISsatIm cI:+DER_cH
+dOnUStUrmeye	dOn:dOn US:yis tUr:+CAU_dir me:+NEG_ma ye:+OPT, dOn:dOn US:yis tUr:+CAU_dir me:+NOUN_ma ye:+DAT
+dOnUlecekti	dOn:dOn Ul:+PSS_Hl ecek:yacak ti:+PAST_hikaye
+dUSUSten	dUS:dUS US:yis t:+CAU_t en:yan, dUS:dUS US:yis ten:+ABL
+dUSUnUlmediGi	dUS:dUS Un:+RFL Ul:+PSS_Hl me:+NEG_ma diG:+ADJ_dig i:+POS3, dUSUn:dUSUn Ul:+PSS_Hl me:+NEG_ma diG:+ADJ_dig i:+ACC, dUS:dUS Un:+RFL Ul:+PSS_Hl me:+NEG_ma diG:+ADJ_dig i:+ACC, dUSUn:dUSUn Ul:+PSS_Hl me:+NEG_ma diG:+ADJ_dig i:+POS3
+dUSUrmedi	dUSUr:dUSUr me:+NEG_ma di:+TNS_di
+dUSeceGiz	dUS:dUS eceG:yacag iz:+PER1P
+dUSmeden	dUS:dUS meden:madan, dUS:dUS me:+NOUN_ma den:+ABL
+dUSmesi	dUS:dUS me:+NOUN_ma si:+POS3
+dUdUGUnU	dUdUG:dUdUG U:+POS3 nU:+ACC3, dUdUG:dUdUG Un:+POS2S U:+ACC
+dUnler	dUn:dUn ler:+PL, dUn:dUn ler:+PER3P, dUn:dUn ler:+la_DER_TNS_ir, dUn:dUn ler:+la_DER_TNS_ar
+dUzenlemektedir	dUzen:dUzen le:+la_DER mek:mak te:+LOC dir:+DEF, dUzen:dUzen le:+la_DER mekte:+TNS_makta dir:+DEF, dUz:dUz en:yan le:+la_DER mekte:+TNS_makta dir:+DEF, dUz:dUz en:yan le:+la_DER mek:mak te:+LOC dir:+DEF
+daGIlmalar	daGIl:daGIl ma:+NOUN_ma lar:+la_DER_TNS_ar, daGIl:daGIl ma:+NOUN_ma lar:+PER3P, daGIl:daGIl ma:+NOUN_ma lar:+la_DER_TNS_ir, daGIl:daGIl ma:+NOUN_ma lar:+PL
+daGIlmazsa	daGIl:daGIl maz:+NEG_ma_NEG_AOR sa:+if_SUF, daGIl:daGIl maz:+NEG_ma_NEG_AOR sa:+TNS_sa
+daGItacaklarInI	daGIt:daGIt acak:yacak lar:+PL In:+POS2S I:+ACC, daGIt:daGIt acak:yacak lar:+PL I:+POS3 nI:+ACC3, daGIt:daGIt acak:yacak larI:+POS3S nI:+ACC3
+dairede	daire:daire de:+LOC
+dallarIndan	dal:dal lar:+PL In:+POS2S dan:+ABL, dal:dal lar:+PL I:+POS3 ndan:+ABL3, dal:dal larI:+POS3S ndan:+ABL3
+damadIyla	damad:damad I:+POS3 yla:+REL
+darUlacezeye	darUlaceze:darUlaceze ye:+DAT
+darbesini	darbe:darbe si:+POS3 ni:+ACC3
+davetlilerce	davet:davet li:+ADJ_SUF_lH ler:+PL ce:+ADV_SUF_cA
+dayanamaz	daya:daya n:+PSS_Hn amaz:+NEG_yama_NEG_AOR, daya:daya n:+RFL amaz:+NEG_yama_NEG_AOR, dayan:dayan amaz:+NEG_yama_NEG_AOR
+deGerlendiremediGimiz	deGer:deGer len:+la_DER_RFL dir:+CAU_dir eme:+NEG_yama diG:+ADJ_dig im:+POS1S iz:+PER1P, deGer:deGer len:+la_DER_RFL dir:+CAU_dir eme:+NEG_yama diG:+ADJ_dig imiz:+POS1P
+deGerlendirilebilirdi	deGer:deGer len:+la_DER_RFL dir:+CAU_dir il:+PSS_Hl ebil:yabil ir:+TNS_ir di:+PAST_hikaye
+deGerlendirilirler	deGer:deGer len:+la_DER_RFL dir:+CAU_dir il:+PSS_Hl ir:+TNS_ir ler:+PER3P
+deGerlendirmemizin	deGer:deGer len:+la_DER_RFL dir:+CAU_dir me:+NOUN_ma miz:+POS1P in:+GEN
+deGiSmemeli	deG:deG iS:yis me:+NEG_ma meli:+TNS_mali, deGiS:deGiS me:+NEG_ma me:+NOUN_ma li:+ADJ_SUF_lH, deGiS:deGiS me:+NEG_ma meli:+TNS_mali, deG:deG iS:yis me:+NEG_ma me:+NOUN_ma li:+ADJ_SUF_lH
+deGinilmekte	deGin:deGin il:+PSS_Hl mekte:+TNS_makta, deGin:deGin il:+PSS_Hl mek:mak te:+LOC, deG:deG in:+RFL il:+PSS_Hl mek:mak te:+LOC, deG:deG in:+RFL il:+PSS_Hl mekte:+TNS_makta
+dedikCe	de:de dik:+ADJ_dik Ce:+ADV_SUF_cA, de:de dikCe:dikca
+defaten	defaten:defaten
+defterdarlIk	defterdar:defterdar lIk:+DER_lHk
+dejenerasyonun	dejenerasyon:dejenerasyon un:+GEN, dejenerasyon:dejenerasyon un:+POS2S
+dekardIr	dekar:dekar dIr:+DEF
+delegesini	delege:delege si:+POS3 ni:+ACC3
+demediGim	de:de me:+NEG_ma diG:+ADJ_dig im:+PER1S, de:de me:+NEG_ma diG:+ADJ_dig im:+POS1S
+demokrasileri	demokrasi:demokrasi leri:+POS3S, demokrasi:demokrasi ler:+PL i:+POS3, demokrasi:demokrasi ler:+PL i:+ACC
+denediklerini	dene:dene dik:+ADJ_dik ler:+PL i:+POS3 ni:+ACC3, dene:dene dik:+ADJ_dik ler:+PL in:+POS2S i:+ACC, dene:dene dik:+ADJ_dik leri:+POS3S ni:+ACC3
+denetimiyle	dene:dene t:+CAU_t im:+im_DER i:+POS3 yle:+REL
+dengesizlikler	denge:denge siz:+ADJ_SUF_sHz lik:+DER_lHk ler:+la_DER_TNS_ir, denge:denge siz:+ADJ_SUF_sHz lik:+DER_lHk ler:+PER3P, denge:denge siz:+ADJ_SUF_sHz lik:+DER_lHk ler:+la_DER_TNS_ar, denge:denge siz:+ADJ_SUF_sHz lik:+DER_lHk ler:+PL
+depolanmaz	depo:depo lan:+la_DER_PSS_Hn maz:+NEG_ma_NEG_AOR, depo:depo lan:+la_DER_RFL maz:+NEG_ma_NEG_AOR
+derbente	derbent:derbent e:+DAT
+derecelerine	derece:derece ler:+PL i:+POS3 ne:+DAT3, derece:derece ler:+PL in:+POS2S e:+DAT, derece:derece leri:+POS3S ne:+DAT3
+dergahlarI	dergah:dergah lar:+PL I:+POS3, dergah:dergah lar:+PL I:+ACC, dergah:dergah larI:+POS3S
+derneGine	derneG:derneG in:+POS2S e:+DAT, derneG:derneG i:+POS3 ne:+DAT3
+dernekleSme	dernek:dernek leS:lAs me:+NOUN_ma, dernek:dernek leS:lAs me:+NEG_ma
+derslerle	ders:ders ler:+PL le:+REL
+dertlenip	dert:dert len:+la_DER_RFL ip:yip, dert:dert len:+la_DER_PSS_Hn ip:yip
+desteklemiSler	destek:destek le:+la_DER miS:+TNS_mis ler:+PL, destek:destek le:+la_DER miS:+TNS_mis ler:+PER3P, destek:destek le:+la_DER miS:+TNS_mis ler:+la_DER_TNS_ar, destek:destek le:+la_DER miS:+TNS_mis ler:+la_DER_TNS_ir
+devSiren	devSir:devSir en:yan
+devrilebilecek	devril:devril ebil:yabil ecek:yacak
+dikkatlerinin	dikkat:dikkat ler:+PL i:+POS3 nin:+GEN, dikkat:dikkat ler:+PL in:+POS2S in:+GEN, dikkat:dikkat leri:+POS3S nin:+GEN
+diktirdiGi	dik:dik tir:+CAU_dir diG:+ADJ_dig i:+POS3, dik:dik tir:+CAU_dir diG:+ADJ_dig i:+ACC
+dilerlerse	dile:dile r:+TNS_ir ler:+PER3P se:+if_SUF, di:di l:+PSS_Hl er:+TNS_ar ler:+PER3P se:+TNS_sa, dile:dile r:+TNS_ar ler:+PER3P se:+if_SUF, dile:dile r:+TNS_ir ler:+PER3P se:+TNS_sa, dil:dil er:+TNS_ar ler:+PER3P se:+if_SUF, dil:dil er:+TNS_ar ler:+PER3P se:+TNS_sa, di:di l:+PSS_Hl er:+TNS_ar ler:+PER3P se:+if_SUF, dile:dile r:+TNS_ar ler:+PER3P se:+TNS_sa
+dillendirmek	dil:dil len:+la_DER_RFL dir:+CAU_dir mek:mak
+dinlemek	din:din le:+la_DER mek:mak, dinle:dinle mek:mak
+dinlemiyorsa	din:din le:+la_DER miyor:+NEG_ma_TNS_yor sa:+TNS_sa, dinle:dinle miyor:+NEG_ma_TNS_yor sa:+if_SUF, din:din le:+la_DER miyor:+NEG_ma_TNS_yor sa:+if_SUF, dinle:dinle miyor:+NEG_ma_TNS_yor sa:+TNS_sa
+dinleyecek	dinle:dinle yecek:yacak, din:din le:+la_DER yecek:yacak
+dinleyip	dinle:dinle yip:yip, din:din le:+la_DER yip:yip
+direneceklerdir	dire:dire n:+RFL ecek:yacak ler:+la_DER_TNS_ir dir:+DEF, dire:dire n:+PSS_Hn ecek:yacak ler:+PER3P dir:+DEF, dire:dire n:+RFL ecek:yacak ler:+PL dir:+DEF, dire:dire n:+PSS_Hn ecek:yacak ler:+la_DER_TNS_ir dir:+DEF, dire:dire n:+PSS_Hn ecek:yacak ler:+la_DER_TNS_ar dir:+DEF, dire:dire n:+PSS_Hn ecek:yacak ler:+PL dir:+DEF, dire:dire n:+RFL ecek:yacak ler:+la_DER_TNS_ar dir:+DEF, dire:dire n:+RFL ecek:yacak ler:+PER3P dir:+DEF
+diyebilirler	di:di yebil:yabil ir:+TNS_ir ler:+PER3P
+dizaynInI	dizayn:dizayn I:+POS3 nI:+ACC3, dizayn:dizayn In:+POS2S I:+ACC
+doGmazdI	doG:doG maz:+NEG_ma_NEG_AOR dI:+PAST_hikaye
+doGrulandIGInI	doGru:doGru lan:+la_DER_PSS_Hn dIG:+ADJ_dig I:+POS3 nI:+ACC3, doGru:doGru lan:+la_DER_RFL dIG:+ADJ_dig In:+POS2S I:+ACC, doGru:doGru lan:+la_DER_PSS_Hn dIG:+ADJ_dig In:+POS2S I:+ACC, doGru:doGru lan:+la_DER_RFL dIG:+ADJ_dig I:+POS3 nI:+ACC3
+dokUmanla	dokUman:dokUman la:+REL, dokUman:dokUman la:+la_DER
+doktrinler	doktrin:doktrin ler:+PER3P, doktrin:doktrin ler:+la_DER_TNS_ar, doktrin:doktrin ler:+PL, doktrin:doktrin ler:+la_DER_TNS_ir
+dokunacaGIna	doku:doku n:+RFL acaG:yacag In:+POS2S a:+DAT, doku:doku n:+RFL acaG:yacag I:+POS3 na:+DAT3, doku:doku n:+PSS_Hn acaG:yacag I:+POS3 na:+DAT3, doku:doku n:+PSS_Hn acaG:yacag In:+POS2S a:+DAT, dokun:dokun acaG:yacag I:+POS3 na:+DAT3, dokun:dokun acaG:yacag In:+POS2S a:+DAT
+dokundurma	doku:doku n:+RFL dur:+CAU_dir ma:+NOUN_ma, dokun:dokun dur:+CAU_dir ma:+NOUN_ma, dokun:dokun dur:+CAU_dir ma:+NEG_ma, doku:doku n:+RFL dur:+CAU_dir ma:+NEG_ma
+dokunmayla	doku:doku n:+RFL ma:+NOUN_ma yla:+REL, dokun:dokun ma:+NOUN_ma yla:+REL, doku:doku n:+PSS_Hn ma:+NOUN_ma yla:+REL
+dokunuSunu	doku:doku n:+RFL uS:yis u:+POS3 nu:+ACC3, doku:doku n:+PSS_Hn uS:yis u:+POS3 nu:+ACC3, doku:doku n:+RFL uS:yis un:+POS2S u:+ACC, dokun:dokun uS:yis u:+POS3 nu:+ACC3, doku:doku n:+PSS_Hn uS:yis un:+POS2S u:+ACC, dokun:dokun uS:yis un:+POS2S u:+ACC
+dolaSIyorsa	do:do laS:lAs Iyor:+TNS_yor sa:+TNS_sa, dolaS:dolaS Iyor:+TNS_yor sa:+TNS_sa, dolaS:dolaS Iyor:+TNS_yor sa:+if_SUF, do:do laS:lAs Iyor:+TNS_yor sa:+if_SUF
+doldurulmuStur	dol:dol dur:+CAU_dir ul:+PSS_Hl muS:+TNS_mis tur:+DEF
+dolunayda	dolunay:dolunay da:+LOC
+dolusunu	do:do lu:+ADJ_SUF_lH su:+POS3 nu:+ACC3, dolu:dolu su:+POS3 nu:+ACC3
+dominantlIGI	dominant:dominant lIG:+DER_lHg I:+POS3, dominant:dominant lIG:+DER_lHg I:+ACC
+donanImInIzIn	dona:dona n:+PSS_Hn Im:+im_DER InIz:+POS2P In:+GEN, dona:dona n:+RFL Im:+im_DER InIz:+POS2P In:+GEN
+doyur	doyur:doyur, doy:doy ur:+TNS_ir
+dramalar	drama:drama lar:+la_DER_TNS_ir, dram:dram a:+DAT lar:+PER3P, drama:drama lar:+PER3P, drama:drama lar:+la_DER_TNS_ar, drama:drama lar:+PL
+durdurduGuna	dur:dur dur:+CAU_dir duG:+ADJ_dig u:+POS3 na:+DAT3, dur:dur dur:+CAU_dir duG:+ADJ_dig un:+POS2S a:+DAT
+durdurmayI	dur:dur dur:+CAU_dir ma:+NOUN_ma yI:+ACC
+durdurulmuS	dur:dur dur:+CAU_dir ul:+PSS_Hl muS:+TNS_mis
+durmasI	dur:dur ma:+NOUN_ma sI:+POS3
+duyarlIlIklarInIzI	duyarlI:duyarlI lIk:+DER_lHk lar:+PL InIz:+POS2P I:+ACC, duyar:duyar lI:+ADJ_SUF_lH lIk:+DER_lHk lar:+PL InIz:+POS2P I:+ACC
+duymamanIn	duy:duy ma:+NEG_ma man:+NOUN_ma_POS2S In:+GEN, duy:duy ma:+NEG_ma ma:+NOUN_ma nIn:+GEN
+duymasInI	duy:duy ma:+NOUN_ma sI:+POS3 nI:+ACC3
+duyularImIzIn	duyu:duyu lar:+PL ImIz:+POS1P In:+GEN
+eGitilmelidir	eG:eG it:+CAU_t il:+PSS_Hl me:+NOUN_ma li:+ADJ_SUF_lH dir:+DEF, eGit:eGit il:+PSS_Hl me:+NOUN_ma li:+ADJ_SUF_lH dir:+DEF, eG:eG it:+CAU_t il:+PSS_Hl meli:+TNS_mali dir:+DEF, eGit:eGit il:+PSS_Hl meli:+TNS_mali dir:+DEF
+eGitmekten	eG:eG it:+CAU_t mek:mak ten:+ABL, eGit:eGit mek:mak ten:+ABL
+eSimi	eS:eS im:+im_DER i:+POS3, eS:eS im:+POS1S i:+ACC, eS:eS im:+im_DER i:+ACC
+eSleStirir	eS:eS leS:lAs tir:+CAU_dir ir:+TNS_ir
+edasInda	eda:eda sI:+POS3 nda:+LOC3
+edebildiGimiz	ed:ed ebil:yabil diG:+ADJ_dig im:+POS1S iz:+PER1P, ed:ed ebil:yabil diG:+ADJ_dig imiz:+POS1P
+edebiliyoruz	ed:ed ebil:yabil iyor:+TNS_yor uz:+PER1P, edebi:edebi liyor:+la_TNS_yor uz:+PER1P
+edebilmekte	ed:ed ebil:yabil mek:mak te:+LOC, ed:ed ebil:yabil mekte:+TNS_makta
+edebiyatImIz	edebiyat:edebiyat Im:+POS1S Iz:+PER1P, edebiyat:edebiyat ImIz:+POS1P
+edemezlerse	ed:ed eme:+NEG_yama zler:+PER3P_NEG se:+TNS_sa, ed:ed eme:+NEG_yama zler:+PER3P_NEG se:+if_SUF
+edemezsek	ed:ed emez:+NEG_yama_NEG_AOR se:+if_SUF k:+PER1P_k, ed:ed emez:+NEG_yama_NEG_AOR se:+TNS_sa k:+PER1P_k
+edilemeden	ed:ed il:+PSS_Hl emeden:yamadan
+efendilerimizden	efendi:efendi ler:+PL imiz:+POS1P den:+ABL
+efendilerini	efendi:efendi leri:+POS3S ni:+ACC3, efendi:efendi ler:+PL i:+POS3 ni:+ACC3, efendi:efendi ler:+PL in:+POS2S i:+ACC
+efesi	efe:efe si:+POS3, efes:efes i:+POS3, efes:efes i:+ACC
+ekollere	ekol:ekol ler:+PL e:+DAT
+eldivenlerle	eldiven:eldiven ler:+PL le:+REL
+eleStirim	eleStiri:eleStiri m:+POS1S, e:e leS:lAs t:+CAU_t ir:+TNS_ir im:+PER1S, e:e leS:lAs tir:+CAU_dir im:+im_DER, eleStir:eleStir im:+im_DER
+emanetCi	emanet:emanet Ci:+DER_cH
+emsalleri	emsal:emsal ler:+PL i:+POS3, emsal:emsal ler:+PL i:+ACC, emsal:emsal leri:+POS3S
+endoderm	endoderm:endoderm
+engelleyeceklerinden	engel:engel le:+la_DER yecek:yacak ler:+PL in:+POS2S den:+ABL, engel:engel le:+la_DER yecek:yacak leri:+POS3S nden:+ABL3, engel:engel le:+la_DER yecek:yacak ler:+PL i:+POS3 nden:+ABL3
+ensest	ensest:ensest
+eriSilebilecek	er:er iS:yis il:+PSS_Hl ebil:yabil ecek:yacak, eriS:eriS il:+PSS_Hl ebil:yabil ecek:yacak
+esinlenerek	esin:esin len:+la_DER_RFL erek:yarak, esin:esin len:+la_DER_PSS_Hn erek:yarak
+esinlenilen	esin:esin len:+la_DER_RFL il:+PSS_Hl en:yan
+eteGine	eteG:eteG i:+POS3 ne:+DAT3, eteG:eteG in:+POS2S e:+DAT
+etikle	etik:etik le:+REL, etik:etik le:+la_DER
+etkenlerin	etken:etken ler:+PL in:+GEN, etken:etken ler:+PL in:+POS2S
+etkilemesine	etki:etki le:+la_DER me:+NOUN_ma si:+POS3 ne:+DAT3, et:et ki:+gi_DER le:+la_DER me:+NOUN_ma si:+POS3 ne:+DAT3
+etkilese	et:et ki:+gi_DER le:+la_DER se:+TNS_sa, etki:etki le:+la_DER se:+TNS_sa
+etmedikleri	et:et me:+NEG_ma dik:+ADJ_dik leri:+POS3S, et:et me:+NEG_ma dik:+ADJ_dik ler:+PL i:+ACC, et:et me:+NEG_ma dik:+ADJ_dik ler:+PL i:+POS3
+etmiyorum	et:et miyor:+NEG_ma_TNS_yor um:+PER1S
+ettirebilir	et:et tir:+CAU_dir ebil:yabil ir:+TNS_ir
+ettirilmeleri	et:et tir:+CAU_dir il:+PSS_Hl me:+NOUN_ma leri:+POS3S, et:et tir:+CAU_dir il:+PSS_Hl me:+NOUN_ma ler:+PL i:+ACC, et:et tir:+CAU_dir il:+PSS_Hl me:+NOUN_ma ler:+PL i:+POS3
+eylemlerimizle	eylem:eylem ler:+PL imiz:+POS1P le:+REL
+ezelde	ezel:ezel de:+LOC
+fUzelerine	fUze:fUze ler:+PL in:+POS2S e:+DAT, fUze:fUze leri:+POS3S ne:+DAT3, fUze:fUze ler:+PL i:+POS3 ne:+DAT3
+falI	fa:fa lI:+ADJ_SUF_lH, fal:fal I:+POS3, fal:fal I:+ACC
+farkIndaydIk	fark:fark In:+POS2S da:+LOC ydI:+PAST_hikaye k:+PER1P_k, fark:fark I:+POS3 nda:+LOC3 ydI:+PAST_hikaye k:+PER1P_k
+fatihinin	fatih:fatih i:+POS3 nin:+GEN, fatih:fatih in:+POS2S in:+GEN
+fazlalaStIkCa	fazla:fazla laS:lAs tIkCa:dikca, fazla:fazla laS:lAs tIk:+ADJ_dik Ca:+ADV_SUF_cA
+fedakarlIGI	fedakar:fedakar lIG:+DER_lHg I:+ACC, fedakar:fedakar lIG:+DER_lHg I:+POS3
+felsefesine	felsefe:felsefe si:+POS3 ne:+DAT3
+fenerlerin	fener:fener ler:+PL in:+POS2S, fener:fener ler:+PL in:+GEN
+fetihler	fetih:fetih ler:+la_DER_TNS_ar, fetih:fetih ler:+PER3P, fetih:fetih ler:+PL, fetih:fetih ler:+la_DER_TNS_ir
+figUranlar	figUran:figUran lar:+PER3P, figUran:figUran lar:+PL, figUran:figUran lar:+la_DER_TNS_ar, figUran:figUran lar:+la_DER_TNS_ir
+figUrleri	figUr:figUr ler:+PL i:+POS3, figUr:figUr ler:+PL i:+ACC, figUr:figUr leri:+POS3S
+fikirlerinizi	fikir:fikir ler:+PL iniz:+POS2P i:+ACC
+filizlenmeye	filiz:filiz len:+la_DER_PSS_Hn me:+NOUN_ma ye:+DAT, filiz:filiz len:+la_DER_PSS_Hn me:+NEG_ma ye:+OPT, filiz:filiz len:+la_DER_RFL me:+NOUN_ma ye:+DAT, filiz:filiz len:+la_DER_RFL me:+NEG_ma ye:+OPT
+filomuz	filo:filo m:+POS1S uz:+PER1P, filo:filo muz:+POS1P
+finaldeki	final:final de:+LOC ki:+REL_SUF_ki
+finansmanda	finansman:finansman da:+LOC
+fonksiyonlarIna	fonksiyon:fonksiyon lar:+PL I:+POS3 na:+DAT3, fonksiyon:fonksiyon lar:+PL In:+POS2S a:+DAT, fonksiyon:fonksiyon larI:+POS3S na:+DAT3
+formUlden	formUl:formUl den:+ABL
+fotoGrafCIlIk	fotoGraf:fotoGraf CI:+DER_cH lIk:+DER_lHk
+frekanslar	frekans:frekans lar:+la_DER_TNS_ir, frekans:frekans lar:+PL, frekans:frekans lar:+la_DER_TNS_ar, frekans:frekans lar:+PER3P
+fukarasI	fukara:fukara sI:+POS3
+gOkyUzUyle	gOkyUzU:gOkyUzU yle:+REL
+gOlgeyi	gOlge:gOlge yi:+ACC
+gOllerinde	gOl:gOl ler:+PL in:+POS2S de:+LOC, gOl:gOl ler:+PL i:+POS3 nde:+LOC3, gOl:gOl leri:+POS3S nde:+LOC3
+gOmUlmUStU	gOm:gOm Ul:+PSS_Hl mUS:+TNS_mis tU:+PAST_hikaye
+gOnderilecek	gOnder:gOnder il:+PSS_Hl ecek:yacak
+gOrUStUklerini	gOr:gOr US:yis tUk:+ADJ_dik ler:+PL in:+POS2S i:+ACC, gOr:gOr US:yis tUk:+ADJ_dik leri:+POS3S ni:+ACC3, gOr:gOr US:yis tUk:+ADJ_dik ler:+PL i:+POS3 ni:+ACC3
+gOrUlebilir	gOr:gOr Ul:+PSS_Hl ebil:yabil ir:+TNS_ir
+gOrUlmekten	gOr:gOr Ul:+PSS_Hl mek:mak ten:+ABL
+gOrUlmeyenler	gOr:gOr Ul:+PSS_Hl me:+NEG_ma yen:yan ler:+la_DER_TNS_ar, gOr:gOr Ul:+PSS_Hl me:+NEG_ma yen:yan ler:+la_DER_TNS_ir, gOr:gOr Ul:+PSS_Hl me:+NEG_ma yen:yan ler:+PL, gOr:gOr Ul:+PSS_Hl me:+NEG_ma yen:yan ler:+PER3P
+gOrUnmediGinden	gOr:gOr Un:+RFL me:+NEG_ma diG:+ADJ_dig in:+POS2S den:+ABL, gOr:gOr Un:+PSS_Hn me:+NEG_ma diG:+ADJ_dig i:+POS3 nden:+ABL3, gOr:gOr Un:+RFL me:+NEG_ma diG:+ADJ_dig i:+POS3 nden:+ABL3, gOr:gOr Un:+PSS_Hn me:+NEG_ma diG:+ADJ_dig in:+POS2S den:+ABL
+gOrUsUnU	gOrU:gOrU sU:+POS3 nU:+ACC3
+gOrUyUm	gOrU:gOrU yUm:+PER1S
+gOrdUk	gOr:gOr dU:+TNS_di k:+PER1P_k, gOr:gOr dUk:+ADJ_dik
+gOrgUlerini	gOr:gOr gU:+gi_DER ler:+PL i:+POS3 ni:+ACC3, gOr:gOr gU:+gi_DER ler:+PL in:+POS2S i:+ACC, gOr:gOr gU:+gi_DER leri:+POS3S ni:+ACC3
+gOrmeyin	gOr:gOr me:+NEG_ma yin:+P2_PL
+gOsterisi	gOsteri:gOsteri si:+POS3
+gOtUrUcU	gOtUr:gOtUr UcU:yici, gOtUrU:gOtUrU cU:+DER_cH
+gOtUrUldUGU	gOtUr:gOtUr Ul:+PSS_Hl dUG:+ADJ_dig U:+POS3, gOtUr:gOtUr Ul:+PSS_Hl dUG:+ADJ_dig U:+ACC
+gOzUkebilir	gOzUk:gOzUk ebil:yabil ir:+TNS_ir
+gUClendirirken	gUC:gUC len:+la_DER_RFL dir:+CAU_dir ir:+TNS_ir ken:iken_e
+gUClendirmekti	gUC:gUC len:+la_DER_RFL dir:+CAU_dir mek:mak ti:+PAST_hikaye
+gUdU	gUdU:gUdU
+gUlUmsUyor	gUlUms:gUlUms Uyor:+TNS_yor
+gUlme	gUl:gUl me:+NEG_ma, gUl:gUl me:+NOUN_ma
+gUrUltUdUr	gUrUltU:gUrUltU dUr:+DEF
+gUvencesinin	gUvence:gUvence si:+POS3 nin:+GEN
+gabari	gabari:gabari
+galibiyete	galibiyet:galibiyet e:+DAT
+garibi	garib:garib i:+POS3, garib:garib i:+ACC
+gazeteciydi	gazete:gazete ci:+DER_cH ydi:+PAST_hikaye
+geCeni	geC:geC en:yan i:+POS3, geCe:geCe n:+POS2S i:+ACC, geC:geC en:yan i:+ACC
+geCerlidir	geCerli:geCerli dir:+DEF, geCer:geCer li:+ADJ_SUF_lH dir:+DEF
+geCilemeyeceGini	geC:geC il:+PSS_Hl eme:+NEG_yama yeceG:yacag in:+POS2S i:+ACC, geC:geC il:+PSS_Hl eme:+NEG_yama yeceG:yacag i:+POS3 ni:+ACC3
+geCirilmiStir	geCir:geCir il:+PSS_Hl miS:+TNS_mis tir:+DEF
+geCmedikleri	geC:geC me:+NEG_ma dik:+ADJ_dik ler:+PL i:+POS3, geC:geC me:+NEG_ma dik:+ADJ_dik ler:+PL i:+ACC, geC:geC me:+NEG_ma dik:+ADJ_dik leri:+POS3S
+geCmeyen	geC:geC me:+NEG_ma yen:yan
+gecesinde	gece:gece si:+POS3 nde:+LOC3, gec:gec esin:+yasi_POS2S de:+LOC
+gelenekte	gelenek:gelenek te:+LOC
+geliSimle	gel:gel iS:yis im:+im_DER le:+la_DER, geliS:geliS im:+im_DER le:+REL, gel:gel iS:yis im:+POS1S le:+REL, gel:gel iS:yis im:+im_DER le:+REL, geliS:geliS im:+im_DER le:+la_DER
+geliStiGinde	geliS:geliS tiG:+ADJ_dig i:+POS3 nde:+LOC3, gel:gel iS:yis tiG:+ADJ_dig i:+POS3 nde:+LOC3, gel:gel iS:yis tiG:+ADJ_dig in:+POS2S de:+LOC, geliS:geliS tiG:+ADJ_dig in:+POS2S de:+LOC
+geliStirilirken	gel:gel iS:yis tir:+CAU_dir il:+PSS_Hl ir:+TNS_ir ken:iken_e, geliS:geliS tir:+CAU_dir il:+PSS_Hl ir:+TNS_ir ken:iken_e
+geliStirmedikleri	geliS:geliS tir:+CAU_dir me:+NEG_ma dik:+ADJ_dik ler:+PL i:+POS3, geliS:geliS tir:+CAU_dir me:+NEG_ma dik:+ADJ_dik ler:+PL i:+ACC, gel:gel iS:yis tir:+CAU_dir me:+NEG_ma dik:+ADJ_dik ler:+PL i:+ACC, gel:gel iS:yis tir:+CAU_dir me:+NEG_ma dik:+ADJ_dik ler:+PL i:+POS3, gel:gel iS:yis tir:+CAU_dir me:+NEG_ma dik:+ADJ_dik leri:+POS3S, geliS:geliS tir:+CAU_dir me:+NEG_ma dik:+ADJ_dik leri:+POS3S
+genellik	genel:genel lik:+DER_lHk
+gerCeGiydi	gerCeG:gerCeG i:+POS3 ydi:+PAST_hikaye
+gerCekleSemeyecek	gerCek:gerCek leS:lAs eme:+NEG_yama yecek:yacak
+gerCekleSmez	gerCek:gerCek leS:lAs mez:+NEG_ma_NEG_AOR
+gerCekleStirdikten	gerCek:gerCek leS:lAs tir:+CAU_dir dik:+ADJ_dik ten:+ABL
+gerCekleStirilebileceGine	gerCek:gerCek leS:lAs tir:+CAU_dir il:+PSS_Hl ebil:yabil eceG:yacag i:+POS3 ne:+DAT3, gerCek:gerCek leS:lAs tir:+CAU_dir il:+PSS_Hl ebil:yabil eceG:yacag in:+POS2S e:+DAT
+gerCekleStirmemiS	gerCek:gerCek leS:lAs tir:+CAU_dir me:+NEG_ma miS:+TNS_mis
+gerekCeyle	gerekCe:gerekCe yle:+REL
+gerekmez	gerek:gerek mez:+NEG_ma_NEG_AOR
+gerilimden	geri:geri lim:+ADJ_SUF_lH_POS1S den:+ABL, ger:ger il:+PSS_Hl im:+im_DER den:+ABL
+geriliminin	ger:ger il:+PSS_Hl im:+im_DER in:+POS2S in:+GEN, ger:ger il:+PSS_Hl im:+im_DER i:+POS3 nin:+GEN
+gerisi	geri:geri si:+POS3
+germeyi	ger:ger me:+NOUN_ma yi:+ACC
+getirdiGidir	getir:getir diG:+ADJ_dig i:+POS3 dir:+DEF
+getirdiGinden	getir:getir diG:+ADJ_dig in:+POS2S den:+ABL, getir:getir diG:+ADJ_dig i:+POS3 nden:+ABL3
+getirenlerin	getir:getir en:yan ler:+PL in:+GEN, getir:getir en:yan ler:+PL in:+POS2S
+getirmemeye	getir:getir me:+NEG_ma me:+NOUN_ma ye:+DAT
+gidebiliyor	gid:gid ebil:yabil iyor:+TNS_yor
+giderek	gid:gid erek:yarak, gider:gider e:+OPT k:+PER1P_k2
+gidiSlerine	gidiS:gidiS ler:+PL i:+POS3 ne:+DAT3, gidiS:gidiS ler:+PL in:+POS2S e:+DAT, gidiS:gidiS leri:+POS3S ne:+DAT3
+gireceksin	gir:gir ecek:yacak sin:+PER2S
+giriSimcilik	gir:gir iS:yis im:+im_DER ci:+DER_cH lik:+DER_lHk, giriS:giriS im:+im_DER ci:+DER_cH lik:+DER_lHk
+giriSiminin	gir:gir iS:yis im:+im_DER i:+POS3 nin:+GEN, giriS:giriS im:+im_DER i:+POS3 nin:+GEN, giriS:giriS im:+im_DER in:+POS2S in:+GEN, gir:gir iS:yis im:+im_DER in:+POS2S in:+GEN
+giymeyin	giy:giy me:+NEG_ma yin:+P2_PL
+gizlemiyorlar	giz:giz le:+la_DER miyor:+NEG_ma_TNS_yor lar:+PER3P
+greviydi	grev:grev i:+POS3 ydi:+PAST_hikaye
+hIrslar	hIrs:hIrs lar:+la_DER_TNS_ar, hIrs:hIrs lar:+la_DER_TNS_ir, hIrs:hIrs lar:+PER3P, hIrs:hIrs lar:+PL
+hIzlandIrabilmek	hIz:hIz lan:+la_DER_RFL dIr:+CAU_dir abil:yabil mek:mak
+hIzlanmanIn	hIz:hIz lan:+la_DER_PSS_Hn man:+NOUN_ma_POS2S In:+GEN, hIz:hIz lan:+la_DER_PSS_Hn ma:+NOUN_ma nIn:+GEN, hIz:hIz lan:+la_DER_RFL ma:+NOUN_ma nIn:+GEN, hIz:hIz lan:+la_DER_RFL man:+NOUN_ma_POS2S In:+GEN
+hIzlarIn	hIz:hIz lar:+PL In:+GEN, hIz:hIz lar:+PL In:+POS2S
+hacze	hacz:hacz e:+DAT
+hainidirler	hain:hain i:+POS3 dir:+DEF ler:+PER3P
+hakimliGince	hakim:hakim liG:+DER_lHg in:+POS2S ce:+ADV_SUF_cA
+halis	halis:halis
+halkImIza	halk:halk ImIz:+POS1P a:+DAT
+hallerini	hal:hal leri:+POS3S ni:+ACC3, hal:hal ler:+PL i:+POS3 ni:+ACC3, hal:hal ler:+PL in:+POS2S i:+ACC
+halletmesi	hal:hal let:+la_DER_CAU_t me:+NOUN_ma si:+POS3, hallet:hallet me:+NOUN_ma si:+POS3
+hasIrIn	hasIr:hasIr In:+GEN, hasIr:hasIr In:+POS2S
+hasadInI	hasad:hasad In:+POS2S I:+ACC, hasad:hasad I:+POS3 nI:+ACC3
+hasadIndan	hasad:hasad I:+POS3 ndan:+ABL3, hasad:hasad In:+POS2S dan:+ABL
+hasarInda	hasar:hasar In:+POS2S da:+LOC, hasar:hasar I:+POS3 nda:+LOC3
+hastanesi	hastane:hastane si:+POS3
+hatIranIn	hatIra:hatIra nIn:+GEN, hatIra:hatIra n:+POS2S In:+GEN
+hatIrlatmayI	hatIr:hatIr lat:+la_DER_CAU_t ma:+NOUN_ma yI:+ACC
+hatunu	hatun:hatun u:+POS3, hatun:hatun u:+ACC
+hayaletinden	hayalet:hayalet i:+POS3 nden:+ABL3, hayalet:hayalet in:+POS2S den:+ABL
+haydutlarIn	haydut:haydut lar:+PL In:+GEN, haydut:haydut lar:+PL In:+POS2S
+hazIrlanmadan	hazIr:hazIr lan:+la_DER_PSS_Hn madan:madan, hazIr:hazIr lan:+la_DER_RFL ma:+NOUN_ma dan:+ABL, hazIr:hazIr lan:+la_DER_PSS_Hn ma:+NOUN_ma dan:+ABL, hazIr:hazIr lan:+la_DER_RFL madan:madan
+hazinelerini	hazine:hazine ler:+PL i:+POS3 ni:+ACC3, hazine:hazine leri:+POS3S ni:+ACC3, hazine:hazine ler:+PL in:+POS2S i:+ACC
+hazzI	hazz:hazz I:+POS3, hazz:hazz I:+ACC
+hekimce	hekim:hekim ce:+ADV_SUF_cA
+helyuma	helyum:helyum a:+DAT
+hesaplamasI	hesap:hesap la:+la_DER ma:+NOUN_ma sI:+POS3
+hesaplamasIna	hesap:hesap la:+la_DER ma:+NOUN_ma sI:+POS3 na:+DAT3
+heyecanImI	heyecan:heyecan Im:+POS1S I:+ACC
+hissettiklerini	hisset:hisset tik:+ADJ_dik ler:+PL in:+POS2S i:+ACC, hisset:hisset tik:+ADJ_dik ler:+PL i:+POS3 ni:+ACC3, hisset:hisset tik:+ADJ_dik leri:+POS3S ni:+ACC3
+hitama	hitam:hitam a:+DAT
+hortumlandIGInI	hortum:hortum lan:+la_DER_RFL dIG:+ADJ_dig In:+POS2S I:+ACC, hortum:hortum lan:+la_DER_RFL dIG:+ADJ_dig I:+POS3 nI:+ACC3, hortum:hortum lan:+la_DER_PSS_Hn dIG:+ADJ_dig I:+POS3 nI:+ACC3, hortum:hortum lan:+la_DER_PSS_Hn dIG:+ADJ_dig In:+POS2S I:+ACC
+hot	hot:hot
+hristiyanlar	hristiyan:hristiyan lar:+PER3P, hristiyan:hristiyan lar:+la_DER_TNS_ar, hristiyan:hristiyan lar:+la_DER_TNS_ir, hristiyan:hristiyan lar:+PL
+huriye	huri:huri ye:+DAT
+iCerikle	iCerik:iCerik le:+la_DER, iCerik:iCerik le:+REL
+iCinde	iC:iC i:+POS3 nde:+LOC3, iC:iC in:+POS2S de:+LOC, iCinde:iCinde, iCin:iCin de:+LOC
+iCinizde	iC:iC iniz:+POS2P de:+LOC
+iCkilere	iC:iC ki:+gi_DER ler:+PL e:+DAT
+iCselleStirir	iCsel:iCsel leS:lAs tir:+CAU_dir ir:+TNS_ir
+iSaretlerin	iSaret:iSaret ler:+PL in:+GEN, iSaret:iSaret ler:+PL in:+POS2S
+iSitmiyoruz	iSit:iSit miyor:+NEG_ma_TNS_yor uz:+PER1P
+iSlemelerinin	iSle:iSle me:+NOUN_ma ler:+PL i:+POS3 nin:+GEN, iS:iS le:+la_DER me:+NOUN_ma ler:+PL i:+POS3 nin:+GEN, iSle:iSle me:+NOUN_ma ler:+PL in:+POS2S in:+GEN, iSle:iSle me:+NOUN_ma leri:+POS3S nin:+GEN, iS:iS le:+la_DER me:+NOUN_ma leri:+POS3S nin:+GEN, iS:iS le:+la_DER me:+NOUN_ma ler:+PL in:+POS2S in:+GEN
+iSlemelerle	iSle:iSle me:+NOUN_ma ler:+PL le:+REL, iS:iS le:+la_DER me:+NOUN_ma ler:+PL le:+REL
+iSletiyordu	iS:iS let:+la_DER_CAU_t iyor:+TNS_yor du:+PAST_hikaye, iSle:iSle t:+CAU_t iyor:+TNS_yor du:+PAST_hikaye
+ibadetine	ibadet:ibadet i:+POS3 ne:+DAT3, ibadet:ibadet in:+POS2S e:+DAT
+iddialarInda	iddia:iddia lar:+PL I:+POS3 nda:+LOC3, iddia:iddia lar:+PL In:+POS2S da:+LOC, iddia:iddia larI:+POS3S nda:+LOC3
+ihtilalini	ihtilal:ihtilal i:+POS3 ni:+ACC3, ihtilal:ihtilal in:+POS2S i:+ACC
+ihtilaller	ihtilal:ihtilal ler:+la_DER_TNS_ar, ihtilal:ihtilal ler:+la_DER_TNS_ir, ihtilal:ihtilal ler:+PER3P, ihtilal:ihtilal ler:+PL
+ihtiyaClarImIza	ihtiyaC:ihtiyaC lar:+PL ImIz:+POS1P a:+DAT
+ilerisinde	ileri:ileri si:+POS3 nde:+LOC3
+ilerliyorduk	ilerl:ilerl iyor:+TNS_yor du:+PAST_hikaye k:+PER1P_k
+ilgilenmenin	il:il gi:+gi_DER len:+la_DER_RFL men:+NOUN_ma_POS2S in:+GEN, il:il gi:+gi_DER len:+la_DER_RFL me:+NOUN_ma nin:+GEN, ilgi:ilgi len:+la_DER_RFL men:+NOUN_ma_POS2S in:+GEN, ilgi:ilgi len:+la_DER_PSS_Hn men:+NOUN_ma_POS2S in:+GEN, ilgi:ilgi len:+la_DER_RFL me:+NOUN_ma nin:+GEN, il:il gi:+gi_DER len:+la_DER_PSS_Hn me:+NOUN_ma nin:+GEN, il:il gi:+gi_DER len:+la_DER_PSS_Hn men:+NOUN_ma_POS2S in:+GEN, ilgi:ilgi len:+la_DER_PSS_Hn me:+NOUN_ma nin:+GEN
+ilimlerle	ilim:ilim ler:+PL le:+REL, il:il im:+im_DER ler:+PL le:+REL
+imparatorluklarInI	imparator:imparator luk:+DER_lHk larI:+POS3S nI:+ACC3, imparator:imparator luk:+DER_lHk lar:+PL I:+POS3 nI:+ACC3, imparator:imparator luk:+DER_lHk lar:+PL In:+POS2S I:+ACC
+imtihanlarla	imtihan:imtihan lar:+PL la:+REL
+imzalamISlardI	imza:imza la:+la_DER mIS:+TNS_mis lar:+PER3P dI:+PAST_hikaye, imza:imza la:+la_DER mIS:+TNS_mis lar:+la_DER_TNS_ar dI:+PAST_hikaye, imza:imza la:+la_DER mIS:+TNS_mis lar:+PER3P dI:+TNS_di, imza:imza la:+la_DER mIS:+TNS_mis lar:+PL dI:+PAST_hikaye, imza:imza la:+la_DER mIS:+TNS_mis lar:+la_DER_TNS_ir dI:+PAST_hikaye
+imzalayabilmektedir	imza:imza la:+la_DER yabil:yabil mek:mak te:+LOC dir:+DEF, imza:imza la:+la_DER yabil:yabil mekte:+TNS_makta dir:+DEF
+inanmamIStIr	inan:inan ma:+NEG_ma mIS:+TNS_mis tIr:+DEF
+incelemedir	ince:ince le:+la_DER me:+NOUN_ma dir:+DEF
+iradesiyle	irade:irade si:+POS3 yle:+REL
+irkilen	irk:irk il:+PSS_Hl en:yan
+issizlik	is:is siz:+ADJ_SUF_sHz lik:+DER_lHk
+istatistiklerimiz	istatistik:istatistik ler:+PL imiz:+POS1P, istatistik:istatistik ler:+PL im:+POS1S iz:+PER1P
+isteGindedir	isteG:isteG i:+POS3 nde:+LOC3 dir:+DEF, isteG:isteG in:+POS2S de:+LOC dir:+DEF
+istemem	iste:iste mem:+NOUN_ma_POS1S, iste:iste me:+NEG_ma m:+PER1S_m
+isteyecekler	iste:iste yecek:yacak ler:+la_DER_TNS_ir, iste:iste yecek:yacak ler:+la_DER_TNS_ar, iste:iste yecek:yacak ler:+PER3P, iste:iste yecek:yacak ler:+PL
+istikamettedir	istikamet:istikamet te:+LOC dir:+DEF
+ithalinden	ithal:ithal i:+POS3 nden:+ABL3, ithal:ithal in:+POS2S den:+ABL
+iyileSmeyle	iyi:iyi leS:lAs me:+NOUN_ma yle:+REL
+izahInIn	izah:izah In:+POS2S In:+GEN, izah:izah I:+POS3 nIn:+GEN
+izindir	izin:izin dir:+DEF, iz:iz in:+POS2S dir:+DEF, iz:iz in:+GEN dir:+DEF
+izlememden	iz:iz le:+la_DER mem:+NOUN_ma_POS1S den:+ABL, izle:izle mem:+NOUN_ma_POS1S den:+ABL
+kISkIrtIldIGI	kISkIr:kISkIr t:+CAU_t Il:+PSS_Hl dIG:+ADJ_dig I:+ACC, kISkIr:kISkIr t:+CAU_t Il:+PSS_Hl dIG:+ADJ_dig I:+POS3, kISkIrt:kISkIrt Il:+PSS_Hl dIG:+ADJ_dig I:+POS3, kISkIrt:kISkIrt Il:+PSS_Hl dIG:+ADJ_dig I:+ACC
+kIlavuzlu	kIlavuz:kIlavuz lu:+ADJ_SUF_lH
+kIlmadI	kIl:kIl ma:+NEG_ma dI:+TNS_di
+kIrkI	kIrk:kIrk I:+POS3, kIrk:kIrk I:+ACC, kIrkI:kIrkI
+kIrmIzIya	kIrmIzI:kIrmIzI ya:+DAT
+kIsItlIlIk	kIsIt:kIsIt lI:+ADJ_SUF_lH lIk:+DER_lHk
+kIsmete	kIsmet:kIsmet e:+DAT
+kIyImInI	kIy:kIy Im:+im_DER In:+POS2S I:+ACC, kIy:kIy Im:+im_DER I:+POS3 nI:+ACC3
+kOkenleri	kOken:kOken leri:+POS3S, kOken:kOken ler:+PL i:+POS3, kOken:kOken ler:+PL i:+ACC
+kOylUmUze	kOy:kOy lU:+ADJ_SUF_lH mUz:+POS1P e:+DAT
+kUfUrdUr	kUfUr:kUfUr dUr:+DEF
+kUlhandan	kUlhan:kUlhan dan:+ABL
+kUnefe	kUnefe:kUnefe
+kaCmayIn	kaC:kaC ma:+NEG_ma yIn:+P2_PL
+kaGanlarI	kaGan:kaGan lar:+PL I:+POS3, kaG:kaG an:yan lar:+PL I:+POS3, kaGan:kaGan lar:+PL I:+ACC, kaG:kaG an:yan larI:+POS3S, kaGan:kaGan larI:+POS3S, kaG:kaG an:yan lar:+PL I:+ACC
+kaSIkta	kaSIk:kaSIk ta:+LOC
+kabartIp	kabar:kabar t:+CAU_t Ip:yip
+kabarttIlar	kabar:kabar t:+CAU_t tI:+TNS_di lar:+PER3P
+kabullenmiSlerdi	kabul:kabul len:+la_DER_RFL miS:+TNS_mis ler:+PL di:+PAST_hikaye, kabul:kabul len:+la_DER_PSS_Hn miS:+TNS_mis ler:+la_DER_TNS_ir di:+PAST_hikaye, kabul:kabul len:+la_DER_PSS_Hn miS:+TNS_mis ler:+PER3P di:+PAST_hikaye, kabul:kabul len:+la_DER_PSS_Hn miS:+TNS_mis ler:+la_DER_TNS_ar di:+PAST_hikaye, kabul:kabul len:+la_DER_RFL miS:+TNS_mis ler:+la_DER_TNS_ir di:+PAST_hikaye, kabul:kabul len:+la_DER_RFL miS:+TNS_mis ler:+PER3P di:+PAST_hikaye, kabul:kabul len:+la_DER_RFL miS:+TNS_mis ler:+PER3P di:+TNS_di, kabul:kabul len:+la_DER_RFL miS:+TNS_mis ler:+la_DER_TNS_ar di:+PAST_hikaye, kabul:kabul len:+la_DER_PSS_Hn miS:+TNS_mis ler:+PL di:+PAST_hikaye, kabul:kabul len:+la_DER_PSS_Hn miS:+TNS_mis ler:+PER3P di:+TNS_di
+kadardI	kad:kad ar:+TNS_ar dI:+PAST_hikaye, kadar:kadar dI:+PAST_hikaye
+kahramanlarImIzIn	kahraman:kahraman lar:+PL ImIz:+POS1P In:+GEN
+kalIndIGInda	kal:kal In:+RFL dIG:+ADJ_dig I:+POS3 nda:+LOC3, kal:kal In:+PSS_Hn dIG:+ADJ_dig I:+POS3 nda:+LOC3, kal:kal In:+PSS_Hn dIG:+ADJ_dig In:+POS2S da:+LOC, kal:kal In:+RFL dIG:+ADJ_dig In:+POS2S da:+LOC
+kalemlerinin	kalem:kalem ler:+PL in:+POS2S in:+GEN, kalem:kalem ler:+PL i:+POS3 nin:+GEN, kalem:kalem leri:+POS3S nin:+GEN
+kalfalarI	kalfa:kalfa lar:+PL I:+ACC, kalfa:kalfa larI:+POS3S, kalfa:kalfa lar:+PL I:+POS3
+kalitelidir	kalite:kalite li:+ADJ_SUF_lH dir:+DEF
+kalktIGInda	kalk:kalk tIG:+ADJ_dig I:+POS3 nda:+LOC3, kalk:kalk tIG:+ADJ_dig In:+POS2S da:+LOC
+kalmakla	kal:kal mak:mak la:+REL
+kamCIsIdIr	kamCI:kamCI sI:+POS3 dIr:+DEF
+kanaatlarInIn	kanaat:kanaat lar:+PL I:+POS3 nIn:+GEN, kanaat:kanaat lar:+PL In:+POS2S In:+GEN, kanaat:kanaat larI:+POS3S nIn:+GEN
+kanmaz	kan:kan maz:+NEG_ma_NEG_AOR
+kapanISIna	kapa:kapa n:+PSS_Hn IS:yis I:+POS3 na:+DAT3, kapa:kapa n:+PSS_Hn IS:yis In:+POS2S a:+DAT, kapa:kapa n:+RFL IS:yis In:+POS2S a:+DAT, kapa:kapa n:+RFL IS:yis I:+POS3 na:+DAT3
+kapasitelerini	kapasite:kapasite ler:+PL in:+POS2S i:+ACC, kapasite:kapasite ler:+PL i:+POS3 ni:+ACC3, kapasite:kapasite leri:+POS3S ni:+ACC3
+kaplamIStI	kap:kap la:+la_DER mIS:+TNS_mis tI:+PAST_hikaye
+kaplanan	kap:kap lan:+la_DER_PSS_Hn an:yan, kap:kap lan:+la_DER_RFL an:yan
+karIsInIn	karI:karI sI:+POS3 nIn:+GEN
+karSIlaSIyorlar	karSI:karSI laS:lAs Iyor:+TNS_yor lar:+PER3P
+karSIlaSmadIGImIzI	karSI:karSI laS:lAs ma:+NEG_ma dIG:+ADJ_dig ImIz:+POS1P I:+ACC
+karSIlaStIGImIzI	karSI:karSI laS:lAs tIG:+ADJ_dig ImIz:+POS1P I:+ACC
+karSIlayabilir	karSI:karSI la:+la_DER yabil:yabil ir:+TNS_ir
+karSIlayacaktI	karSI:karSI la:+la_DER yacak:yacak tI:+PAST_hikaye
+karSItIn	karSIt:karSIt In:+GEN, karSIt:karSIt In:+POS2S
+karakeCili	karakeCi:karakeCi li:+ADJ_SUF_lH
+karalanIp	kara:kara lan:+la_DER_RFL Ip:yip, kara:kara lan:+la_DER_PSS_Hn Ip:yip
+karamsar	karamsar:karamsar
+kararlIlIGI	karar:karar lI:+ADJ_SUF_lH lIG:+DER_lHg I:+POS3, karar:karar lI:+ADJ_SUF_lH lIG:+DER_lHg I:+ACC
+karataSI	karataS:karataS I:+POS3, karataS:karataS I:+ACC
+kardeSlerinizle	kardeS:kardeS ler:+PL iniz:+POS2P le:+REL
+karsa	kar:kar sa:+TNS_sa, kars:kars a:+DAT, kar:kar sa:+if_SUF
+kartla	kart:kart la:+la_DER, kart:kart la:+REL
+karyaGdI	karyaGdI:karyaGdI
+kasabamIz	kasaba:kasaba mIz:+POS1P, kasaba:kasaba m:+POS1S Iz:+PER1P
+kasetten	kaset:kaset ten:+ABL
+kategorilerden	kategori:kategori ler:+PL den:+ABL
+kavuStuktan	kavuS:kavuS tuk:+ADJ_dik tan:+ABL
+kayIsIda	kayIsI:kayIsI da:+LOC
+kayarlar	kayar:kayar lar:+la_DER_TNS_ar, kayar:kayar lar:+PL, kay:kay ar:+TNS_ar lar:+PER3P, kayar:kayar lar:+PER3P, kayar:kayar lar:+la_DER_TNS_ir
+kaybettin	kaybet:kaybet ti:+TNS_di n:+PER2S_n, kaybet:kaybet t:+CAU_t in:+P2_PL, kaybet:kaybet t:+CAU_t in:+PSS_Hn
+kaynadIGI	kayna:kayna dIG:+ADJ_dig I:+ACC, kayna:kayna dIG:+ADJ_dig I:+POS3
+kazanIlanIn	kazan:kazan Il:+PSS_Hl an:yan In:+GEN, kazan:kazan Il:+PSS_Hl an:yan In:+POS2S
+kazanIrlardI	kazan:kazan Ir:+TNS_ir lar:+PER3P dI:+TNS_di, kazan:kazan Ir:+TNS_ir lar:+PER3P dI:+PAST_hikaye
+kazandIysam	kazan:kazan dI:+TNS_di ysa:+if_SUF m:+PER1S_m
+kazanmalarInI	kazan:kazan ma:+NOUN_ma lar:+PL I:+POS3 nI:+ACC3, kazan:kazan ma:+NOUN_ma lar:+PL In:+POS2S I:+ACC, kazan:kazan ma:+NOUN_ma larI:+POS3S nI:+ACC3
+kazanmanIza	kazan:kazan ma:+NOUN_ma nIz:+POS2P a:+DAT
+keSfedeceGimiz	keSfed:keSfed eceG:yacag imiz:+POS1P, keSfed:keSfed eceG:yacag im:+POS1S iz:+PER1P
+keSfediliyor	keSfed:keSfed il:+PSS_Hl iyor:+TNS_yor
+keSfinin	keSf:keSf i:+POS3 nin:+GEN, keSf:keSf in:+POS2S in:+GEN
+kelimeleriyle	kelime:kelime ler:+PL i:+POS3 yle:+REL, kelime:kelime leri:+POS3S yle:+REL
+kemoterapiye	kemoterapi:kemoterapi ye:+DAT
+kendir	kendir:kendir
+kesilip	kes:kes il:+PSS_Hl ip:yip
+kesilmemeli	kes:kes il:+PSS_Hl me:+NEG_ma meli:+TNS_mali, kes:kes il:+PSS_Hl me:+NEG_ma me:+NOUN_ma li:+ADJ_SUF_lH
+kesinleSen	kesin:kesin leS:lAs en:yan
+kesinti	kesinti:kesinti
+kesintilerden	kesinti:kesinti ler:+PL den:+ABL
+kesmesin	kes:kes me:+NOUN_ma sin:+PER2S, kes:kes me:+NEG_ma sin:+PER2S
+kiSinin	kiSi:kiSi n:+POS2S in:+GEN, kiSi:kiSi nin:+GEN
+kilimcilik	kilim:kilim ci:+DER_cH lik:+DER_lHk
+kilitlenme	kilit:kilit len:+la_DER_PSS_Hn me:+NOUN_ma, kilit:kilit len:+la_DER_PSS_Hn me:+NEG_ma, kilit:kilit len:+la_DER_RFL me:+NOUN_ma, kilit:kilit len:+la_DER_RFL me:+NEG_ma
+koSabilmek	koS:koS abil:yabil mek:mak
+kodlu	kod:kod lu:+ADJ_SUF_lH
+koliti	kolit:kolit i:+POS3, kolit:kolit i:+ACC
+konaklamalarI	konak:konak la:+la_DER ma:+NOUN_ma larI:+POS3S, konak:konak la:+la_DER ma:+NOUN_ma lar:+PL I:+ACC, konak:konak la:+la_DER ma:+NOUN_ma lar:+PL I:+POS3
+konmuStur	kon:kon muS:+TNS_mis tur:+DEF
+konsepti	konsept:konsept i:+ACC, konsept:konsept i:+POS3
+konseyinin	konsey:konsey i:+POS3 nin:+GEN, konsey:konsey in:+POS2S in:+GEN
+konteynere	konteyner:konteyner e:+DAT
+kontra	kontra:kontra
+konuGumu	konuG:konuG um:+POS1S u:+ACC
+konuSamayIz	kon:kon uS:yis ama:+NEG_yama yIz:+PER1P, konuS:konuS ama:+NEG_yama yIz:+PER1P
+konuStunuz	kon:kon uS:yis tu:+PAST_hikaye nuz:+PER2P_niz, kon:kon uS:yis tu:+TNS_di nuz:+PER2P_niz, konuS:konuS tu:+TNS_di nuz:+PER2P_niz, konuS:konuS t:+CAU_t unuz:+P2_PL_iz, kon:kon uS:yis t:+CAU_t unuz:+P2_PL_iz
+konumlanmIS	konum:konum lan:+la_DER_RFL mIS:+TNS_mis, kon:kon um:+im_DER lan:+la_DER_PSS_Hn mIS:+TNS_mis, kon:kon um:+im_DER lan:+la_DER_RFL mIS:+TNS_mis, konum:konum lan:+la_DER_PSS_Hn mIS:+TNS_mis
+konuttur	konut:konut tur:+DEF, kon:kon ut:+CAU_t t:+CAU_t ur:+TNS_ir, kon:kon ut:+CAU_t tur:+CAU_dir
+konyaspor	konyaspor:konyaspor
+kopyalarI	kopya:kopya lar:+PL I:+POS3, kopya:kopya lar:+PL I:+ACC, kopya:kopya larI:+POS3S
+koridorlara	koridor:koridor lar:+PL a:+DAT
+korkmaktadIr	kork:kork mak:mak ta:+LOC dIr:+DEF, kork:kork makta:+TNS_makta dIr:+DEF
+korkunC	korkunC:korkunC
+korunmalIdIrlar	koru:koru n:+PSS_Hn ma:+NOUN_ma lI:+ADJ_SUF_lH dIr:+DEF lar:+PER3P, koru:koru n:+RFL ma:+NOUN_ma lI:+ADJ_SUF_lH dIr:+DEF lar:+PER3P
+kuSatIcIlIGI	kuSat:kuSat IcI:yici lIG:+DER_lHg I:+ACC, kuSat:kuSat IcI:yici lIG:+DER_lHg I:+POS3
+kulUbecik	kulUbe:kulUbe cik:+DER_cHk
+kullan	kul:kul lan:+la_DER_RFL, kullan:kullan, kul:kul lan:+la_DER_PSS_Hn
+kullanabiliyordu	kul:kul lan:+la_DER_PSS_Hn abil:yabil iyor:+TNS_yor du:+PAST_hikaye, kullan:kullan abil:yabil iyor:+TNS_yor du:+PAST_hikaye, kul:kul lan:+la_DER_RFL abil:yabil iyor:+TNS_yor du:+PAST_hikaye
+kurbanInIn	kurban:kurban I:+POS3 nIn:+GEN, kurban:kurban In:+POS2S In:+GEN
+kurulamamIStI	kurul:kurul ama:+NEG_yama mIS:+TNS_mis tI:+PAST_hikaye, kuru:kuru la:+la_DER ma:+NEG_ma mIS:+TNS_mis tI:+PAST_hikaye, kuru:kuru l:+PSS_Hl ama:+NEG_yama mIS:+TNS_mis tI:+PAST_hikaye, kur:kur ul:+PSS_Hl ama:+NEG_yama mIS:+TNS_mis tI:+PAST_hikaye
+kurulda	kurul:kurul da:+LOC
+kuruluSunuzda	kur:kur ul:+PSS_Hl uS:yis unuz:+POS2P da:+LOC, kurul:kurul uS:yis unuz:+POS2P da:+LOC, kuru:kuru l:+PSS_Hl uS:yis unuz:+POS2P da:+LOC
+kurutulan	kurut:kurut ul:+PSS_Hl an:yan, kur:kur ut:+CAU_t ul:+PSS_Hl an:yan, kuru:kuru t:+CAU_t ul:+PSS_Hl an:yan
+kusurlarIn	kusur:kusur lar:+PL In:+POS2S, kusur:kusur lar:+PL In:+GEN
+lastiGiyle	lastiG:lastiG i:+POS3 yle:+REL
+lavman	lavman:lavman
+lavrion	lavrion:lavrion
+lifi	lif:lif i:+POS3, lif:lif i:+ACC
+ligin	lig:lig in:+GEN, lig:lig in:+POS2S
+listedeki	liste:liste de:+LOC ki:+REL_SUF_ki
+literatUr	literatUr:literatUr
+lokmasI	lokma:lokma sI:+POS3
+mUSahit	mUSahit:mUSahit
+mUdahaleler	mUdahale:mUdahale ler:+PER3P, mUdahale:mUdahale ler:+PL, mUdahale:mUdahale ler:+la_DER_TNS_ar, mUdahale:mUdahale ler:+la_DER_TNS_ir
+mUkelleflerinden	mUkellef:mUkellef ler:+PL in:+POS2S den:+ABL, mUkellef:mUkellef leri:+POS3S nden:+ABL3, mUkellef:mUkellef ler:+PL i:+POS3 nden:+ABL3
+mUktesebatInI	mUktesebat:mUktesebat I:+POS3 nI:+ACC3, mUktesebat:mUktesebat In:+POS2S I:+ACC
+mUmessillere	mUmessil:mUmessil ler:+PL e:+DAT
+mUminleri	mUmin:mUmin ler:+PL i:+ACC, mUmin:mUmin ler:+PL i:+POS3, mUmin:mUmin leri:+POS3S
+mUsabakalarda	mUsabaka:mUsabaka lar:+PL da:+LOC
+mUslUmanlIGa	mUslUman:mUslUman lIG:+DER_lHg a:+DAT
+mUzisyenleriyle	mUzisyen:mUzisyen ler:+PL i:+POS3 yle:+REL, mUzisyen:mUzisyen leri:+POS3S yle:+REL
+maGlupken	maGlup:maGlup ken:iken_e
+maddelerdir	madde:madde ler:+la_DER_TNS_ir dir:+DEF, madde:madde ler:+la_DER_TNS_ar dir:+DEF, madde:madde ler:+PER3P dir:+DEF, madde:madde ler:+PL dir:+DEF
+mahiyetindedir	mahiyet:mahiyet in:+POS2S de:+LOC dir:+DEF, mahiyet:mahiyet i:+POS3 nde:+LOC3 dir:+DEF
+maili	mail:mail i:+ACC, mail:mail i:+POS3, mai:mai li:+ADJ_SUF_lH
+makalelere	makale:makale ler:+PL e:+DAT
+malatyalI	malatya:malatya lI:+ADJ_SUF_lH
+manileri	mani:mani ler:+PL i:+ACC, mani:mani ler:+PL i:+POS3, mani:mani leri:+POS3S
+mankenlerden	manken:manken ler:+PL den:+ABL
+mansIz	mansIz:mansIz
+marketlere	market:market ler:+PL e:+DAT
+marklarIn	mark:mark lar:+PL In:+GEN, mark:mark lar:+PL In:+POS2S
+matematikCidir	matematik:matematik Ci:+DER_cH dir:+DEF
+mazur	mazur:mazur
+meSgulsUnUz	meSgul:meSgul sUnUz:+PER2P
+meSrulaStIrIlIr	meSru:meSru laS:lAs tIr:+CAU_dir Il:+PSS_Hl Ir:+TNS_ir
+medeniyetlerine	medeniyet:medeniyet leri:+POS3S ne:+DAT3, medeniyet:medeniyet ler:+PL in:+POS2S e:+DAT, medeniyet:medeniyet ler:+PL i:+POS3 ne:+DAT3
+mekandaki	mekan:mekan da:+LOC ki:+REL_SUF_ki, meka:meka n:+POS2S da:+LOC ki:+REL_SUF_ki
+mektuplaSmalar	mektup:mektup laS:lAs ma:+NOUN_ma lar:+la_DER_TNS_ir, mektup:mektup laS:lAs ma:+NOUN_ma lar:+PL, mektup:mektup laS:lAs ma:+NOUN_ma lar:+PER3P, mektup:mektup laS:lAs ma:+NOUN_ma lar:+la_DER_TNS_ar
+memeliler	meme:meme li:+ADJ_SUF_lH ler:+la_DER_TNS_ar, meme:meme li:+ADJ_SUF_lH ler:+la_DER_TNS_ir, meme:meme li:+ADJ_SUF_lH ler:+PER3P, meme:meme li:+ADJ_SUF_lH ler:+PL
+menUler	menU:menU ler:+la_DER_TNS_ar, menU:menU ler:+la_DER_TNS_ir, menU:menU ler:+PER3P, menU:menU ler:+PL
+mendille	mendil:mendil le:+la_DER, mendil:mendil le:+REL
+mermerinden	mermer:mermer i:+POS3 nden:+ABL3, mermer:mermer in:+POS2S den:+ABL
+mesleklerini	meslek:meslek leri:+POS3S ni:+ACC3, meslek:meslek ler:+PL i:+POS3 ni:+ACC3, meslek:meslek ler:+PL in:+POS2S i:+ACC
+meteorolojiye	meteoroloji:meteoroloji ye:+DAT
+meydanInda	meydan:meydan I:+POS3 nda:+LOC3, meydan:meydan In:+POS2S da:+LOC
+midyenin	midye:midye nin:+GEN, midye:midye n:+POS2S in:+GEN
+mimiklerin	mimik:mimik ler:+PL in:+GEN, mimik:mimik ler:+PL in:+POS2S
+mineli	mine:mine li:+ADJ_SUF_lH, mi:mi n:+PSS_Hn eli:yali, mi:mi n:+RFL eli:yali
+minerallerin	mineral:mineral ler:+PL in:+POS2S, mineral:mineral ler:+PL in:+GEN
+modernleSmeden	modern:modern leS:lAs meden:madan, modern:modern leS:lAs me:+NOUN_ma den:+ABL
+modernleStiriyor	modern:modern leS:lAs tir:+CAU_dir iyor:+TNS_yor
+monitOrlUk	monitOr:monitOr lUk:+DER_lHk
+moralinizi	moral:moral iniz:+POS2P i:+ACC
+muSta	muS:muS ta:+LOC, muSta:muSta
+muarrem	muarrem:muarrem
+muayenede	muayene:muayene de:+LOC
+muayenehaneye	muayenehane:muayenehane ye:+DAT
+mubayaasI	mubayaa:mubayaa sI:+POS3
+mucizeydi	mucize:mucize ydi:+PAST_hikaye
+mutfaklar	mutfak:mutfak lar:+PER3P, mutfak:mutfak lar:+la_DER_TNS_ar, mutfak:mutfak lar:+PL, mutfak:mutfak lar:+la_DER_TNS_ir
+nahiyelerinde	nahiye:nahiye ler:+PL i:+POS3 nde:+LOC3, nahiye:nahiye ler:+PL in:+POS2S de:+LOC, nahiye:nahiye leri:+POS3S nde:+LOC3
+nama	na:na m:+POS1S a:+DAT, nam:nam a:+DAT
+neSriyat	neSriyat:neSriyat
+nebzede	nebze:nebze de:+LOC
+nedenlerine	neden:neden ler:+PL in:+POS2S e:+DAT, neden:neden leri:+POS3S ne:+DAT3, neden:neden ler:+PL i:+POS3 ne:+DAT3
+nehrine	nehr:nehr i:+POS3 ne:+DAT3, nehr:nehr in:+POS2S e:+DAT
+nevrim	nevr:nevr im:+PER1S, nevr:nevr im:+POS1S
+nidasInI	nida:nida sI:+POS3 nI:+ACC3
+nikahlI	nikah:nikah lI:+ADJ_SUF_lH
+nuha	nuh:nuh a:+DAT
+obje	obje:obje
+ocaksIz	ocak:ocak sIz:+ADJ_SUF_sHz
+odaya	oda:oda ya:+DAT
+okSasIn	okSa:okSa sIn:+PER2S
+oksijensiz	oksijen:oksijen siz:+ADJ_SUF_sHz
+oktan	ok:ok tan:+ABL, ok:ok t:+CAU_t an:yan, oktan:oktan
+okuduGumu	oku:oku duG:+ADJ_dig um:+POS1S u:+ACC
+okuyamayan	oku:oku yama:+NEG_yama yan:yan
+okuyucularImIz	oku:oku yucu:yici lar:+PL ImIz:+POS1P, oku:oku yucu:yici lar:+PL Im:+POS1S Iz:+PER1P
+olamadIGInI	o:o la:+la_DER ma:+NEG_ma dIG:+ADJ_dig I:+POS3 nI:+ACC3, o:o la:+la_DER ma:+NEG_ma dIG:+ADJ_dig In:+POS2S I:+ACC, ol:ol ama:+NEG_yama dIG:+ADJ_dig I:+POS3 nI:+ACC3, ol:ol ama:+NEG_yama dIG:+ADJ_dig In:+POS2S I:+ACC
+olgunlaSmasInIn	olgun:olgun laS:lAs ma:+NOUN_ma sI:+POS3 nIn:+GEN
+olmazlardI	ol:ol ma:+NEG_ma zlar:+PER3P_NEG dI:+PAST_hikaye, olmaz:olmaz lar:+la_DER_TNS_ar dI:+PAST_hikaye, olmaz:olmaz lar:+la_DER_TNS_ir dI:+PAST_hikaye, olmaz:olmaz lar:+PL dI:+PAST_hikaye
+oluGa	o:o luG:+DER_lHg a:+DAT, oluG:oluG a:+DAT
+oluSturuyorsunuz	oluS:oluS tur:+CAU_dir uyor:+TNS_yor sunuz:+PER2P, ol:ol uS:yis tur:+CAU_dir uyor:+TNS_yor sunuz:+PER2P
+oluSumlar	ol:ol uS:yis um:+im_DER lar:+la_DER_TNS_ar, oluS:oluS um:+im_DER lar:+la_DER_TNS_ir, ol:ol uS:yis um:+im_DER lar:+PER3P, oluS:oluS um:+im_DER lar:+PL, oluS:oluS um:+im_DER lar:+la_DER_TNS_ar, ol:ol uS:yis um:+POS1S lar:+PER3P, ol:ol uS:yis um:+im_DER lar:+PL, oluS:oluS um:+im_DER lar:+PER3P, ol:ol uS:yis um:+im_DER lar:+la_DER_TNS_ir
+olumlanan	ol:ol um:+im_DER lan:+la_DER_PSS_Hn an:yan, ol:ol um:+im_DER lan:+la_DER_RFL an:yan
+onarIlmIS	onar:onar Il:+PSS_Hl mIS:+TNS_mis
+onayIna	onay:onay I:+POS3 na:+DAT3, onay:onay In:+POS2S a:+DAT
+orkestrasInI	orkestra:orkestra sI:+POS3 nI:+ACC3
+orospuluk	orospu:orospu luk:+DER_lHk
+otlarla	ot:ot lar:+PL la:+REL
+oturtulmasIna	otur:otur t:+CAU_t ul:+PSS_Hl ma:+NOUN_ma sI:+POS3 na:+DAT3
+oynatabilen	oyna:oyna t:+CAU_t abil:yabil en:yan
+oynayacaGImIz	oyna:oyna yacaG:yacag Im:+POS1S Iz:+PER1P, oyna:oyna yacaG:yacag ImIz:+POS1P
+pakete	paket:paket e:+DAT
+palazlanIyor	palaz:palaz lan:+la_DER_PSS_Hn Iyor:+TNS_yor, palaz:palaz lan:+la_DER_RFL Iyor:+TNS_yor
+parCacI	parCa:parCa cI:+DER_cH
+parCala	parCa:parCa la:+la_DER
+parolalarI	parola:parola lar:+PL I:+ACC, parola:parola lar:+PL I:+POS3, parola:parola larI:+POS3S
+parolaydI	parola:parola ydI:+PAST_hikaye
+partisinde	parti:parti si:+POS3 nde:+LOC3
+partisine	parti:parti si:+POS3 ne:+DAT3
+pas	pas:pas
+pasifikteki	pasifik:pasifik te:+LOC ki:+REL_SUF_ki
+passionu	passion:passion u:+ACC, passion:passion u:+POS3
+patlIcanlarI	patlIcan:patlIcan larI:+POS3S, patlIcan:patlIcan lar:+PL I:+POS3, patlIcan:patlIcan lar:+PL I:+ACC
+patlamIStI	patla:patla mIS:+TNS_mis tI:+PAST_hikaye, pat:pat la:+la_DER mIS:+TNS_mis tI:+PAST_hikaye
+payeler	paye:paye ler:+PER3P, paye:paye ler:+la_DER_TNS_ir, paye:paye ler:+la_DER_TNS_ar, paye:paye ler:+PL
+pazI	pazI:pazI
+pazarIndaki	pazar:pazar In:+POS2S da:+LOC ki:+REL_SUF_ki, pazar:pazar I:+POS3 nda:+LOC3 ki:+REL_SUF_ki
+pazarlamacIlIGI	pazar:pazar la:+la_DER ma:+NOUN_ma cI:+DER_cH lIG:+DER_lHg I:+POS3, pazar:pazar la:+la_DER ma:+NOUN_ma cI:+DER_cH lIG:+DER_lHg I:+ACC
+pedikUr	pedikUr:pedikUr
+penCeleri	penCe:penCe ler:+PL i:+ACC, penCe:penCe leri:+POS3S, penCe:penCe ler:+PL i:+POS3
+perdede	perde:perde de:+LOC
+pervazIn	pervaz:pervaz In:+GEN, pervaz:pervaz In:+POS2S
+pestil	pestil:pestil
+piSmiS	piS:piS miS:+TNS_mis
+plaketini	plaket:plaket in:+POS2S i:+ACC, plaket:plaket i:+POS3 ni:+ACC3
+planlamasInda	plan:plan la:+la_DER ma:+NOUN_ma sI:+POS3 nda:+LOC3
+poliCede	poliCe:poliCe de:+LOC
+pozisyonu	pozisyon:pozisyon u:+ACC, pozisyon:pozisyon u:+POS3
+prensesle	prenses:prenses le:+la_DER, prenses:prenses le:+REL
+primlerini	prim:prim ler:+PL in:+POS2S i:+ACC, prim:prim leri:+POS3S ni:+ACC3, prim:prim ler:+PL i:+POS3 ni:+ACC3
+profesyonelliGi	profesyonel:profesyonel liG:+DER_lHg i:+POS3, profesyonel:profesyonel liG:+DER_lHg i:+ACC
+psikoanalizle	psikoanaliz:psikoanaliz le:+REL, psikoanaliz:psikoanaliz le:+la_DER
+rakipler	rakip:rakip ler:+la_DER_TNS_ir, rakip:rakip ler:+PL, rakip:rakip ler:+la_DER_TNS_ar, rakip:rakip ler:+PER3P
+reddetmeye	reddet:reddet me:+NOUN_ma ye:+DAT, reddet:reddet me:+NEG_ma ye:+OPT
+reisliGe	reis:reis liG:+DER_lHg e:+DAT
+reyinizi	rey:rey iniz:+POS2P i:+ACC
+rezerv	rezerv:rezerv
+robotun	robot:robot un:+GEN, robot:robot un:+POS2S
+rotalarI	rota:rota lar:+PL I:+POS3, rota:rota larI:+POS3S, rota:rota lar:+PL I:+ACC
+sIhhIye	sIhhIye:sIhhIye
+sIkIStIrIlIp	sIk:sIk IS:yis tIr:+CAU_dir Il:+PSS_Hl Ip:yip
+sIkmaz	sIk:sIk maz:+NEG_ma_NEG_AOR
+sInIflandIrIlIp	sInIf:sInIf lan:+la_DER_RFL dIr:+CAU_dir Il:+PSS_Hl Ip:yip
+sIralamada	sIra:sIra la:+la_DER ma:+NOUN_ma da:+LOC
+sIralanmasInda	sIra:sIra lan:+la_DER_PSS_Hn ma:+NOUN_ma sI:+POS3 nda:+LOC3, sIra:sIra lan:+la_DER_RFL ma:+NOUN_ma sI:+POS3 nda:+LOC3
+sIralarIn	sIra:sIra lar:+PL In:+GEN, sIra:sIra lar:+PL In:+POS2S
+sIyIrma	sIyIr:sIyIr ma:+NOUN_ma, sIyIr:sIyIr ma:+NEG_ma
+sOkUl	sOk:sOk Ul:+PSS_Hl
+sOndUrUcU	sOn:sOn dUr:+CAU_dir UcU:yici
+sOyleyemeyeceGim	sOyle:sOyle yeme:+NEG_yama yeceG:yacag im:+PER1S, sOyle:sOyle yeme:+NEG_yama yeceG:yacag im:+POS1S
+sOzUmUzUn	sOz:sOz UmUz:+POS1P Un:+GEN
+sOzlerimiz	sOz:sOz ler:+PL im:+POS1S iz:+PER1P, sOz:sOz ler:+PL imiz:+POS1P
+sUmbUl	sUmbUl:sUmbUl
+sUnger	sUnger:sUnger
+sUrUkleyebileceGini	sUrUkle:sUrUkle yebil:yabil eceG:yacag i:+POS3 ni:+ACC3, sUrUkle:sUrUkle yebil:yabil eceG:yacag in:+POS2S i:+ACC
+sUrUlmesidir	sUr:sUr Ul:+PSS_Hl me:+NOUN_ma si:+POS3 dir:+DEF, sUrU:sUrU l:+PSS_Hl me:+NOUN_ma si:+POS3 dir:+DEF
+sUrdUrebilmesine	sUr:sUr dUr:+CAU_dir ebil:yabil me:+NOUN_ma si:+POS3 ne:+DAT3, sUrdUr:sUrdUr ebil:yabil me:+NOUN_ma si:+POS3 ne:+DAT3
+sUrdUreceklerdir	sUr:sUr dUr:+CAU_dir ecek:yacak ler:+la_DER_TNS_ir dir:+DEF, sUrdUr:sUrdUr ecek:yacak ler:+la_DER_TNS_ir dir:+DEF, sUr:sUr dUr:+CAU_dir ecek:yacak ler:+PER3P dir:+DEF, sUr:sUr dUr:+CAU_dir ecek:yacak ler:+PL dir:+DEF, sUrdUr:sUrdUr ecek:yacak ler:+PL dir:+DEF, sUrdUr:sUrdUr ecek:yacak ler:+PER3P dir:+DEF, sUr:sUr dUr:+CAU_dir ecek:yacak ler:+la_DER_TNS_ar dir:+DEF, sUrdUr:sUrdUr ecek:yacak ler:+la_DER_TNS_ar dir:+DEF
+sUremi	sUre:sUre m:+POS1S i:+ACC
+sUresizdir	sUre:sUre siz:+ADJ_SUF_sHz dir:+DEF
+sUrprizli	sUrpriz:sUrpriz li:+ADJ_SUF_lH
+sUtunlara	sUtun:sUtun lar:+PL a:+DAT
+saGImI	saGIm:saGIm I:+POS3, saG:saG Im:+POS1S I:+ACC, saG:saG Im:+im_DER I:+POS3, saGI:saGI m:+POS1S I:+ACC, saGIm:saGIm I:+ACC, saG:saG Im:+im_DER I:+ACC
+saGlanamayacaGIna	saG:saG lan:+la_DER_PSS_Hn ama:+NEG_yama yacaG:yacag I:+POS3 na:+DAT3, saG:saG lan:+la_DER_RFL ama:+NEG_yama yacaG:yacag I:+POS3 na:+DAT3, saG:saG lan:+la_DER_RFL ama:+NEG_yama yacaG:yacag In:+POS2S a:+DAT, saGla:saGla n:+RFL ama:+NEG_yama yacaG:yacag I:+POS3 na:+DAT3, saG:saG lan:+la_DER_PSS_Hn ama:+NEG_yama yacaG:yacag In:+POS2S a:+DAT, saGla:saGla n:+RFL ama:+NEG_yama yacaG:yacag In:+POS2S a:+DAT, saGla:saGla n:+PSS_Hn ama:+NEG_yama yacaG:yacag I:+POS3 na:+DAT3, saGla:saGla n:+PSS_Hn ama:+NEG_yama yacaG:yacag In:+POS2S a:+DAT
+saGlayIcIlarInIn	saG:saG la:+la_DER yIcI:yici lar:+PL I:+POS3 nIn:+GEN, saG:saG la:+la_DER yIcI:yici larI:+POS3S nIn:+GEN, saG:saG la:+la_DER yIcI:yici lar:+PL In:+POS2S In:+GEN, saGla:saGla yIcI:yici lar:+PL I:+POS3 nIn:+GEN, saGla:saGla yIcI:yici larI:+POS3S nIn:+GEN, saGla:saGla yIcI:yici lar:+PL In:+POS2S In:+GEN
+saatlerinden	saat:saat ler:+PL i:+POS3 nden:+ABL3, saat:saat ler:+PL in:+POS2S den:+ABL, saat:saat leri:+POS3S nden:+ABL3
+saatleriydi	saat:saat leri:+POS3S ydi:+PAST_hikaye, saat:saat ler:+PL i:+POS3 ydi:+PAST_hikaye
+sabotaj	sabotaj:sabotaj
+sahili	sahil:sahil i:+ACC, sahil:sahil i:+POS3, sahi:sahi li:+ADJ_SUF_lH
+sahipleridirler	sahip:sahip ler:+PL i:+POS3 dir:+DEF ler:+PER3P, sahip:sahip leri:+POS3S dir:+DEF ler:+PER3P
+sakInIm	sakIn:sakIn Im:+im_DER, sak:sak In:+GEN Im:+PER1S, sak:sak In:+POS2S Im:+PER1S, sakIn:sakIn Im:+POS1S, sakIn:sakIn Im:+PER1S
+sakallI	sakal:sakal lI:+ADJ_SUF_lH
+sakinlerini	sakin:sakin ler:+PL i:+POS3 ni:+ACC3, sakin:sakin leri:+POS3S ni:+ACC3, sakin:sakin ler:+PL in:+POS2S i:+ACC
+saklanabileceGi	sak:sak lan:+la_DER_PSS_Hn abil:yabil eceG:yacag i:+POS3, sakla:sakla n:+RFL abil:yabil eceG:yacag i:+POS3, sakla:sakla n:+PSS_Hn abil:yabil eceG:yacag i:+POS3, sakla:sakla n:+PSS_Hn abil:yabil eceG:yacag i:+ACC, sak:sak lan:+la_DER_RFL abil:yabil eceG:yacag i:+POS3, sakla:sakla n:+RFL abil:yabil eceG:yacag i:+ACC, sak:sak lan:+la_DER_RFL abil:yabil eceG:yacag i:+ACC, sak:sak lan:+la_DER_PSS_Hn abil:yabil eceG:yacag i:+ACC
+saldIrgan	saldIrgan:saldIrgan
+saldIrganlIkla	saldIrgan:saldIrgan lIk:+DER_lHk la:+la_DER
+salgInlara	salgIn:salgIn lar:+PL a:+DAT
+sandalyelerini	sandalye:sandalye ler:+PL i:+POS3 ni:+ACC3, sandalye:sandalye ler:+PL in:+POS2S i:+ACC, sandalye:sandalye leri:+POS3S ni:+ACC3
+sanrIlar	sanrI:sanrI lar:+PER3P, sanrI:sanrI lar:+PL, sanrI:sanrI lar:+la_DER_TNS_ir, sanrI:sanrI lar:+la_DER_TNS_ar
+santrallerinin	santral:santral leri:+POS3S nin:+GEN, santral:santral ler:+PL in:+POS2S in:+GEN, santral:santral ler:+PL i:+POS3 nin:+GEN
+sarICam	sarICam:sarICam
+sarImsaGIn	sarImsaG:sarImsaG In:+GEN, sarImsaG:sarImsaG In:+POS2S
+sarIyormuS	sar:sar Iyor:+TNS_yor muS:+PAST_rivayet
+satIyorum	sat:sat Iyor:+TNS_yor um:+PER1S
+savaSmanIn	savaS:savaS man:+NOUN_ma_POS2S In:+GEN, savaS:savaS ma:+NOUN_ma nIn:+GEN
+savaSta	savaS:savaS t:+CAU_t a:+OPT, savaS:savaS ta:+LOC
+sayardI	say:say ar:+TNS_ar dI:+PAST_hikaye
+seCmenleri	seCmen:seCmen leri:+POS3S, seCmen:seCmen ler:+PL i:+POS3, seCmen:seCmen ler:+PL i:+ACC
+sebebin	sebeb:sebep in:+GEN, sebeb:sebep in:+POS2S
+sebzede	sebze:sebze de:+LOC
+seden	se:se den:+ABL
+selimi	se:se lim:+ADJ_SUF_lH_POS1S i:+ACC, selim:selim i:+ACC, sel:sel im:+POS1S i:+ACC, selim:selim i:+POS3
+semantik	semantik:semantik
+semih	semih:semih
+sempozyumu	sempozyum:sempozyum u:+ACC, sempozyum:sempozyum u:+POS3
+semtini	semt:semt in:+POS2S i:+ACC, semt:semt i:+POS3 ni:+ACC3
+sendromu	sendrom:sendrom u:+POS3, sendrom:sendrom u:+ACC
+sergilenip	ser:ser gi:+gi_DER len:+la_DER_PSS_Hn ip:yip, ser:ser gi:+gi_DER len:+la_DER_RFL ip:yip
+sergimizi	ser:ser gi:+gi_DER miz:+POS1P i:+ACC
+serilerini	seri:seri ler:+PL in:+POS2S i:+ACC, seri:seri ler:+PL i:+POS3 ni:+ACC3, seri:seri leri:+POS3S ni:+ACC3
+serpintisini	serpinti:serpinti si:+POS3 ni:+ACC3
+sertleSme	sert:sert leS:lAs me:+NOUN_ma, sert:sert leS:lAs me:+NEG_ma
+sevilmiS	sev:sev il:+PSS_Hl miS:+TNS_mis
+sevindirmiStir	sev:sev in:+RFL dir:+CAU_dir miS:+TNS_mis tir:+DEF
+seviyormuSuz	sev:sev iyor:+TNS_yor muS:+PAST_rivayet uz:+PER1P
+seyrettim	seyret:seyret ti:+TNS_di m:+PER1S_m, seyret:seyret t:+CAU_t im:+im_DER
+silinmemiSti	sil:sil in:+PSS_Hn me:+NEG_ma miS:+TNS_mis ti:+PAST_hikaye, sil:sil in:+RFL me:+NEG_ma miS:+TNS_mis ti:+PAST_hikaye
+simitlerin	simit:simit ler:+PL in:+POS2S, simit:simit ler:+PL in:+GEN
+sipariSleriniz	sipariS:sipariS ler:+PL in:+POS2S iz:+PER1P, sipariS:sipariS ler:+PL in:+GEN iz:+PER1P, sipariS:sipariS ler:+PL iniz:+POS2P
+soGukkanlIlIGInIzI	soGukkanlI:soGukkanlI lIG:+DER_lHg InIz:+POS2P I:+ACC
+sohbetimizi	sohbet:sohbet imiz:+POS1P i:+ACC
+solladIk	sol:sol la:+la_DER dI:+TNS_di k:+PER1P_k, sol:sol la:+la_DER dIk:+ADJ_dik
+solukdur	soluk:soluk dur:+DEF
+somut	somut:somut
+sopalarInI	sopa:sopa lar:+PL I:+POS3 nI:+ACC3, sopa:sopa larI:+POS3S nI:+ACC3, sopa:sopa lar:+PL In:+POS2S I:+ACC
+sorabilirler	sor:sor abil:yabil ir:+TNS_ir ler:+PER3P
+soruSturulmalIdIr	soruS:soruS tur:+CAU_dir ul:+PSS_Hl ma:+NOUN_ma lI:+ADJ_SUF_lH dIr:+DEF, soruStur:soruStur ul:+PSS_Hl ma:+NOUN_ma lI:+ADJ_SUF_lH dIr:+DEF, sor:sor uS:yis tur:+CAU_dir ul:+PSS_Hl ma:+NOUN_ma lI:+ADJ_SUF_lH dIr:+DEF
+sorulur	sor:sor ul:+PSS_Hl ur:+TNS_ir, soru:soru l:+PSS_Hl ur:+TNS_ir
+sorununu	sorun:sorun un:+POS2S u:+ACC, sorun:sorun u:+POS3 nu:+ACC3
+sorununun	sorun:sorun un:+POS2S un:+GEN, sor:sor un:+RFL un:+PSS_Hn un:+P2_PL, soru:soru n:+RFL un:+PSS_Hn un:+P2_PL, sorun:sorun u:+POS3 nun:+GEN
+soyadIyla	soyadI:soyadI yla:+REL, soyad:soyad I:+POS3 yla:+REL
+soyucu	soy:soy ucu:yici
+stokun	stok:stok un:+GEN, stok:stok un:+POS2S
+stratejisinin	strateji:strateji si:+POS3 nin:+GEN
+suClamaktan	suC:suC la:+la_DER mak:mak tan:+ABL
+suClandIrIlIrlar	suC:suC lan:+la_DER_RFL dIr:+CAU_dir Il:+PSS_Hl Ir:+TNS_ir lar:+PER3P
+sulanInca	su:su lan:+la_DER_RFL Inca:yinca, su:su lan:+la_DER_PSS_Hn Inca:yinca
+sulandIrIlmamIS	su:su lan:+la_DER_RFL dIr:+CAU_dir Il:+PSS_Hl ma:+NEG_ma mIS:+TNS_mis
+sullivan	sullivan:sullivan
+sunacaGI	sun:sun acaG:yacag I:+POS3, sun:sun acaG:yacag I:+ACC
+sunmuS	su:su n:+POS2S muS:+PAST_rivayet, sun:sun muS:+TNS_mis
+tIkamakta	tIka:tIka mak:mak ta:+LOC, tIka:tIka makta:+TNS_makta
+tIrlar	tIr:tIr lar:+PER3P, tIr:tIr lar:+la_DER_TNS_ar, tIr:tIr lar:+la_DER_TNS_ir, tIr:tIr lar:+PL
+tIrmanmIStIlar	tIrman:tIrman mIS:+TNS_mis tI:+PAST_hikaye lar:+PER3P
+tOreninde	tOren:tOren i:+POS3 nde:+LOC3, tOren:tOren in:+POS2S de:+LOC
+tUfeGimiz	tUfeG:tUfeG im:+POS1S iz:+PER1P, tUfeG:tUfeG imiz:+POS1P
+tUkenecek	tUken:tUken ecek:yacak
+tUmen	tUmen:tUmen
+tUmlUGUnUn	tUm:tUm lUG:+DER_lHg U:+POS3 nUn:+GEN, tUm:tUm lUG:+DER_lHg Un:+POS2S Un:+GEN
+tUrediGini	tUre:tUre diG:+ADJ_dig i:+POS3 ni:+ACC3, tUre:tUre diG:+ADJ_dig in:+POS2S i:+ACC
+tabakadaki	tabaka:tabaka da:+LOC ki:+REL_SUF_ki
+takacak	tak:tak acak:yacak
+taksidi	taksid:taksid i:+ACC, taksid:taksid i:+POS3
+talimatlarInI	talimat:talimat lar:+PL In:+POS2S I:+ACC, talimat:talimat lar:+PL I:+POS3 nI:+ACC3, talimat:talimat larI:+POS3S nI:+ACC3
+tanIStIracak	tan:tan IS:yis tIr:+CAU_dir acak:yacak
+tanImlayabileceGimizi	tan:tan Im:+im_DER la:+la_DER yabil:yabil eceG:yacag imiz:+POS1P i:+ACC, tanIm:tanIm la:+la_DER yabil:yabil eceG:yacag imiz:+POS1P i:+ACC
+tanIrlar	tan:tan Ir:+TNS_ir lar:+PER3P, tanI:tanI r:+TNS_ar lar:+PER3P, tanI:tanI r:+TNS_ir lar:+PER3P
+tanItIyorum	tan:tan It:+CAU_t Iyor:+TNS_yor um:+PER1S, tanI:tanI t:+CAU_t Iyor:+TNS_yor um:+PER1S
+tarlalar	tarla:tarla lar:+la_DER_TNS_ar, tarla:tarla lar:+PER3P, tarla:tarla lar:+PL, tarla:tarla lar:+la_DER_TNS_ir
+tartISIlmadIGInI	tartIS:tartIS Il:+PSS_Hl ma:+NEG_ma dIG:+ADJ_dig In:+POS2S I:+ACC, tart:tart IS:yis Il:+PSS_Hl ma:+NEG_ma dIG:+ADJ_dig I:+POS3 nI:+ACC3, tart:tart IS:yis Il:+PSS_Hl ma:+NEG_ma dIG:+ADJ_dig In:+POS2S I:+ACC, tartIS:tartIS Il:+PSS_Hl ma:+NEG_ma dIG:+ADJ_dig I:+POS3 nI:+ACC3
+tasarlanamaz	tasar:tasar lan:+la_DER_RFL amaz:+NEG_yama_NEG_AOR, tasar:tasar lan:+la_DER_PSS_Hn amaz:+NEG_yama_NEG_AOR
+tasarlayabilir	tasar:tasar la:+la_DER yabil:yabil ir:+TNS_ir
+tasfiyeden	tasfiye:tasfiye den:+ABL
+taslaktaki	taslak:taslak ta:+LOC ki:+REL_SUF_ki
+tavdIr	tav:tav dIr:+DEF
+teSvikleriyle	teSvik:teSvik ler:+PL i:+POS3 yle:+REL, teSvik:teSvik leri:+POS3S yle:+REL
+tecrUbeleriyle	tecrUbe:tecrUbe ler:+PL i:+POS3 yle:+REL, tecrUbe:tecrUbe leri:+POS3S yle:+REL
+tedarikCisi	tedarik:tedarik Ci:+DER_cH si:+POS3
+tedmer	tedmer:tedmer
+tehlikelidir	tehlike:tehlike li:+ADJ_SUF_lH dir:+DEF
+tehlikenin	tehlike:tehlike n:+POS2S in:+GEN, tehlike:tehlike nin:+GEN
+teknelerden	tekne:tekne ler:+PL den:+ABL
+teknesini	tekne:tekne si:+POS3 ni:+ACC3
+teknolojileri	teknoloji:teknoloji ler:+PL i:+POS3, teknoloji:teknoloji ler:+PL i:+ACC, teknoloji:teknoloji leri:+POS3S
+tekrarlanmalIdIr	tekrar:tekrar lan:+la_DER_RFL ma:+NOUN_ma lI:+ADJ_SUF_lH dIr:+DEF, tekrar:tekrar lan:+la_DER_PSS_Hn ma:+NOUN_ma lI:+ADJ_SUF_lH dIr:+DEF, tekrar:tekrar lan:+la_DER_PSS_Hn malI:+TNS_mali dIr:+DEF, tekrar:tekrar lan:+la_DER_RFL malI:+TNS_mali dIr:+DEF
+tekstilinin	tekstil:tekstil i:+POS3 nin:+GEN, tekstil:tekstil in:+POS2S in:+GEN
+temada	tema:tema da:+LOC
+temizlemesini	temiz:temiz le:+la_DER me:+NOUN_ma si:+POS3 ni:+ACC3
+tempoyu	tempo:tempo yu:+ACC
+tenteli	tente:tente li:+ADJ_SUF_lH
+terminaline	terminal:terminal i:+POS3 ne:+DAT3, terminal:terminal in:+POS2S e:+DAT
+tertibatIn	tertibat:tertibat In:+GEN, tertibat:tertibat In:+POS2S
+tesadUflerin	tesadUf:tesadUf ler:+PL in:+GEN, tesadUf:tesadUf ler:+PL in:+POS2S
+tezgahIndaki	tezgah:tezgah I:+POS3 nda:+LOC3 ki:+REL_SUF_ki, tezgah:tezgah In:+POS2S da:+LOC ki:+REL_SUF_ki
+ticaretimizi	ticaret:ticaret imiz:+POS1P i:+ACC
+titreyerek	titre:titre yerek:yarak
+titriyor	titr:titr iyor:+TNS_yor
+tiyatrolarda	tiyatro:tiyatro lar:+PL da:+LOC
+tiyatrosuna	tiyatro:tiyatro su:+POS3 na:+DAT3
+topallayarak	topal:topal la:+la_DER yarak:yarak
+toplanamadI	topla:topla n:+PSS_Hn ama:+NEG_yama dI:+TNS_di, topla:topla n:+RFL ama:+NEG_yama dI:+TNS_di, top:top lan:+la_DER_PSS_Hn ama:+NEG_yama dI:+TNS_di, top:top lan:+la_DER_RFL ama:+NEG_yama dI:+TNS_di
+toplusOzleSmeli	toplusOzleSme:toplusOzleSme li:+ADJ_SUF_lH
+torunlarInI	torun:torun lar:+PL In:+POS2S I:+ACC, torun:torun larI:+POS3S nI:+ACC3, torun:torun lar:+PL I:+POS3 nI:+ACC3
+trajedilere	trajedi:trajedi ler:+PL e:+DAT
+trajedileri	trajedi:trajedi ler:+PL i:+ACC, trajedi:trajedi leri:+POS3S, trajedi:trajedi ler:+PL i:+POS3
+trajedisine	trajedi:trajedi si:+POS3 ne:+DAT3
+trombon	trombon:trombon
+turcas	turcas:turcas
+tuttururlar	tut:tut tur:+CAU_dir ur:+TNS_ir lar:+PER3P
+tutulma	tut:tut ul:+PSS_Hl ma:+NEG_ma, tut:tut ul:+PSS_Hl ma:+NOUN_ma
+tutulmalI	tut:tut ul:+PSS_Hl ma:+NOUN_ma lI:+ADJ_SUF_lH
+tuvali	tuval:tuval i:+POS3, tuval:tuval i:+ACC
+uGradIk	uGra:uGra dI:+TNS_di k:+PER1P_k, uGra:uGra dIk:+ADJ_dik
+uGurladIGImIz	uGur:uGur la:+la_DER dIG:+ADJ_dig Im:+POS1S Iz:+PER1P, uGur:uGur la:+la_DER dIG:+ADJ_dig ImIz:+POS1P
+ufalanma	ufa:ufa lan:+la_DER_PSS_Hn ma:+NEG_ma, ufa:ufa lan:+la_DER_RFL ma:+NEG_ma, ufa:ufa lan:+la_DER_RFL ma:+NOUN_ma, ufala:ufala n:+RFL ma:+NEG_ma, ufala:ufala n:+PSS_Hn ma:+NEG_ma, ufala:ufala n:+PSS_Hn ma:+NOUN_ma, ufa:ufa lan:+la_DER_PSS_Hn ma:+NOUN_ma, ufala:ufala n:+RFL ma:+NOUN_ma
+ulaSmamIza	u:u laS:lAs ma:+NOUN_ma mIz:+POS1P a:+DAT, ulaS:ulaS ma:+NOUN_ma mIz:+POS1P a:+DAT
+ulaSmasIndan	u:u laS:lAs ma:+NOUN_ma sI:+POS3 ndan:+ABL3, ulaS:ulaS ma:+NOUN_ma sI:+POS3 ndan:+ABL3
+ulumanIn	ulu:ulu ma:+NOUN_ma nIn:+GEN, ulu:ulu man:+NOUN_ma_POS2S In:+GEN
+umursamadIGI	umursa:umursa ma:+NEG_ma dIG:+ADJ_dig I:+POS3, umursa:umursa ma:+NEG_ma dIG:+ADJ_dig I:+ACC
+unsurlarIna	unsur:unsur larI:+POS3S na:+DAT3, unsur:unsur lar:+PL I:+POS3 na:+DAT3, unsur:unsur lar:+PL In:+POS2S a:+DAT
+unutabilir	unut:unut abil:yabil ir:+TNS_ir
+unutabiliriz	unut:unut abil:yabil ir:+TNS_ir iz:+PER1P
+unvanlarIyla	unvan:unvan larI:+POS3S yla:+REL, unvan:unvan lar:+PL I:+POS3 yla:+REL
+uyanIrdIk	uyan:uyan Ir:+TNS_ir dI:+PAST_hikaye k:+PER1P_k
+uyaranIn	uyar:uyar an:yan In:+GEN, uyar:uyar an:yan In:+POS2S
+uzamIS	uza:uza mIS:+TNS_mis
+uzatmazdI	uza:uza t:+CAU_t maz:+NEG_ma_NEG_AOR dI:+PAST_hikaye
+uzayInda	uzay:uzay In:+POS2S da:+LOC, uzay:uzay I:+POS3 nda:+LOC3
+uzlaSarak	uz:uz laS:lAs arak:yarak, uzlaS:uzlaS arak:yarak
+uzmanlaStIGI	uzman:uzman laS:lAs tIG:+ADJ_dig I:+ACC, uzman:uzman laS:lAs tIG:+ADJ_dig I:+POS3
+vahSetleri	vahSet:vahSet leri:+POS3S, vahSet:vahSet ler:+PL i:+POS3, vahSet:vahSet ler:+PL i:+ACC
+vahSiliGi	vahSi:vahSi liG:+DER_lHg i:+ACC, vahSi:vahSi liG:+DER_lHg i:+POS3
+vakanUvis	vakanUvis:vakanUvis
+varacaktIr	var:var acak:yacak tIr:+DEF
+varislerden	varis:varis ler:+PL den:+ABL
+vasiyetnameden	vasiyetname:vasiyetname den:+ABL
+vatandaSlarIn	vatandaS:vatandaS lar:+PL In:+GEN, vatandaS:vatandaS lar:+PL In:+POS2S
+vekilini	vekil:vekil in:+POS2S i:+ACC, vekil:vekil i:+POS3 ni:+ACC3
+venden	ve:ve n:+POS2S den:+ABL
+verdiGinizi	ver:ver diG:+ADJ_dig iniz:+POS2P i:+ACC
+verdiren	ver:ver dir:+CAU_dir en:yan
+verebilmelerini	ver:ver ebil:yabil me:+NOUN_ma ler:+PL in:+POS2S i:+ACC, ver:ver ebil:yabil me:+NOUN_ma ler:+PL i:+POS3 ni:+ACC3, ver:ver ebil:yabil me:+NOUN_ma leri:+POS3S ni:+ACC3
+verebilmelidir	ver:ver ebil:yabil meli:+TNS_mali dir:+DEF, ver:ver ebil:yabil me:+NOUN_ma li:+ADJ_SUF_lH dir:+DEF
+vergisini	vergi:vergi si:+POS3 ni:+ACC3, ver:ver gi:+gi_DER si:+POS3 ni:+ACC3
+verilerinizi	veri:veri ler:+PL iniz:+POS2P i:+ACC
+verilmekte	ver:ver il:+PSS_Hl mek:mak te:+LOC, ver:ver il:+PSS_Hl mekte:+TNS_makta
+veritabanlarIyla	veritaban:veritaban larI:+POS3S yla:+REL, veritaban:veritaban lar:+PL I:+POS3 yla:+REL
+vermeseydim	ver:ver me:+NEG_ma se:+TNS_sa ydi:+PAST_hikaye m:+PER1S_m
+verniGi	verniG:verniG i:+ACC, verniG:verniG i:+POS3
+vurabilecek	vur:vur abil:yabil ecek:yacak
+yOnelmektedir	yOnel:yOnel mek:mak te:+LOC dir:+DEF, yOnel:yOnel mekte:+TNS_makta dir:+DEF
+yOneltebilirler	yOnel:yOnel t:+CAU_t ebil:yabil ir:+TNS_ir ler:+PER3P
+yOneltilebilecek	yOnel:yOnel t:+CAU_t il:+PSS_Hl ebil:yabil ecek:yacak
+yOnlendirin	yOn:yOn len:+la_DER_RFL dir:+CAU_dir in:+P2_PL, yOn:yOn len:+la_DER_RFL dir:+CAU_dir in:+PSS_Hn
+yOnlendirmelerini	yOn:yOn len:+la_DER_RFL dir:+CAU_dir me:+NOUN_ma ler:+PL i:+POS3 ni:+ACC3, yOn:yOn len:+la_DER_RFL dir:+CAU_dir me:+NOUN_ma ler:+PL in:+POS2S i:+ACC, yOn:yOn len:+la_DER_RFL dir:+CAU_dir me:+NOUN_ma leri:+POS3S ni:+ACC3
+yUceltmeleridir	yUcel:yUcel t:+CAU_t me:+NOUN_ma ler:+PL i:+POS3 dir:+DEF, yUcel:yUcel t:+CAU_t me:+NOUN_ma leri:+POS3S dir:+DEF
+yUrUmeden	yUrU:yUrU meden:madan, yUrU:yUrU me:+NOUN_ma den:+ABL
+yUrUtUlmesiyle	yUrU:yUrU t:+CAU_t Ul:+PSS_Hl me:+NOUN_ma si:+POS3 yle:+REL, yUrUt:yUrUt Ul:+PSS_Hl me:+NOUN_ma si:+POS3 yle:+REL
+yUrUyenleri	yUrU:yUrU yen:yan ler:+PL i:+ACC, yUrU:yUrU yen:yan leri:+POS3S, yUrU:yUrU yen:yan ler:+PL i:+POS3
+yaSadIGInIzI	yaSa:yaSa dIG:+ADJ_dig InIz:+POS2P I:+ACC
+yaSanIlIr	yaSa:yaSa n:+RFL Il:+PSS_Hl Ir:+TNS_ir
+yaSandIysa	yaSa:yaSa n:+RFL dI:+TNS_di ysa:+if_SUF, yaSa:yaSa n:+PSS_Hn dI:+TNS_di ysa:+if_SUF
+yaSantImdan	yaSantI:yaSantI m:+POS1S dan:+ABL, yaSa:yaSa n:+RFL t:+CAU_t Im:+im_DER dan:+ABL
+yaSarlarken	yaSa:yaSa r:+TNS_ir lar:+PER3P ken:iken_e, yaSa:yaSa r:+TNS_ar lar:+PER3P ken:iken_e
+yaSayabiliyorlar	yaSa:yaSa yabil:yabil iyor:+TNS_yor lar:+PER3P
+yakInlarInIzla	yakIn:yakIn lar:+PL InIz:+POS2P la:+REL
+yakItIna	yak:yak It:+CAU_t In:+PSS_Hn a:+OPT, yakIt:yakIt I:+POS3 na:+DAT3, yakIt:yakIt In:+POS2S a:+DAT
+yakItIyla	yakIt:yakIt I:+POS3 yla:+REL
+yakanIzda	yaka:yaka nIz:+POS2P da:+LOC
+yandaysa	yan:yan da:+LOC ysa:+if_SUF, ya:ya n:+POS2S da:+LOC ysa:+if_SUF
+yangInla	yangI:yangI n:+POS2S la:+REL, yang:yang In:+POS2S la:+REL, yangIn:yangIn la:+REL, yangIn:yangIn la:+la_DER, yan:yan gIn:+gi_DER_POS2S la:+REL
+yanlISlarI	yanlIS:yanlIS lar:+PL I:+POS3, yanlIS:yanlIS lar:+PL I:+ACC, yanlIS:yanlIS larI:+POS3S
+yanlISlarInIzI	yanlIS:yanlIS lar:+PL InIz:+POS2P I:+ACC
+yapIStIrdIk	yap:yap IS:yis tIr:+CAU_dir dI:+TNS_di k:+PER1P_k, yapIS:yapIS t:+CAU_t Ir:+TNS_ir dI:+PAST_hikaye k:+PER1P_k, yapIS:yapIS tIr:+CAU_dir dIk:+ADJ_dik, yap:yap IS:yis t:+CAU_t Ir:+TNS_ir dI:+PAST_hikaye k:+PER1P_k, yap:yap IS:yis tIr:+CAU_dir dIk:+ADJ_dik, yapIS:yapIS tIr:+CAU_dir dI:+TNS_di k:+PER1P_k
+yapIlanmadan	yapI:yapI lan:+la_DER_PSS_Hn ma:+NOUN_ma dan:+ABL, yapI:yapI lan:+la_DER_RFL madan:madan, yapI:yapI lan:+la_DER_PSS_Hn madan:madan, yapI:yapI lan:+la_DER_RFL ma:+NOUN_ma dan:+ABL
+yapIlmISsa	yap:yap Il:+PSS_Hl mIS:+TNS_mis sa:+TNS_sa, yap:yap Il:+PSS_Hl mIS:+TNS_mis sa:+if_SUF
+yapImIn	yap:yap Im:+im_DER In:+POS2S, yapI:yapI m:+POS1S In:+GEN, yapIm:yapIm In:+POS2S, yap:yap Im:+im_DER In:+GEN, yapIm:yapIm In:+GEN
+yapInca	yap:yap Inca:yinca, yapI:yapI n:+POS2S ca:+ADV_SUF_cA
+yapItlardan	yapIt:yapIt lar:+PL dan:+ABL
+yapamayacaGImI	yap:yap ama:+NEG_yama yacaG:yacag Im:+POS1S I:+ACC
+yapmadIGImIzI	yap:yap ma:+NEG_ma dIG:+ADJ_dig ImIz:+POS1P I:+ACC
+yaptIrdIGInIz	yap:yap tIr:+CAU_dir dIG:+ADJ_dig InIz:+POS2P, yap:yap tIr:+CAU_dir dIG:+ADJ_dig In:+GEN Iz:+PER1P, yap:yap tIr:+CAU_dir dIG:+ADJ_dig In:+POS2S Iz:+PER1P
+yarIcI	yar:yar IcI:yici, yarI:yarI cI:+DER_cH
+yararlanamayacak	yarar:yarar lan:+la_DER_PSS_Hn ama:+NEG_yama yacak:yacak, yarar:yarar lan:+la_DER_RFL ama:+NEG_yama yacak:yacak
+yarasaydI	yarasa:yarasa ydI:+PAST_hikaye, yara:yara sa:+TNS_sa ydI:+PAST_hikaye
+yaratamadIGI	yara:yara t:+CAU_t ama:+NEG_yama dIG:+ADJ_dig I:+ACC, yara:yara t:+CAU_t ama:+NEG_yama dIG:+ADJ_dig I:+POS3, yarat:yarat ama:+NEG_yama dIG:+ADJ_dig I:+ACC, yarat:yarat ama:+NEG_yama dIG:+ADJ_dig I:+POS3
+yaratmalarInda	yarat:yarat ma:+NOUN_ma lar:+PL I:+POS3 nda:+LOC3, yarat:yarat ma:+NOUN_ma lar:+PL In:+POS2S da:+LOC, yara:yara t:+CAU_t ma:+NOUN_ma lar:+PL In:+POS2S da:+LOC, yara:yara t:+CAU_t ma:+NOUN_ma larI:+POS3S nda:+LOC3, yarat:yarat ma:+NOUN_ma larI:+POS3S nda:+LOC3, yara:yara t:+CAU_t ma:+NOUN_ma lar:+PL I:+POS3 nda:+LOC3
+yasaklanmasInIn	yasak:yasak lan:+la_DER_RFL ma:+NOUN_ma sI:+POS3 nIn:+GEN, yasak:yasak lan:+la_DER_PSS_Hn ma:+NOUN_ma sI:+POS3 nIn:+GEN
+yasasInI	yas:yas asIn:+yasi_POS2S I:+ACC, yasa:yasa sI:+POS3 nI:+ACC3
+yaslayarak	yas:yas la:+la_DER yarak:yarak
+yatIrIlacaktIr	yatIr:yatIr Il:+PSS_Hl acak:yacak tIr:+DEF
+yavaSlI	yavaS:yavaS lI:+ADJ_SUF_lH
+yayImlandIGInI	yay:yay Im:+im_DER lan:+la_DER_RFL dIG:+ADJ_dig I:+POS3 nI:+ACC3, yay:yay Im:+im_DER lan:+la_DER_PSS_Hn dIG:+ADJ_dig I:+POS3 nI:+ACC3, yayIm:yayIm lan:+la_DER_RFL dIG:+ADJ_dig I:+POS3 nI:+ACC3, yayIm:yayIm lan:+la_DER_PSS_Hn dIG:+ADJ_dig I:+POS3 nI:+ACC3, yayIm:yayIm lan:+la_DER_PSS_Hn dIG:+ADJ_dig In:+POS2S I:+ACC, yay:yay Im:+im_DER lan:+la_DER_RFL dIG:+ADJ_dig In:+POS2S I:+ACC, yay:yay Im:+im_DER lan:+la_DER_PSS_Hn dIG:+ADJ_dig In:+POS2S I:+ACC, yayIm:yayIm lan:+la_DER_RFL dIG:+ADJ_dig In:+POS2S I:+ACC
+yaygInca	yay:yay gIn:+gi_DER_POS2S ca:+ADV_SUF_cA, yaygIn:yaygIn ca:+ADV_SUF_cA
+yaygInlaStIrmanIn	yaygIn:yaygIn laS:lAs tIr:+CAU_dir ma:+NOUN_ma nIn:+GEN, yaygIn:yaygIn laS:lAs tIr:+CAU_dir man:+NOUN_ma_POS2S In:+GEN
+yazImIza	yaz:yaz ImIz:+POS1P a:+DAT, yazI:yazI mIz:+POS1P a:+DAT
+yazdIr	yaz:yaz dIr:+CAU_dir, yaz:yaz dIr:+DEF
+yazmamasI	yaz:yaz ma:+NEG_ma ma:+NOUN_ma sI:+POS3
+yazmayla	yaz:yaz ma:+NOUN_ma yla:+REL
+yeGliyorlardI	yeG:yeG liyor:+la_TNS_yor lar:+PER3P dI:+TNS_di, yeG:yeG liyor:+la_TNS_yor lar:+PER3P dI:+PAST_hikaye
+yeSereceGini	yeSer:yeSer eceG:yacag in:+POS2S i:+ACC, yeSer:yeSer eceG:yacag i:+POS3 ni:+ACC3
+yemekhanesi	yemekhane:yemekhane si:+POS3
+yenilikCilerine	yeni:yeni lik:+DER_lHk Ci:+DER_cH ler:+PL in:+POS2S e:+DAT, yeni:yeni lik:+DER_lHk Ci:+DER_cH leri:+POS3S ne:+DAT3, yeni:yeni lik:+DER_lHk Ci:+DER_cH ler:+PL i:+POS3 ne:+DAT3
+yeralmamIz	yeral:yeral mam:+NOUN_ma_POS1S Iz:+PER1P, yeral:yeral ma:+NOUN_ma mIz:+POS1P
+yerkUrede	yerkUre:yerkUre de:+LOC
+yetiSkinlik	yetiSkin:yetiSkin lik:+DER_lHk
+yetkimizi	yet:yet ki:+gi_DER miz:+POS1P i:+ACC, yetki:yetki miz:+POS1P i:+ACC
+yirmilerin	yirmi:yirmi ler:+PL in:+POS2S, yirmi:yirmi ler:+PL in:+GEN
+yiyemez	yi:yi yemez:+NEG_yama_NEG_AOR
+yom	yo:yo m:+POS1S, yom:yom
+yugoslavlar	yugoslav:yugoslav lar:+la_DER_TNS_ar, yugoslav:yugoslav lar:+PL, yugoslav:yugoslav lar:+la_DER_TNS_ir, yugoslav:yugoslav lar:+PER3P
+yurtseveri	yurtsever:yurtsever i:+ACC, yurtsever:yurtsever i:+POS3
+yurttaSlarImIza	yurttaS:yurttaS lar:+PL ImIz:+POS1P a:+DAT
+yutarken	yu:yu t:+CAU_t ar:+TNS_ar ken:iken_e, yut:yut ar:+TNS_ar ken:iken_e
+zIlgItlarla	zIlgIt:zIlgIt lar:+PL la:+REL
+zamanlamayla	zaman:zaman la:+la_DER ma:+NOUN_ma yla:+REL
+zeminde	zemin:zemin de:+LOC, zem:zem in:+POS2S de:+LOC, zem:zem i:+POS3 nde:+LOC3
+zenginleSmiSti	zengin:zengin leS:lAs miS:+TNS_mis ti:+PAST_hikaye
+zevklerle	zevk:zevk ler:+PL le:+REL
+zinciriyle	zincir:zincir i:+POS3 yle:+REL
+zorlaStIrdIGI	zor:zor laS:lAs tIr:+CAU_dir dIG:+ADJ_dig I:+POS3, zor:zor laS:lAs tIr:+CAU_dir dIG:+ADJ_dig I:+ACC
