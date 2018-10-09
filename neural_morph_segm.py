@@ -15,13 +15,15 @@ from keras.models import Model
 from keras.optimizers import adam
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 
-from read import extract_morpheme_type, read_BMES
+from read import extract_morpheme_type, read_BMES, read_splitted
 from tabled_trie import make_trie
 
 
 def read_config(infile):
     with open(infile, "r", encoding="utf8") as fin:
         config = json.load(fin)
+    if "use_morpheme_types" not in config:
+        config["use_morpheme_types"] = True
     return config
 
 # вспомогательные фунцкии
@@ -117,6 +119,8 @@ def get_next_morpheme_types(morpheme_type):
     """
     Определяет, какие морфемы могут идти за текущей.
     """
+    if morpheme_type == "None":
+        return ["None"]
     MORPHEMES = ["SUFF", "END", "LINK", "POSTFIX", "PREF", "ROOT"]
     if morpheme_type in ["ROOT", "SUFF", "HYPH"]:
         start = 0
@@ -129,6 +133,8 @@ def get_next_morpheme_types(morpheme_type):
     answer = MORPHEMES[start:6]
     if len(answer) > 0 and morpheme_type != "HYPH":
         answer.append("HYPH")
+    if morpheme_type == "BEGIN":
+        answer.append("None")
     return answer
 
 def get_next_morpheme(morpheme):
@@ -157,14 +163,14 @@ def is_correct_morpheme_sequence(morphemes):
     if any("-" not in morpheme for morpheme in morphemes):
         return False
     morpheme_label, morpheme_type = morphemes[0].split("-")
-    if morpheme_label not in "BS" or morpheme_type not in ["PREF", "ROOT"]:
+    if morpheme_label not in "BS" or morpheme_type not in ["PREF", "ROOT", "None"]:
         return False
     morpheme_label, morpheme_type = morphemes[-1].split("-")
+    if morpheme_label not in "ES" or morpheme_type not in ["ROOT", "SUFF", "ENDING", "POSTFIX", "None"]:
+        return False
     for i, morpheme in enumerate(morphemes[:-1]):
         if morphemes[i+1] not in get_next_morpheme(morpheme):
             return False
-    if morpheme_label not in "ES" or morpheme_type not in ["ROOT", "SUFF", "ENDING", "POSTFIX"]:
-        return False
     return True
 
 
@@ -217,9 +223,9 @@ class Partitioner:
     LEFT_MORPHEME_TYPES = ["pref", "root"]
     RIGHT_MORPHEME_TYPES = ["root", "suff", "end", "postfix"]
 
-    def __init__(self, models_number=1, to_memorize_morphemes=False,
-                 min_morpheme_count=2, to_memorize_ngram_counts=False,
-                 min_relative_ngram_count=0.1,
+    def __init__(self, models_number=1, use_morpheme_types=True,
+                 to_memorize_morphemes=False, min_morpheme_count=2,
+                 to_memorize_ngram_counts=False, min_relative_ngram_count=0.1,
                  use_embeddings=False, embeddings_size=32,
                  conv_layers=1, window_size=5, filters_number=64,
                  dense_output_units=0, use_lstm=False, lstm_units=64,
@@ -228,6 +234,7 @@ class Partitioner:
                  validation_split=0.2, batch_size=32,
                  callbacks=None, early_stopping=None):
         self.models_number = models_number
+        self.use_morpheme_types = use_morpheme_types
         self.to_memorize_morphemes = to_memorize_morphemes
         self.min_morpheme_count = min_morpheme_count
         self.to_memorize_ngram_counts = to_memorize_ngram_counts
@@ -690,8 +697,11 @@ class Partitioner:
             morpheme_types: list of strs, список типов морфем
         """
         morphemes, curr_morpheme, morpheme_types = [], "", []
-        end_labels = ['E-ROOT', 'E-PREF', 'E-SUFF', 'E-END', 'E-POSTFIX', 'S-ROOT', 'S-PREF', 'S-SUFF', 'S-END',
-                      'S-LINK', 'S-HYPH']
+        if self.use_morpheme_types:
+            end_labels = ['E-ROOT', 'E-PREF', 'E-SUFF', 'E-END', 'E-POSTFIX', 'S-ROOT',
+                          'S-PREF', 'S-SUFF', 'S-END', 'S-LINK', 'S-HYPH']
+        else:
+            end_labels = ['E-None', 'S-None']
         for letter, label in zip(word, labels):
             curr_morpheme += letter
             if label in end_labels:
@@ -762,7 +772,7 @@ class Partitioner:
                 states.append(prev_states)
             # последнее состояние --- обязательно конец морфемы
             possible_states = [self.target_symbol_codes_["{}-{}".format(x, y)]
-                               for x in "ES" for y in ["ROOT", "SUFF", "END", "POSTFIX"]
+                               for x in "ES" for y in ["ROOT", "SUFF", "END", "POSTFIX", "None"]
                                if "{}-{}".format(x, y) in self.target_symbol_codes_]
             best_states = [min(possible_states, key=(lambda x: costs[-1][x]))]
             for j in range(length, 0, -1):
@@ -812,7 +822,7 @@ def generate_data(data, targets, indexes, classes_number, shuffle=False, nepochs
         nsteps += 1
 
 
-def measure_quality(targets, predicted_targets, english_metrics=False):
+def measure_quality(targets, predicted_targets, english_metrics=False, measure_last=True):
     """
 
     targets: метки корректных ответов
@@ -821,11 +831,14 @@ def measure_quality(targets, predicted_targets, english_metrics=False):
     Возвращает словарь со значениями основных метрик
     """
     TP, FP, FN, equal, total = 0, 0, 0, 0, 0
-    SE = ['S-ROOT', 'S-PREF', 'S-SUFF', 'S-END', 'S-LINK', 'E-ROOT', 'E-PREF', 'E-SUFF', 'E-END']
+    SE = ['{}-{}'.format(x, y) for x in "SE" for y in ["ROOT", "PREF", "SUFF", "END", "LINK", "None"]]
+    # SE = ['S-ROOT', 'S-PREF', 'S-SUFF', 'S-END', 'S-LINK', 'E-ROOT', 'E-PREF', 'E-SUFF', 'E-END']
     corr_words = 0
     for corr, pred in zip(targets, predicted_targets):
-        boundaries = [i for i in range(len(corr)) if corr[i] in SE]
-        pred_boundaries = [i for i in range(len(pred)) if pred[i] in SE]
+        corr_len = len(corr) + int(measure_last) - 1
+        pred_len = len(pred) + int(measure_last) - 1
+        boundaries = [i for i in range(corr_len) if corr[i] in SE]
+        pred_boundaries = [i for i in range(pred_len) if pred[i] in SE]
         common = [x for x in boundaries if x in pred_boundaries]
         TP += len(common)
         FN += len(boundaries) - len(common)
@@ -850,15 +863,17 @@ if __name__ == "__main__":
         sys.exit("Pass config file")
     config_file = sys.argv[1]
     params = read_config(config_file)
-    use_morpheme_names = True
+    use_morpheme_types = params["use_morpheme_types"]
+    read_func = read_BMES if use_morpheme_types else read_splitted
     if "train_file" in params:
         n = params.get("n_train") # число слов в обучающей+развивающей выборке
-        inputs, targets = read_BMES(params["train_file"], n=n)
+        inputs, targets = read_func(params["train_file"], n=n)
         # inputs, targets = read_input(params["train_file"], n=n)
     else:
         inputs, targets = None, None
     if not "load_file" in params:
         partitioner_params = params.get("model_params", dict())
+        partitioner_params["use_morpheme_types"] = use_morpheme_types
         cls = Partitioner(**partitioner_params)
     else:
         cls = load_cls(params["load_file"])
@@ -868,11 +883,13 @@ if __name__ == "__main__":
         model_file = params.get("model_file")
         cls.to_json(params["save_file"], model_file)
     if "test_file" in params:
-        inputs, targets = read_BMES(params["test_file"], shuffle=False)
+        inputs, targets = read_func(params["test_file"], shuffle=False)
         # inputs, targets = read_input(params["test_file"])
         predicted_targets = cls._predict_probs(inputs)
+        measure_last = params.get("measure_last", use_morpheme_types)
         quality = measure_quality(targets, [elem[0] for elem in predicted_targets],
-                                  english_metrics=params.get("english_metrics", False))
+                                  english_metrics=params.get("english_metrics", False),
+                                  measure_last=measure_last)
         for key, value in sorted(quality):
             print("{}={:.2f}".format(key, 100*value))
         if "outfile" in params:
