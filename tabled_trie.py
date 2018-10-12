@@ -175,6 +175,31 @@ class Trie:
         '''
         return self.final[index]
 
+    def find_substrings(self, s, return_positions=False, return_compressed=True):
+        """
+        Finds all nonempty substrings of s in the trie
+        """
+        curr_agenda = {self.root: {0}}
+        answer = [[] for _ in s]
+        for i, a in enumerate(s, 1):
+            next_agenda = defaultdict(set)
+            for curr, starts in curr_agenda.items():
+                if a in self.alphabet:
+                    child = self.graph[curr][self.alphabet_codes[a]]
+                    if child == Trie.NO_NODE:
+                        continue
+                    next_agenda[child] |= starts
+            next_agenda[self.root].add(i)
+            for curr, starts in next_agenda.items():
+                 if self.is_final(curr):
+                     answer[i-1].extend(starts)
+            curr_agenda = next_agenda
+        answer = [(x, i) for i, x in enumerate(answer, 1)]
+        if not return_positions or not return_compressed:
+            answer = [(i, j) for starts, j in answer for i in starts]
+        if not return_positions:
+            answer = [s[i:j] for i, j in answer]
+        return answer
     def find_partitions(self, s, max_count=1):
         """
         Находит все разбиения s = s_1 ... s_m на словарные слова s_1, ..., s_m

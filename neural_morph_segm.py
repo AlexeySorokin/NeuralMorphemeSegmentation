@@ -278,6 +278,10 @@ class Partitioner:
         if (self.early_stopping is not None and
                 not any(isinstance(x, EarlyStopping) for x in self.callbacks)):
             self.callbacks.append(EarlyStopping(patience=self.early_stopping, monitor="val_acc"))
+        if self.use_morpheme_types:
+            self._morpheme_memo_func = self._make_morpheme_data
+        else:
+            self._morpheme_memo_func = self._make_morpheme_data_simple
 
     def to_json(self, outfile, model_file=None):
         info = dict()
@@ -311,6 +315,10 @@ class Partitioner:
     @property
     def target_symbols_number_(self):
         return len(self.target_symbols_)
+
+    @property
+    def memory_dim(self):
+        return 15 if self.use_morpheme_types else 3
 
     def _preprocess(self, data, targets=None):
         # к каждому слову добавляются символы начала и конца строки
@@ -348,7 +356,7 @@ class Partitioner:
             answer = [self._recode_bucket_data(bucket_data, bucket_length, self.symbol_codes_)]
             if self.to_memorize_morphemes:
                 print("Processing morphemes for bucket length", bucket_length)
-                answer.append(self._make_morpheme_data(bucket_data, bucket_length))
+                answer.append(self._morpheme_memo_func(bucket_data, bucket_length))
                 print("Processing morphemes for bucket length", bucket_length, "finished")
             return answer
 
@@ -356,7 +364,7 @@ class Partitioner:
         answer = np.full(shape=(len(data), bucket_length), fill_value=PAD, dtype=int)
         answer[:,0] = BEGIN
         for j, word in enumerate(data):
-            answer[j,1:1+len(word)] = [encoding[x] for x in word]
+            answer[j,1:1+len(word)] = [encoding.get(x, UNKNOWN) for x in word]
             answer[j,1+len(word)] = END
         return answer
 
@@ -436,13 +444,30 @@ class Partitioner:
             answer[j] = curr_answer
         return answer
 
-    def _get_ngram_score(self, ngram, mode=None):
+    def _make_morpheme_data_simple(self, data, bucket_length):
+        answer = np.zeros(shape=(len(data), bucket_length, 3), dtype=float)
+        for j, word in enumerate(data):
+            m = len(word)
+            curr_answer = np.zeros(shape=(bucket_length, 3), dtype=int)
+            positions = self.morpheme_trie_.find_substrings(word, return_positions=True)
+            for starts, end in positions:
+                for start in starts:
+                    score = self._get_ngram_score(word[start:end])
+                    if end == start+1:
+                        curr_answer[start+1, 2] = max(curr_answer[start+1, 2], score)
+                    else:
+                        curr_answer[start+1, 0] = max(curr_answer[start+0, 2], score)
+                        curr_answer[end, 1] = max(curr_answer[end, 1], score)
+            answer[j] = curr_answer
+        return answer
+
+    def _get_ngram_score(self, ngram, mode="None"):
         if self.to_memorize_ngram_counts:
             return self.morpheme_counts_[mode].get(ngram, 0)
         else:
             return 1.0
 
-    def train(self, source, targets, model_file=None):
+    def train(self, source, targets, dev=None, dev_targets=None, model_file=None):
         """
 
         source: list of strs, список слов для морфемоделения
@@ -458,9 +483,14 @@ class Partitioner:
         if self.to_memorize_morphemes:
             self._memorize_morphemes(source, targets)
 
-        data_by_buckets, targets_by_buckets, buckets_indexes = self._preprocess(source, targets)
+        data_by_buckets, targets_by_buckets, _ = self._preprocess(source, targets)
+        if dev is not None:
+            dev_data_by_buckets, dev_targets_by_buckets, _ = self._preprocess(dev, dev_targets)
+        else:
+            dev_data_by_buckets, dev_targets_by_buckets = None, None
         self.build()
-        self._train_models(data_by_buckets, targets_by_buckets, model_file=model_file)
+        self._train_models(data_by_buckets, targets_by_buckets,  dev_data_by_buckets,
+                           dev_targets_by_buckets, model_file=model_file)
         return self
 
     def build(self):
@@ -488,7 +518,7 @@ class Partitioner:
         inputs = [symbol_inputs]
         if self.to_memorize_morphemes:
             # context_inputs: array, 2D-массив размера m*15
-            context_inputs = kl.Input(shape=(None, 15), dtype='float32', name="context_inputs")
+            context_inputs = kl.Input(shape=(None, self.memory_dim), dtype='float32', name="context_inputs")
             inputs.append(context_inputs)
             if self.context_dropout > 0.0:
                 context_inputs = kl.Dropout(self.context_dropout)(context_inputs)
@@ -534,7 +564,8 @@ class Partitioner:
                       loss="categorical_crossentropy", metrics=["accuracy"])
         return model
 
-    def _train_models(self, data_by_buckets, targets_by_buckets, model_file=None):
+    def _train_models(self, data_by_buckets, targets_by_buckets,
+                      dev_data_by_buckets=None, dev_targets_by_buckets=None, model_file=None):
         """
         data_by_buckets: list of lists of np.arrays,
             data_by_buckets[i] = [..., bucket_i, ...],
@@ -545,15 +576,24 @@ class Partitioner:
         model_file: str or None, путь к файлу для сохранения модели
         """
         train_indexes_by_buckets, dev_indexes_by_buckets = [], []
-        for bucket in data_by_buckets:
-            # разбиваем каждую корзину на обучающую и валидационную выборку
-            L = len(bucket[0])
-            indexes_for_bucket = list(range(L))
-            np.random.shuffle(indexes_for_bucket)
-            train_bucket_length = int(L*(1.0 - self.validation_split))
-            train_indexes_by_buckets.append(indexes_for_bucket[:train_bucket_length])
-            dev_indexes_by_buckets.append(indexes_for_bucket[train_bucket_length:])
-        
+        if dev_data_by_buckets is not None:
+            train_indexes_by_buckets = [list(range(len(bucket[0]))) for bucket in data_by_buckets]
+            for elem in train_indexes_by_buckets:
+                np.random.shuffle(elem)
+            dev_indexes_by_buckets = [list(range(len(bucket[0]))) for bucket in dev_data_by_buckets]
+            train_data, dev_data = data_by_buckets, dev_data_by_buckets
+            train_targets, dev_targets = targets_by_buckets, dev_targets_by_buckets
+        else:
+            for bucket in data_by_buckets:
+                # разбиваем каждую корзину на обучающую и валидационную выборку
+                L = len(bucket[0])
+                indexes_for_bucket = list(range(L))
+                np.random.shuffle(indexes_for_bucket)
+                train_bucket_length = int(L*(1.0 - self.validation_split))
+                train_indexes_by_buckets.append(indexes_for_bucket[:train_bucket_length])
+                dev_indexes_by_buckets.append(indexes_for_bucket[train_bucket_length:])
+            train_data, dev_data = data_by_buckets, data_by_buckets
+            train_targets, dev_targets = targets_by_buckets, targets_by_buckets
         # разбиваем на батчи обучающую и валидационную выборку
         # (для валидационной этого можно не делать, а подавать сразу корзины)
         train_batches_indexes = list(chain.from_iterable(
@@ -564,11 +604,10 @@ class Partitioner:
              for i, elem in enumerate(dev_indexes_by_buckets)]))
         # поскольку функции fit_generator нужен генератор, порождающий batch за batch'ем,
         # то приходится заводить генераторы для обеих выборок
-        train_gen = generate_data(data_by_buckets, targets_by_buckets, train_batches_indexes,
+        train_gen = generate_data(train_data, train_targets, train_batches_indexes,
                                   classes_number=self.target_symbols_number_, shuffle=True)
-        val_gen = generate_data(data_by_buckets, targets_by_buckets, dev_batches_indexes,
+        val_gen = generate_data(dev_data, dev_targets, dev_batches_indexes,
                                 classes_number=self.target_symbols_number_, shuffle=False)
-        
         for i, model in enumerate(self.models_):
             if model_file is not None:
                 curr_model_file = make_model_file(model_file, i+1)
@@ -646,11 +685,12 @@ class Partitioner:
         строит префиксный бор для морфем для более быстрого их поиска
         """
         self.left_morphemes_, self.right_morphemes_ = dict(), dict()
-        for key in self.LEFT_MORPHEME_TYPES:
-            self.left_morphemes_[key] = make_trie(list(self.morphemes_[key]))
-        for key in self.RIGHT_MORPHEME_TYPES:
-            self.right_morphemes_[key] = make_trie([x[::-1] for x in self.morphemes_[key]])
-        if self.to_memorize_ngram_counts:
+        if self.use_morpheme_types:
+            for key in self.LEFT_MORPHEME_TYPES:
+                self.left_morphemes_[key] = make_trie(list(self.morphemes_[key]))
+            for key in self.RIGHT_MORPHEME_TYPES:
+                self.right_morphemes_[key] = make_trie([x[::-1] for x in self.morphemes_[key]])
+        if not self.use_morpheme_types or self.to_memorize_ngram_counts:
             morphemes = {x for elem in self.morphemes_.values() for x in elem}
             self.morpheme_trie_ = make_trie(list(morphemes))
         return self
@@ -868,9 +908,14 @@ if __name__ == "__main__":
     if "train_file" in params:
         n = params.get("n_train") # число слов в обучающей+развивающей выборке
         inputs, targets = read_func(params["train_file"], n=n)
+        if "dev_file" in params:
+            n = params.get("n_dev")  # число слов в обучающей+развивающей выборке
+            dev_inputs, dev_targets = read_func(params["dev_file"], n=n)
+        else:
+            dev_inputs, dev_targets = None, None
         # inputs, targets = read_input(params["train_file"], n=n)
     else:
-        inputs, targets = None, None
+        inputs, targets, dev_inputs, dev_targets = None, None, None, None
     if not "load_file" in params:
         partitioner_params = params.get("model_params", dict())
         partitioner_params["use_morpheme_types"] = use_morpheme_types
@@ -878,7 +923,7 @@ if __name__ == "__main__":
     else:
         cls = load_cls(params["load_file"])
     if inputs is not None:
-        cls.train(inputs, targets, model_file=params.get("model_file"))
+        cls.train(inputs, targets, dev_inputs, dev_targets, model_file=params.get("model_file"))
     if "save_file" in params:
         model_file = params.get("model_file")
         cls.to_json(params["save_file"], model_file)
@@ -896,12 +941,15 @@ if __name__ == "__main__":
             outfile = params["outfile"]
             output_probs = params.get("output_probs", True)
             format_string = "{}\t{}\t{}\n" if output_probs else "{}\t{}\n"
+            output_morpheme_types = params.get("output_morpheme_types", True)
+            morph_format_string = "{}\t{}" if output_morpheme_types else "{}"
             with open(outfile, "w", encoding="utf8") as fout:
                 for word, (labels, probs) in zip(inputs, predicted_targets):
                     morphemes, morpheme_probs, morpheme_types = cls.labels_to_morphemes(
                         word, labels, probs, return_probs=True, return_types=True)
                     fout.write(format_string.format(
-                        word, "/".join("{}:{}".format(*elem) for elem in zip(morphemes, morpheme_types)),
+                        word, "/".join(morph_format_string.format(*elem)
+                                       for elem in zip(morphemes, morpheme_types)),
                         " ".join("{:.2f}".format(100*x) for x in morpheme_probs)))
                     # fout.write(format_string.format(
                     #     word, "#".join(morphemes), "-".join(
