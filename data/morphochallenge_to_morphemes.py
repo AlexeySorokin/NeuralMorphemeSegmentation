@@ -4,7 +4,7 @@ import os
 
 def read_words(infile):
     answer = []
-    with open(infile, "r", encoding="utf8") as fin:
+    with open(infile, "r", encoding="iso-8859-1") as fin:
         for line in fin:
             line = line.strip()
             if line == "":
@@ -15,7 +15,7 @@ def read_words(infile):
 
 def read_pairs(infile):
     answer = []
-    with open(infile, "r", encoding="utf8") as fin:
+    with open(infile, "r", encoding="iso-8859-1") as fin:
         for line in fin:
             line = line.strip()
             if line == "":
