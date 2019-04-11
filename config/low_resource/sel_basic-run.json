@@ -1,0 +1,14 @@
+{
+    "train_file": ["/home/alexeysorokin/data/neural_tagging/data/low-resource/sel/splitted/sel.train.morph",
+                   "/home/alexeysorokin/data/neural_tagging/data/low-resource/sel/splitted/sel.dev.morph"],
+    "input_format": "low_resource",
+    "model_params": {"conv_layers": 2, "window_size": [5, 7], "filters_number": 128,
+                     "dense_output_units": 64, "nepochs": 25, "validation_split": 0.0,
+                     "to_memorize_morphemes": false, "dropout": 0.2,
+                     "to_memorize_ngram_counts": true, "context_dropout": 0.2, "models_number": 3},
+    "output_errors": false,
+    "measure_quality": false,
+    "save_file": "models/low_resource/sel-basic-1.json", "model_file": "models/low_resource/sel-basic-1.hdf5",
+    "test_file": "/home/alexeysorokin/data/neural_tagging/data/low-resource/test/sel.test.morph",
+    "predictions_file": "/home/alexeysorokin/data/neural_tagging/neural_tagging/results/low-resource/run/sel.test.morph"
+}

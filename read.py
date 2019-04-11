@@ -1,4 +1,5 @@
 # чтение и разметка данных
+from collections import defaultdict
 import numpy as np
 
 
@@ -14,7 +15,8 @@ def generate_BMES(morphs, morph_types):
     return answer
 
 
-def read_splitted(infile, transform_to_BMES=True, n=None, morph_sep="/", shuffle=True):
+def read_splitted(infile, transform_to_BMES=True, make_morph_types=None,
+                  n=None, morph_sep="/", shuffle=True):
     source, targets = [], []
     with open(infile, "r", encoding="utf8") as fin:
         for line in fin:
@@ -23,7 +25,10 @@ def read_splitted(infile, transform_to_BMES=True, n=None, morph_sep="/", shuffle
                 break
             word, analysis = line.split("\t")
             morphs = analysis.split(morph_sep)
-            morph_types = ["None"] * len(morphs)
+            if make_morph_types is None:
+                morph_types = ["None"] * len(morphs)
+            elif make_morph_types == "suff":
+                morph_types = ["ROOT"] + ["SUFF"] * (len(morphs) - 1)
             if transform_to_BMES:
                 target = generate_BMES(morphs, morph_types)
             else:
@@ -40,6 +45,53 @@ def read_splitted(infile, transform_to_BMES=True, n=None, morph_sep="/", shuffle
     return source, targets
 
 
+def read_lowresource_format(infiles, remove_frequent=False, min_count=5, n=None, shuffle=False):
+    sents, source, targets = [], [], []
+    if isinstance(infiles, str):
+        infiles = [infiles]
+    for infile in infiles:
+        with open(infile, "r", encoding="utf8") as fin:
+            curr_sent = []
+            for line in fin:
+                line = line.strip()
+                if line == "":
+                    if len(curr_sent) > 0:
+                        sents.append(curr_sent)
+                        if n is not None and len(source) >= n:
+                            break
+                    curr_sent = []
+                    continue
+                if "\t" in line:
+                    word, morphs = line.split("\t")
+                    word = "".join(x for x in word if x != " ")
+                    morphs = morphs.split()
+                    morphs = [morphs[0]] + [elem.split("_")[0] for elem in morphs[1:]]
+                    morph_types = ["ROOT"] + ["SUFF"] * (len(morphs) - 1)
+                    target = generate_BMES(morphs, morph_types)
+                else:
+                    word, morphs, morph_types = line, None, None
+                    target = None
+                source.append(word)
+                targets.append(target)
+                if target is not None and len(word) != len(target):
+                    print(word, target)
+                curr_sent.append(word)
+    if remove_frequent:
+        counts = defaultdict(int)
+        for word, target in zip(source, targets):
+            counts[(word, tuple(target))] += 1
+        source, targets = [], []
+        for (word, target), count in counts.items():
+            if count >= min_count:
+                count = min_count + int(np.log2(1 + count - min_count))
+            source += [word] * count
+            targets += [target] * count
+        indexes = np.random.permutation(len(source))
+        source = [source[i] for i in indexes]
+        targets = [targets[i] for i in indexes]
+    return sents, source, targets
+
+
 def read_BMES(infile, transform_to_BMES=True, n=None,
               morph_sep="/" ,sep=":", shuffle=True):
     source, targets = [], []
@@ -49,6 +101,7 @@ def read_BMES(infile, transform_to_BMES=True, n=None,
             if line == "":
                 break
             word, analysis = line.split("\t")
+            word = word.strip()
             analysis = [x.split(sep) for x in analysis.split(morph_sep)]
             morphs, morph_types = [elem[0] for elem in analysis], [elem[1] for elem in analysis]
             target = generate_BMES(morphs, morph_types) if transform_to_BMES else morphs

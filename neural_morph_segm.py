@@ -14,16 +14,19 @@ import keras.backend as kb
 from keras.models import Model
 from keras.optimizers import adam
 from keras.callbacks import ModelCheckpoint, EarlyStopping
+import tensorflow as tf
+import keras.backend.tensorflow_backend as kbt
 
-from read import extract_morpheme_type, read_BMES, read_splitted
+from read import extract_morpheme_type, read_BMES, read_splitted, read_lowresource_format
 from tabled_trie import make_trie
 
 
 def read_config(infile):
     with open(infile, "r", encoding="utf8") as fin:
         config = json.load(fin)
-    if "use_morpheme_types" not in config:
-        config["use_morpheme_types"] = True
+    if "input_format" not in config:
+        config["input_format"] = "types" if config.get("use_morpheme_types", True) else "splitted"
+    config["use_morpheme_types"] = config.get("use_morpheme_types", config["input_format"] != "splitted")
     return config
 
 # вспомогательные фунцкии
@@ -480,6 +483,7 @@ class Partitioner:
         """
         self.symbols_, self.symbol_codes_ = _make_vocabulary(source)
         self.target_symbols_, self.target_symbol_codes_ = _make_vocabulary(targets)
+        self.target_types_ = [x.split("-")[1] for x in self.target_symbols_ if "-" in x]
         if self.to_memorize_morphemes:
             self._memorize_morphemes(source, targets)
 
@@ -592,33 +596,38 @@ class Partitioner:
                 train_bucket_length = int(L*(1.0 - self.validation_split))
                 train_indexes_by_buckets.append(indexes_for_bucket[:train_bucket_length])
                 dev_indexes_by_buckets.append(indexes_for_bucket[train_bucket_length:])
-            train_data, dev_data = data_by_buckets, data_by_buckets
-            train_targets, dev_targets = targets_by_buckets, targets_by_buckets
+        train_data, dev_data = data_by_buckets, data_by_buckets
+        train_targets, dev_targets = targets_by_buckets, targets_by_buckets
         # разбиваем на батчи обучающую и валидационную выборку
         # (для валидационной этого можно не делать, а подавать сразу корзины)
         train_batches_indexes = list(chain.from_iterable(
             [[(i, elem[j:j+self.batch_size]) for j in range(0, len(elem), self.batch_size)]
              for i, elem in enumerate(train_indexes_by_buckets)]))
-        dev_batches_indexes = list(chain.from_iterable(
-            [[(i, elem[j:j+self.batch_size]) for j in range(0, len(elem), self.batch_size)]
-             for i, elem in enumerate(dev_indexes_by_buckets)]))
         # поскольку функции fit_generator нужен генератор, порождающий batch за batch'ем,
         # то приходится заводить генераторы для обеих выборок
         train_gen = generate_data(train_data, train_targets, train_batches_indexes,
                                   classes_number=self.target_symbols_number_, shuffle=True)
-        val_gen = generate_data(dev_data, dev_targets, dev_batches_indexes,
-                                classes_number=self.target_symbols_number_, shuffle=False)
+        if dev_data_by_buckets is not None:
+            dev_batches_indexes = list(chain.from_iterable(
+                [[(i, elem[j:j + self.batch_size]) for j in range(0, len(elem), self.batch_size)]
+                 for i, elem in enumerate(dev_indexes_by_buckets)]))
+            val_gen = generate_data(dev_data, dev_targets, dev_batches_indexes,
+                                    classes_number=self.target_symbols_number_, shuffle=False)
+            validation_steps = len(dev_batches_indexes)
+        else:
+            val_gen, validation_steps = None, None
         for i, model in enumerate(self.models_):
             if model_file is not None:
                 curr_model_file = make_model_file(model_file, i+1)
                 # для сохранения модели с наилучшим результатом на валидационной выборке
-                save_callback = ModelCheckpoint(curr_model_file, save_weights_only=True, save_best_only=True)
+                save_best_only = (val_gen is not None)
+                save_callback = ModelCheckpoint(curr_model_file, save_weights_only=True, save_best_only=save_best_only)
                 curr_callbacks = self.callbacks + [save_callback]
             else:
                 curr_callbacks = self.callbacks
             model.fit_generator(train_gen, len(train_batches_indexes),
                                 epochs=self.nepochs, callbacks=curr_callbacks,
-                                validation_data=val_gen, validation_steps=len(dev_batches_indexes))
+                                validation_data=val_gen, validation_steps=validation_steps)
             if model_file is not None:
                 model.load_weights(curr_model_file)
         return self
@@ -687,13 +696,24 @@ class Partitioner:
         self.left_morphemes_, self.right_morphemes_ = dict(), dict()
         if self.use_morpheme_types:
             for key in self.LEFT_MORPHEME_TYPES:
-                self.left_morphemes_[key] = make_trie(list(self.morphemes_[key]))
+                self.left_morphemes_[key] = make_trie(list(self.morphemes_.get(key, [])))
             for key in self.RIGHT_MORPHEME_TYPES:
-                self.right_morphemes_[key] = make_trie([x[::-1] for x in self.morphemes_[key]])
+                self.right_morphemes_[key] = make_trie([x[::-1] for x in self.morphemes_.get(key, [])])
         if not self.use_morpheme_types or self.to_memorize_ngram_counts:
             morphemes = {x for elem in self.morphemes_.values() for x in elem}
             self.morpheme_trie_ = make_trie(list(morphemes))
         return self
+
+    def _predict_label_probs(self, words):
+        data_by_buckets, indexes_by_buckets = self._preprocess(words)
+        word_probs = [None] * len(words)
+        for r, (bucket_data, (_, bucket_indexes)) in \
+                enumerate(zip(data_by_buckets, indexes_by_buckets), 1):
+            print("Bucket {} predicting".format(r))
+            bucket_probs = np.mean([model.predict(bucket_data) for model in self.models_], axis=0)
+            for i, elem in zip(bucket_indexes, bucket_probs):
+                word_probs[i] = elem
+        return word_probs
 
     def _predict_probs(self, words):
         """
@@ -706,14 +726,7 @@ class Partitioner:
         p_j = [p_j1, ..., p_jr], r --- число классов
         (len(AUXILIARY) + 4 * 4 (BMES; PREF, ROOT, SUFF, END) + 3 (BME; POSTFIX) + 2 * 1 (S; LINK, HYPHEN) = 23)
         """
-        data_by_buckets, indexes_by_buckets = self._preprocess(words)
-        word_probs = [None] * len(words)
-        for r, (bucket_data, (_, bucket_indexes)) in\
-                enumerate(zip(data_by_buckets, indexes_by_buckets), 1):
-            print("Bucket {} predicting".format(r))
-            bucket_probs = np.mean([model.predict(bucket_data) for model in self.models_], axis=0)
-            for i, elem in zip(bucket_indexes, bucket_probs):
-                word_probs[i] = elem
+        word_probs = self._predict_label_probs(words)
         answer = [None] * len(words)
         for i, (elem, word) in enumerate(zip(word_probs, words)):
             if i % 1000 == 0 and i > 0:
@@ -827,6 +840,49 @@ class Partitioner:
             probs_to_return[j,possible_states] = probs[j+1,possible_states]
         return [self.target_symbols_[i] for i in best_states[1:]], probs_to_return
 
+    def prob(self, words, morphemes, morph_types=None):
+        if morph_types is None:
+            morph_types = [None] * len(words)
+        label_probs = self._predict_label_probs(words)
+        answer = []
+        for curr_words, curr_morphemes, curr_morph_types, probs in zip(words, morphemes, morph_types, label_probs):
+            if isinstance(curr_morphemes[0], list):
+                curr_morphemes, curr_morph_types = curr_morphemes
+            start = 1
+            curr_answer = []
+            for i, morph in enumerate(curr_morphemes):
+                # if isinstance(morph, tuple):
+                #     morph, possible_morph_types = morph[0], [morph[1]]
+                if curr_morph_types is None:
+                    possible_morph_types = self.target_types_
+                else:
+                    possible_morph_types = [curr_morph_types[i]]
+                if len(morph) > 1:
+                    labels = "B" + "M" * (len(morph) - 2) + "E"
+                else:
+                    labels = "S"
+                possible_morph_seqs = []
+                for morph_type in possible_morph_types:
+                    curr_seq = []
+                    for label in labels:
+                        label_code = self.target_symbol_codes_.get("{}-{}".format(label, morph_type))
+                        if label_code is not None:
+                            curr_seq.append(label_code)
+                        else:
+                            break
+                    else:
+                        possible_morph_seqs.append(curr_seq)
+                possible_probs = [[probs[start+i,code] for i, code in enumerate(seq)]
+                                  for seq in possible_morph_seqs]
+                possible_total_probs = [-sum(np.log(x)) for x in possible_probs]
+                index = np.argmin(possible_total_probs)
+                curr_answer.append(np.exp(-possible_total_probs[index]))
+                start += len(morph)
+            answer.append(curr_answer)
+        return answer
+
+
+
     def get_possible_next_states(self, state_index):
         state = self.target_symbols_[state_index]
         next_states = get_next_morpheme(state)
@@ -898,19 +954,33 @@ def measure_quality(targets, predicted_targets, english_metrics=False, measure_l
 SHORT_ARGS = "a:"
 
 if __name__ == "__main__":
+    config = tf.ConfigProto()
+    config.gpu_options.per_process_gpu_memory_fraction = 0.2
+    kbt.set_session(tf.Session(config=config))
     np.random.seed(261) # для воспроизводимости
     if len(sys.argv) < 2:
         sys.exit("Pass config file")
     config_file = sys.argv[1]
     params = read_config(config_file)
+    input_format = params["input_format"]
+    read_func = (read_BMES if input_format == "types" else
+                 read_lowresource_format if input_format == "low_resource" else
+                 read_splitted)
     use_morpheme_types = params["use_morpheme_types"]
-    read_func = read_BMES if use_morpheme_types else read_splitted
+    # read_func = read_BMES if use_morpheme_types else read_splitted
     if "train_file" in params:
         n = params.get("n_train") # число слов в обучающей+развивающей выборке
-        inputs, targets = read_func(params["train_file"], n=n)
+        read_params = params.get("train_params", dict())
+        if input_format == "low_resource":
+            sents, inputs, targets = read_func(params["train_file"], n=n, **read_params)
+        else:
+            inputs, targets = read_func(params["train_file"], n=n)
         if "dev_file" in params:
             n = params.get("n_dev")  # число слов в обучающей+развивающей выборке
-            dev_inputs, dev_targets = read_func(params["dev_file"], n=n)
+            if input_format == "low_resource":
+                _, dev_inputs, dev_targets = read_func(params["dev_file"], n=n)
+            else:
+                dev_inputs, dev_targets = read_func(params["dev_file"], n=n)
         else:
             dev_inputs, dev_targets = None, None
         # inputs, targets = read_input(params["train_file"], n=n)
@@ -918,7 +988,7 @@ if __name__ == "__main__":
         inputs, targets, dev_inputs, dev_targets = None, None, None, None
     if not "load_file" in params:
         partitioner_params = params.get("model_params", dict())
-        partitioner_params["use_morpheme_types"] = use_morpheme_types
+        # partitioner_params["use_morpheme_types"] = use_morpheme_types
         cls = Partitioner(**partitioner_params)
     else:
         cls = load_cls(params["load_file"])
@@ -928,29 +998,56 @@ if __name__ == "__main__":
         model_file = params.get("model_file")
         cls.to_json(params["save_file"], model_file)
     if "test_file" in params:
-        inputs, targets = read_func(params["test_file"], shuffle=False)
+        if input_format == "low_resource":
+            test_sents, inputs, targets = read_func(params["test_file"], shuffle=False)
+        else:
+            inputs, targets = read_func(params["test_file"], shuffle=False)
+            test_sents = None
         # inputs, targets = read_input(params["test_file"])
         predicted_targets = cls._predict_probs(inputs)
-        measure_last = params.get("measure_last", use_morpheme_types)
-        quality = measure_quality(targets, [elem[0] for elem in predicted_targets],
-                                  english_metrics=params.get("english_metrics", False),
-                                  measure_last=measure_last)
-        for key, value in sorted(quality):
-            print("{}={:.2f}".format(key, 100*value))
+        if params.get("measure_quality", True):
+            measure_last = params.get("measure_last", use_morpheme_types)
+            quality = measure_quality(targets, [elem[0] for elem in predicted_targets],
+                                      english_metrics=params.get("english_metrics", False),
+                                      measure_last=measure_last)
+            for key, value in sorted(quality):
+                print("{}={:.2f}".format(key, 100*value))
         if "outfile" in params:
             outfile = params["outfile"]
             output_probs = params.get("output_probs", True)
-            format_string = "{}\t{}\t{}\n" if output_probs else "{}\t{}\n"
+            format_string = "{}\t{}\t{}" if output_probs else "{}\t{}"
             output_morpheme_types = params.get("output_morpheme_types", True)
-            morph_format_string = "{}\t{}" if output_morpheme_types else "{}"
+            morph_format_string = "{}-{}" if output_morpheme_types else "{}"
             with open(outfile, "w", encoding="utf8") as fout:
-                for word, (labels, probs) in zip(inputs, predicted_targets):
+                morphs = [cls.labels_to_morphemes(word, labels, return_types=True) for word, labels in zip(inputs, targets)]
+                corr_segmentation_probs = cls.prob(inputs, morphs)
+                for r, (word, corr_labels, (labels, probs)) in enumerate(zip(inputs, targets, predicted_targets)):
                     morphemes, morpheme_probs, morpheme_types = cls.labels_to_morphemes(
                         word, labels, probs, return_probs=True, return_types=True)
-                    fout.write(format_string.format(
+                    s = format_string.format(
                         word, "/".join(morph_format_string.format(*elem)
                                        for elem in zip(morphemes, morpheme_types)),
-                        " ".join("{:.2f}".format(100*x) for x in morpheme_probs)))
+                        " ".join("{:.2f}".format(100*x) for x in morpheme_probs))
+                    fout.write(s)
+                    if params.get("output_errors", True) and corr_labels != labels:
+                        fout.write("\tERROR")
+                    # fout.write("\n")
+                    # fout.write(" ".join("{}-{}".format(*elem) for elem in zip(*morphs[r])) + "\t")
+                    # fout.write(" ".join("{:.2f}".format(100 * x) for x in corr_segmentation_probs[r]))
+                    fout.write("\n")
+        if "predictions_file" in params:
+            predictions_file = params["predictions_file"]
+            with open(predictions_file, "w", encoding="utf8") as fout:
+                sent_index = 0
+                if test_sents is not None:
+                    sent_lengths = np.cumsum([len(sent) for sent in test_sents])
+                for r, (word, corr_labels, (labels, probs)) in enumerate(zip(inputs, targets, predicted_targets), 1):
+                    morphemes, morpheme_probs, morpheme_types = cls.labels_to_morphemes(
+                        word, labels, probs, return_probs=True, return_types=True)
+                    fout.write(word + "\t" + " ".join(morphemes) + "\n")
+                    if test_sents is not None and (sent_index < len(sent_lengths)) and r == sent_lengths[sent_index]:
+                        sent_index += 1
+                        fout.write("\n")
                     # fout.write(format_string.format(
                     #     word, "#".join(morphemes), "-".join(
                     #         "{:.2f}/{}".format(100*x, y) for x, y in zip(morpheme_probs, morpheme_types))))

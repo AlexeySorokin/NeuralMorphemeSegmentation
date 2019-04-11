@@ -1,10 +1,10 @@
 {
     "train_file": "data/eng.train", "dev_file": "data/eng.dev",
     "use_morpheme_types": false,
-    "model_params": {"conv_layers": 1, "window_size": [5, 7], "filters_number": 96,
+    "model_params": {"conv_layers": 2, "window_size": [3, 5], "filters_number": 96,
                      "dense_output_units": 64, "nepochs": 75, "validation_split": 0.2,
-                     "early_stopping": 10, "to_memorize_morphemes": true, "dropout": 0.2,
-                     "to_memorize_ngram_counts": true, "context_dropout": 0.2, "models_number": 1},
+                     "early_stopping": 10, "to_memorize_morphemes": true, "dropout": 0.3,
+                     "to_memorize_ngram_counts": false, "context_dropout": 0.2, "models_number": 1},
     "save_file": "models/morphemes-3-5-eng.json", "model_file": "models/morphemes-model-3-5-eng.hdf5",
     "test_file": "data/eng.dev", "outfile": "results/test_3-5-eng.txt"
 }
