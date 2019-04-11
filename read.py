@@ -3,6 +3,13 @@ from collections import defaultdict
 import numpy as np
 
 
+def normalize_morph_types(morphs, aliases=None):
+    if aliases is None:
+        return aliases
+    aliases = dict(aliases)
+    morphs = [aliases.get(x, x) for x in morphs]
+    return morphs
+
 def generate_BMES(morphs, morph_types):
     answer = []
     for morph, morph_type in zip(morphs, morph_types):
@@ -16,7 +23,7 @@ def generate_BMES(morphs, morph_types):
 
 
 def read_splitted(infile, transform_to_BMES=True, make_morph_types=None,
-                  n=None, morph_sep="/", shuffle=True):
+                  n=None, morph_sep="/", shuffle=True, morph_aliases=None):
     source, targets = [], []
     with open(infile, "r", encoding="utf8") as fin:
         for line in fin:
@@ -29,6 +36,7 @@ def read_splitted(infile, transform_to_BMES=True, make_morph_types=None,
                 morph_types = ["None"] * len(morphs)
             elif make_morph_types == "suff":
                 morph_types = ["ROOT"] + ["SUFF"] * (len(morphs) - 1)
+            morph_types = normalize_morph_types(morph_types, morph_aliases)
             if transform_to_BMES:
                 target = generate_BMES(morphs, morph_types)
             else:
@@ -93,7 +101,7 @@ def read_lowresource_format(infiles, remove_frequent=False, min_count=5, n=None,
 
 
 def read_BMES(infile, transform_to_BMES=True, n=None,
-              morph_sep="/" ,sep=":", shuffle=True):
+              morph_sep="/" ,sep=":", shuffle=True, morph_aliases=None):
     source, targets = [], []
     with open(infile, "r", encoding="utf8") as fin:
         for line in fin:
@@ -104,6 +112,7 @@ def read_BMES(infile, transform_to_BMES=True, n=None,
             word = word.strip()
             analysis = [x.split(sep) for x in analysis.split(morph_sep)]
             morphs, morph_types = [elem[0] for elem in analysis], [elem[1] for elem in analysis]
+            morph_types = normalize_morph_types(morph_types, morph_aliases)
             target = generate_BMES(morphs, morph_types) if transform_to_BMES else morphs
             source.append(word)
             targets.append(target)

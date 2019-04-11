@@ -358,9 +358,9 @@ class Partitioner:
         else:
             answer = [self._recode_bucket_data(bucket_data, bucket_length, self.symbol_codes_)]
             if self.to_memorize_morphemes:
-                print("Processing morphemes for bucket length", bucket_length)
+                # print("Processing morphemes for bucket length", bucket_length)
                 answer.append(self._morpheme_memo_func(bucket_data, bucket_length))
-                print("Processing morphemes for bucket length", bucket_length, "finished")
+                # print("Processing morphemes for bucket length", bucket_length, "finished")
             return answer
 
     def _recode_bucket_data(self, data, bucket_length, encoding):
@@ -489,6 +489,7 @@ class Partitioner:
 
         data_by_buckets, targets_by_buckets, _ = self._preprocess(source, targets)
         if dev is not None:
+            # dev, dev_targets = dev[:100], dev_targets[:100]
             dev_data_by_buckets, dev_targets_by_buckets, _ = self._preprocess(dev, dev_targets)
         else:
             dev_data_by_buckets, dev_targets_by_buckets = None, None
@@ -537,6 +538,7 @@ class Partitioner:
                 # все слои свёртки, кроме финального (после них возможен dropout)
                 curr_conv_input = kl.Conv1D(filters_number, window_size,
                                             activation="relu", padding="same")(curr_conv_input)
+                curr_conv_input = kl.BatchNormalization()(curr_conv_input)
                 if self.dropout > 0.0:
                     # между однотипными слоями рекомендуется вставить dropout
                     curr_conv_input = kl.Dropout(self.dropout)(curr_conv_input)
@@ -587,6 +589,8 @@ class Partitioner:
             dev_indexes_by_buckets = [list(range(len(bucket[0]))) for bucket in dev_data_by_buckets]
             train_data, dev_data = data_by_buckets, dev_data_by_buckets
             train_targets, dev_targets = targets_by_buckets, dev_targets_by_buckets
+            # train_data, dev_data = data_by_buckets, data_by_buckets[:]
+            # train_targets, dev_targets = targets_by_buckets, targets_by_buckets[:]
         else:
             for bucket in data_by_buckets:
                 # разбиваем каждую корзину на обучающую и валидационную выборку
@@ -596,24 +600,22 @@ class Partitioner:
                 train_bucket_length = int(L*(1.0 - self.validation_split))
                 train_indexes_by_buckets.append(indexes_for_bucket[:train_bucket_length])
                 dev_indexes_by_buckets.append(indexes_for_bucket[train_bucket_length:])
-        train_data, dev_data = data_by_buckets, data_by_buckets
-        train_targets, dev_targets = targets_by_buckets, targets_by_buckets
-        # разбиваем на батчи обучающую и валидационную выборку
+       # разбиваем на батчи обучающую и валидационную выборку
         # (для валидационной этого можно не делать, а подавать сразу корзины)
         train_batches_indexes = list(chain.from_iterable(
             [[(i, elem[j:j+self.batch_size]) for j in range(0, len(elem), self.batch_size)]
              for i, elem in enumerate(train_indexes_by_buckets)]))
         # поскольку функции fit_generator нужен генератор, порождающий batch за batch'ем,
         # то приходится заводить генераторы для обеих выборок
-        train_gen = generate_data(train_data, train_targets, train_batches_indexes,
+        train_gen = DataGenerator(train_data, train_targets, train_batches_indexes,
                                   classes_number=self.target_symbols_number_, shuffle=True)
         if dev_data_by_buckets is not None:
             dev_batches_indexes = list(chain.from_iterable(
                 [[(i, elem[j:j + self.batch_size]) for j in range(0, len(elem), self.batch_size)]
                  for i, elem in enumerate(dev_indexes_by_buckets)]))
-            val_gen = generate_data(dev_data, dev_targets, dev_batches_indexes,
+            val_gen = DataGenerator(dev_data, dev_targets, dev_batches_indexes,
                                     classes_number=self.target_symbols_number_, shuffle=False)
-            validation_steps = len(dev_batches_indexes)
+            validation_steps = val_gen.steps_per_epoch
         else:
             val_gen, validation_steps = None, None
         for i, model in enumerate(self.models_):
@@ -621,11 +623,12 @@ class Partitioner:
                 curr_model_file = make_model_file(model_file, i+1)
                 # для сохранения модели с наилучшим результатом на валидационной выборке
                 save_best_only = (val_gen is not None)
-                save_callback = ModelCheckpoint(curr_model_file, save_weights_only=True, save_best_only=save_best_only)
+                save_callback = ModelCheckpoint(curr_model_file, save_weights_only=True,
+                                                save_best_only=True, monitor="val_acc")
                 curr_callbacks = self.callbacks + [save_callback]
             else:
                 curr_callbacks = self.callbacks
-            model.fit_generator(train_gen, len(train_batches_indexes),
+            model.fit_generator(train_gen, train_gen.steps_per_epoch,
                                 epochs=self.nepochs, callbacks=curr_callbacks,
                                 validation_data=val_gen, validation_steps=validation_steps)
             if model_file is not None:
@@ -709,7 +712,7 @@ class Partitioner:
         word_probs = [None] * len(words)
         for r, (bucket_data, (_, bucket_indexes)) in \
                 enumerate(zip(data_by_buckets, indexes_by_buckets), 1):
-            print("Bucket {} predicting".format(r))
+            # print("Bucket {} predicting".format(r))
             bucket_probs = np.mean([model.predict(bucket_data) for model in self.models_], axis=0)
             for i, elem in zip(bucket_indexes, bucket_probs):
                 word_probs[i] = elem
@@ -889,6 +892,44 @@ class Partitioner:
         return [self.target_symbol_codes_[x] for x in next_states if x in self.target_symbol_codes_]
 
 
+class DataGenerator:
+
+    def __init__(self, data,  targets, indexes, classes_number, shuffle=False, nepochs=None):
+        self.data = data
+        self.targets = targets
+        self.indexes = indexes
+        self.classes_number = classes_number
+        self.shuffle = shuffle
+        self.nepochs = nepochs
+        self._initialize()
+
+    def _initialize(self):
+        self.step = 0
+        self.epoch = 0
+
+    @property
+    def steps_per_epoch(self):
+        return len(self.indexes)
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.epoch == self.nepochs:
+            raise StopIteration()
+        if self.shuffle and self.step == 0:
+            np.random.shuffle(self.indexes)
+        i, bucket_indexes = self.indexes[self.step]
+        curr_bucket, curr_targets = self.data[i], self.targets[i]
+        data_to_yield = [elem[bucket_indexes] for elem in curr_bucket]
+        targets_to_yield = to_one_hot(curr_targets[bucket_indexes], self.classes_number)
+        self.step += 1
+        if self.step == self.steps_per_epoch:
+            self.step = 0
+            self.epoch += 1
+        return data_to_yield, targets_to_yield
+
+
 def generate_data(data, targets, indexes, classes_number, shuffle=False, nepochs=None):
     """
 
@@ -910,6 +951,9 @@ def generate_data(data, targets, indexes, classes_number, shuffle=False, nepochs
     while nepochs is None or nsteps < nepochs:
         if shuffle:
             np.random.shuffle(indexes)
+        # if shuffle:
+        #     print("")
+        #     print(indexes[0][1])
         for i, bucket_indexes in indexes:
             curr_bucket, curr_targets = data[i], targets[i]
             data_to_yield = [elem[bucket_indexes] for elem in curr_bucket]
@@ -957,30 +1001,30 @@ if __name__ == "__main__":
     config = tf.ConfigProto()
     config.gpu_options.per_process_gpu_memory_fraction = 0.2
     kbt.set_session(tf.Session(config=config))
-    np.random.seed(261) # для воспроизводимости
     if len(sys.argv) < 2:
         sys.exit("Pass config file")
     config_file = sys.argv[1]
     params = read_config(config_file)
+    np.random.seed(params.get("random_state", 261))  # для воспроизводимости
     input_format = params["input_format"]
     read_func = (read_BMES if input_format == "types" else
                  read_lowresource_format if input_format == "low_resource" else
                  read_splitted)
     use_morpheme_types = params["use_morpheme_types"]
     # read_func = read_BMES if use_morpheme_types else read_splitted
+    read_params = params.get("read_params", dict())
     if "train_file" in params:
         n = params.get("n_train") # число слов в обучающей+развивающей выборке
-        read_params = params.get("train_params", dict())
         if input_format == "low_resource":
             sents, inputs, targets = read_func(params["train_file"], n=n, **read_params)
         else:
-            inputs, targets = read_func(params["train_file"], n=n)
+            inputs, targets = read_func(params["train_file"], n=n, **read_params)
         if "dev_file" in params:
             n = params.get("n_dev")  # число слов в обучающей+развивающей выборке
             if input_format == "low_resource":
                 _, dev_inputs, dev_targets = read_func(params["dev_file"], n=n)
             else:
-                dev_inputs, dev_targets = read_func(params["dev_file"], n=n)
+                dev_inputs, dev_targets = read_func(params["dev_file"], n=n, **read_params)
         else:
             dev_inputs, dev_targets = None, None
         # inputs, targets = read_input(params["train_file"], n=n)
@@ -1001,7 +1045,7 @@ if __name__ == "__main__":
         if input_format == "low_resource":
             test_sents, inputs, targets = read_func(params["test_file"], shuffle=False)
         else:
-            inputs, targets = read_func(params["test_file"], shuffle=False)
+            inputs, targets = read_func(params["test_file"], shuffle=False, **read_params)
             test_sents = None
         # inputs, targets = read_input(params["test_file"])
         predicted_targets = cls._predict_probs(inputs)
@@ -1031,9 +1075,9 @@ if __name__ == "__main__":
                     fout.write(s)
                     if params.get("output_errors", True) and corr_labels != labels:
                         fout.write("\tERROR")
-                    # fout.write("\n")
-                    # fout.write(" ".join("{}-{}".format(*elem) for elem in zip(*morphs[r])) + "\t")
-                    # fout.write(" ".join("{:.2f}".format(100 * x) for x in corr_segmentation_probs[r]))
+                        fout.write("\n")
+                        fout.write(" ".join("{}-{}".format(*elem) for elem in zip(*morphs[r])) + "\t")
+                        fout.write(" ".join("{:.2f}".format(100 * x) for x in corr_segmentation_probs[r]))
                     fout.write("\n")
         if "predictions_file" in params:
             predictions_file = params["predictions_file"]
