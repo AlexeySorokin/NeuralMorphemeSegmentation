@@ -19,6 +19,7 @@ import keras.backend.tensorflow_backend as kbt
 
 from read import extract_morpheme_type, read_BMES, read_splitted, read_lowresource_format
 from tabled_trie import make_trie
+from embedder import Embedder
 
 
 def read_config(infile):
@@ -229,7 +230,7 @@ class Partitioner:
     def __init__(self, models_number=1, use_morpheme_types=True,
                  to_memorize_morphemes=False, min_morpheme_count=2,
                  to_memorize_ngram_counts=False, min_relative_ngram_count=0.1,
-                 lm_embedder=None, lm_state_size=64,
+                 lm_embedder_file=None, lm_state_size=64,
                  use_embeddings=False, embeddings_size=32,
                  conv_layers=1, window_size=5, filters_number=64,
                  dense_output_units=0, use_lstm=False, lstm_units=64,
@@ -243,7 +244,7 @@ class Partitioner:
         self.min_morpheme_count = min_morpheme_count
         self.to_memorize_ngram_counts = to_memorize_ngram_counts
         self.min_relative_ngram_count = min_relative_ngram_count
-        self.lm_embedder = lm_embedder
+        self.lm_embedder_file = lm_embedder_file
         self.lm_state_size = lm_state_size
         self.use_embeddings = use_embeddings
         self.embeddings_size = embeddings_size
@@ -288,6 +289,12 @@ class Partitioner:
             self._morpheme_memo_func = self._make_morpheme_data
         else:
             self._morpheme_memo_func = self._make_morpheme_data_simple
+        if self.lm_embedder_file is not None:
+            with open(self.lm_embedder_file, "r", encoding="utf8") as fin:
+                params = json.load(fin)
+                self.lm_embedder = Embedder(**params)
+        else:
+            self.lm_embedder = None
 
     def to_json(self, outfile, model_file=None):
         info = dict()
@@ -303,7 +310,8 @@ class Partitioner:
             if not (attr.startswith("__") or inspect.ismethod(val) or
                     isinstance(getattr(Partitioner, attr, None), property) or
                     attr.isupper() or attr in [
-                        "callbacks", "models_", "left_morphemes_", "right_morphemes_", "morpheme_trie_"]):
+                        "callbacks", "models_", "left_morphemes_", "right_morphemes_",
+                        "morpheme_trie_", "lm_embedder"]):
                 info[attr] = val
             elif attr == "models_":
                 # для каждой модели сохраняем веса
@@ -477,7 +485,7 @@ class Partitioner:
 
     def _make_lm_embeddings_data(self, data, length):
         answer = np.zeros(shape=(len(data), length, self.lm_state_size), dtype=float)
-        embeddings = self.lm_embedder.transform(data)
+        embeddings = self.lm_embedder.transform([[elem] for elem in data])
         for i, elem in enumerate(embeddings):
             answer[i,1:len(elem)+1] = elem
         return answer
@@ -541,10 +549,6 @@ class Partitioner:
                 context_inputs = kl.Dropout(self.context_dropout)(context_inputs)
             # представление контекста подклеивается к представлению символа
             symbol_embeddings = kl.Concatenate()([symbol_embeddings, context_inputs])
-        if self.lm_embedder is not None:
-            lm_inputs = kl.Input(shape=(None, self.lm_state_size), dtype='float32', name="lm_inputs")
-            inputs.append(lm_inputs)
-            symbol_embeddings = kl.Concatenate()([symbol_embeddings, lm_inputs])
         conv_inputs = symbol_embeddings
         conv_outputs = []
         for window_size, curr_filters_numbers in zip(self.window_size, self.filters_number):
@@ -569,6 +573,10 @@ class Partitioner:
             conv_output = conv_outputs[0]
         else:
             conv_output = kl.Concatenate(name="conv_output")(conv_outputs)
+        if self.lm_embedder is not None:
+            lm_inputs = kl.Input(shape=(None, self.lm_state_size), dtype='float32', name="lm_inputs")
+            inputs.append(lm_inputs)
+            conv_output = kl.Concatenate()([conv_output, lm_inputs])
         if self.use_lstm:
             conv_output = kl.Bidirectional(
                 kl.LSTM(self.lstm_units, return_sequences=True))(conv_output)

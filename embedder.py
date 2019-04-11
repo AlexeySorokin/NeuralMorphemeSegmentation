@@ -18,8 +18,9 @@ class Embedder:
             L = len(elem[0])
             # берём левые состояния уже после прочтения текущей буквы
             curr_first_states = first_states[i,1:L+1]
-            curr_second_states = second_states[i,L-1::-1]
+            curr_second_states = second_states[i,L:0:-1]
             states = np.concatenate([curr_first_states, curr_second_states], axis=-1)
+            # states = curr_second_states
             answer.append(states)
         return answer
 
