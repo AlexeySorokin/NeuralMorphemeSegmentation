@@ -229,6 +229,7 @@ class Partitioner:
     def __init__(self, models_number=1, use_morpheme_types=True,
                  to_memorize_morphemes=False, min_morpheme_count=2,
                  to_memorize_ngram_counts=False, min_relative_ngram_count=0.1,
+                 lm_embedder=None, lm_state_size=64,
                  use_embeddings=False, embeddings_size=32,
                  conv_layers=1, window_size=5, filters_number=64,
                  dense_output_units=0, use_lstm=False, lstm_units=64,
@@ -242,6 +243,8 @@ class Partitioner:
         self.min_morpheme_count = min_morpheme_count
         self.to_memorize_ngram_counts = to_memorize_ngram_counts
         self.min_relative_ngram_count = min_relative_ngram_count
+        self.lm_embedder = lm_embedder
+        self.lm_state_size = lm_state_size
         self.use_embeddings = use_embeddings
         self.embeddings_size = embeddings_size
         self.conv_layers = conv_layers
@@ -361,6 +364,8 @@ class Partitioner:
                 # print("Processing morphemes for bucket length", bucket_length)
                 answer.append(self._morpheme_memo_func(bucket_data, bucket_length))
                 # print("Processing morphemes for bucket length", bucket_length, "finished")
+            if self.lm_embedder is not None:
+                answer.append(self._make_lm_embeddings_data(bucket_data, bucket_length))
             return answer
 
     def _recode_bucket_data(self, data, bucket_length, encoding):
@@ -470,6 +475,13 @@ class Partitioner:
         else:
             return 1.0
 
+    def _make_lm_embeddings_data(self, data, length):
+        answer = np.zeros(shape=(len(data), length, self.lm_state_size), dtype=float)
+        embeddings = self.lm_embedder.transform(data)
+        for i, elem in enumerate(embeddings):
+            answer[i,1:len(elem)+1] = elem
+        return answer
+
     def train(self, source, targets, dev=None, dev_targets=None, model_file=None):
         """
 
@@ -494,7 +506,7 @@ class Partitioner:
         else:
             dev_data_by_buckets, dev_targets_by_buckets = None, None
         self.build()
-        self._train_models(data_by_buckets, targets_by_buckets,  dev_data_by_buckets,
+        self._train_models(data_by_buckets, targets_by_buckets, dev_data_by_buckets,
                            dev_targets_by_buckets, model_file=model_file)
         return self
 
@@ -529,6 +541,10 @@ class Partitioner:
                 context_inputs = kl.Dropout(self.context_dropout)(context_inputs)
             # представление контекста подклеивается к представлению символа
             symbol_embeddings = kl.Concatenate()([symbol_embeddings, context_inputs])
+        if self.lm_embedder is not None:
+            lm_inputs = kl.Input(shape=(None, self.lm_state_size), dtype='float32', name="lm_inputs")
+            inputs.append(lm_inputs)
+            symbol_embeddings = kl.Concatenate()([symbol_embeddings, lm_inputs])
         conv_inputs = symbol_embeddings
         conv_outputs = []
         for window_size, curr_filters_numbers in zip(self.window_size, self.filters_number):
