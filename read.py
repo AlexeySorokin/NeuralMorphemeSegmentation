@@ -5,7 +5,7 @@ import numpy as np
 
 def normalize_morph_types(morphs, aliases=None):
     if aliases is None:
-        return aliases
+        return morphs
     aliases = dict(aliases)
     morphs = [aliases.get(x, x) for x in morphs]
     return morphs

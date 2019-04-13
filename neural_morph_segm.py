@@ -1023,7 +1023,7 @@ SHORT_ARGS = "a:"
 
 if __name__ == "__main__":
     config = tf.ConfigProto()
-    config.gpu_options.per_process_gpu_memory_fraction = 0.2
+    config.gpu_options.per_process_gpu_memory_fraction = 0.5
     kbt.set_session(tf.Session(config=config))
     if len(sys.argv) < 2:
         sys.exit("Pass config file")
