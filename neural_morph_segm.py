@@ -227,10 +227,10 @@ class Partitioner:
     LEFT_MORPHEME_TYPES = ["pref", "root"]
     RIGHT_MORPHEME_TYPES = ["root", "suff", "end", "postfix"]
 
-    def __init__(self, models_number=1, use_morpheme_types=True,
+    def __init__(self, models_number=1, use_inputs=True, use_morpheme_types=True,
                  to_memorize_morphemes=False, min_morpheme_count=2,
                  to_memorize_ngram_counts=False, min_relative_ngram_count=0.1,
-                 lm_embedder_file=None, lm_state_size=64,
+                 lm_embedder_file=None, lm_state_size=64, lm_inputs_to_conv=True,
                  use_embeddings=False, embeddings_size=32,
                  conv_layers=1, window_size=5, filters_number=64,
                  dense_output_units=0, use_lstm=False, lstm_units=64,
@@ -239,6 +239,7 @@ class Partitioner:
                  validation_split=0.2, batch_size=32,
                  callbacks=None, early_stopping=None):
         self.models_number = models_number
+        self.use_inputs = use_inputs
         self.use_morpheme_types = use_morpheme_types
         self.to_memorize_morphemes = to_memorize_morphemes
         self.min_morpheme_count = min_morpheme_count
@@ -246,6 +247,7 @@ class Partitioner:
         self.min_relative_ngram_count = min_relative_ngram_count
         self.lm_embedder_file = lm_embedder_file
         self.lm_state_size = lm_state_size
+        self.lm_inputs_to_conv = lm_inputs_to_conv
         self.use_embeddings = use_embeddings
         self.embeddings_size = embeddings_size
         self.conv_layers = conv_layers
@@ -367,13 +369,17 @@ class Partitioner:
         if is_target:
             return self._recode_bucket_data(bucket_data, bucket_length, self.target_symbol_codes_)
         else:
-            answer = [self._recode_bucket_data(bucket_data, bucket_length, self.symbol_codes_)]
-            if self.to_memorize_morphemes:
-                # print("Processing morphemes for bucket length", bucket_length)
-                answer.append(self._morpheme_memo_func(bucket_data, bucket_length))
-                # print("Processing morphemes for bucket length", bucket_length, "finished")
+            if self.use_inputs:
+                answer = [self._recode_bucket_data(bucket_data, bucket_length, self.symbol_codes_)]
+                if self.to_memorize_morphemes:
+                    # print("Processing morphemes for bucket length", bucket_length)
+                    answer.append(self._morpheme_memo_func(bucket_data, bucket_length))
+                    # print("Processing morphemes for bucket length", bucket_length, "finished")
+            else:
+                answer = []
             if self.lm_embedder is not None:
                 answer.append(self._make_lm_embeddings_data(bucket_data, bucket_length))
+                # answer = [self._make_lm_embeddings_data(bucket_data, bucket_length)]
             return answer
 
     def _recode_bucket_data(self, data, bucket_length, encoding):
@@ -490,7 +496,7 @@ class Partitioner:
             answer[i,1:len(elem)+1] = elem
         return answer
 
-    def train(self, source, targets, dev=None, dev_targets=None, model_file=None):
+    def train(self, source, targets, dev=None, dev_targets=None, model_file=None, verbose=True):
         """
 
         source: list of strs, список слов для морфемоделения
@@ -513,17 +519,18 @@ class Partitioner:
             dev_data_by_buckets, dev_targets_by_buckets, _ = self._preprocess(dev, dev_targets)
         else:
             dev_data_by_buckets, dev_targets_by_buckets = None, None
-        self.build()
+        self.build(verbose=verbose)
         self._train_models(data_by_buckets, targets_by_buckets, dev_data_by_buckets,
-                           dev_targets_by_buckets, model_file=model_file)
+                           dev_targets_by_buckets, model_file=model_file, verbose=verbose)
         return self
 
-    def build(self):
+    def build(self, verbose=True):
         """
         Создаёт нейронные модели
         """
         self.models_ = [self.build_model() for _ in range(self.models_number)]
-        print(self.models_[0].summary())
+        if verbose:
+            print(self.models_[0].summary())
         return self
 
     def build_model(self):
@@ -531,16 +538,19 @@ class Partitioner:
         Функция, задающая архитектуру нейронной сети
         """
         # symbol_inputs: array, 1D-массив длины m
-        symbol_inputs = kl.Input(shape=(None,), dtype='uint8', name="symbol_inputs")
-        # symbol_embeddings: array, 2D-массив размера m*self.symbols_number
-        if self.use_embeddings:
-            symbol_embeddings = kl.Embedding(self.symbols_number_, self.embeddings_size,
-                                             name="symbol_embeddings")(symbol_inputs)
+        if self.use_inputs:
+            symbol_inputs = kl.Input(shape=(None,), dtype='uint8', name="symbol_inputs")
+            # symbol_embeddings: array, 2D-массив размера m*self.symbols_number
+            if self.use_embeddings:
+                symbol_embeddings = kl.Embedding(self.symbols_number_, self.embeddings_size,
+                                                 name="symbol_embeddings")(symbol_inputs)
+            else:
+                symbol_embeddings = kl.Lambda(kb.one_hot, output_shape=(None, self.symbols_number_),
+                                              arguments={"num_classes": self.symbols_number_},
+                                              name="symbol_embeddings")(symbol_inputs)
+            inputs, conv_inputs = [symbol_inputs], [symbol_embeddings]
         else:
-            symbol_embeddings = kl.Lambda(kb.one_hot, output_shape=(None, self.symbols_number_),
-                                          arguments={"num_classes": self.symbols_number_},
-                                          name="symbol_embeddings")(symbol_inputs)
-        inputs = [symbol_inputs]
+            inputs, conv_inputs = [], []
         if self.to_memorize_morphemes:
             # context_inputs: array, 2D-массив размера m*15
             context_inputs = kl.Input(shape=(None, self.memory_dim), dtype='float32', name="context_inputs")
@@ -548,35 +558,47 @@ class Partitioner:
             if self.context_dropout > 0.0:
                 context_inputs = kl.Dropout(self.context_dropout)(context_inputs)
             # представление контекста подклеивается к представлению символа
-            symbol_embeddings = kl.Concatenate()([symbol_embeddings, context_inputs])
-        conv_inputs = symbol_embeddings
-        conv_outputs = []
-        for window_size, curr_filters_numbers in zip(self.window_size, self.filters_number):
-            # свёрточный слой отдельно для каждой ширины окна
-            curr_conv_input = conv_inputs
-            for j, filters_number in enumerate(curr_filters_numbers[:-1]):
-                # все слои свёртки, кроме финального (после них возможен dropout)
-                curr_conv_input = kl.Conv1D(filters_number, window_size,
-                                            activation="relu", padding="same")(curr_conv_input)
-                curr_conv_input = kl.BatchNormalization()(curr_conv_input)
-                if self.dropout > 0.0:
-                    # между однотипными слоями рекомендуется вставить dropout
-                    curr_conv_input = kl.Dropout(self.dropout)(curr_conv_input)
-            if not self.use_lstm:
-                curr_conv_output = kl.Conv1D(curr_filters_numbers[-1], window_size,
-                                             activation="relu", padding="same")(curr_conv_input)
-            else:
-                curr_conv_output = curr_conv_input
-            conv_outputs.append(curr_conv_output)
-        # соединяем выходы всех свёрточных слоёв в один вектор
-        if len(conv_outputs) == 1:
-            conv_output = conv_outputs[0]
-        else:
-            conv_output = kl.Concatenate(name="conv_output")(conv_outputs)
+            conv_inputs.append(context_inputs)
         if self.lm_embedder is not None:
             lm_inputs = kl.Input(shape=(None, self.lm_state_size), dtype='float32', name="lm_inputs")
             inputs.append(lm_inputs)
-            conv_output = kl.Concatenate()([conv_output, lm_inputs])
+            if self.lm_inputs_to_conv:
+                conv_inputs.append(lm_inputs)
+        if len(conv_inputs) == 1:
+            conv_inputs = conv_inputs[0]
+        else:
+            conv_inputs = kl.Concatenate()(conv_inputs)
+        if self.conv_layers > 0:
+            conv_outputs = []
+            for window_size, curr_filters_numbers in zip(self.window_size, self.filters_number):
+                # свёрточный слой отдельно для каждой ширины окна
+                curr_conv_input = conv_inputs
+                for j, filters_number in enumerate(curr_filters_numbers[:-1]):
+                    # все слои свёртки, кроме финального (после них возможен dropout)
+                    curr_conv_input = kl.Conv1D(filters_number, window_size,
+                                                activation="relu", padding="same")(curr_conv_input)
+                    curr_conv_input = kl.BatchNormalization()(curr_conv_input)
+                    if self.dropout > 0.0:
+                        # между однотипными слоями рекомендуется вставить dropout
+                        curr_conv_input = kl.Dropout(self.dropout)(curr_conv_input)
+                if not self.use_lstm:
+                    curr_conv_output = kl.Conv1D(curr_filters_numbers[-1], window_size,
+                                                 activation="relu", padding="same")(curr_conv_input)
+                else:
+                    curr_conv_output = curr_conv_input
+                conv_outputs.append(curr_conv_output)
+            # соединяем выходы всех свёрточных слоёв в один вектор
+            if len(conv_outputs) == 1:
+                conv_output = conv_outputs[0]
+            else:
+                conv_output = kl.Concatenate(name="conv_output")(conv_outputs)
+        else:
+            conv_output = None
+        if self.lm_embedder is not None and not self.lm_inputs_to_conv:
+            if conv_output is not None:
+                conv_output = kl.Concatenate()([conv_output, lm_inputs])
+            else:
+                conv_output = lm_inputs
         if self.use_lstm:
             conv_output = kl.Bidirectional(
                 kl.LSTM(self.lstm_units, return_sequences=True))(conv_output)
@@ -595,7 +617,8 @@ class Partitioner:
         return model
 
     def _train_models(self, data_by_buckets, targets_by_buckets,
-                      dev_data_by_buckets=None, dev_targets_by_buckets=None, model_file=None):
+                      dev_data_by_buckets=None, dev_targets_by_buckets=None,
+                      model_file=None, verbose=True):
         """
         data_by_buckets: list of lists of np.arrays,
             data_by_buckets[i] = [..., bucket_i, ...],
@@ -652,7 +675,7 @@ class Partitioner:
                 curr_callbacks = self.callbacks + [save_callback]
             else:
                 curr_callbacks = self.callbacks
-            model.fit_generator(train_gen, train_gen.steps_per_epoch,
+            model.fit_generator(train_gen, train_gen.steps_per_epoch, verbose=int(verbose),
                                 epochs=self.nepochs, callbacks=curr_callbacks,
                                 validation_data=val_gen, validation_steps=validation_steps)
             if model_file is not None:
@@ -1021,6 +1044,11 @@ def measure_quality(targets, predicted_targets, english_metrics=False, measure_l
 
 SHORT_ARGS = "a:"
 
+def make_state_filename(filename, state):
+    answer = ("{}-{}".format(filename, state) if "." not in filename else
+              "{0}-{2}.{1}".format(*(filename.split(".", maxsplit=1)), state))
+    return answer
+
 if __name__ == "__main__":
     config = tf.ConfigProto()
     config.gpu_options.per_process_gpu_memory_fraction = 0.5
@@ -1029,7 +1057,13 @@ if __name__ == "__main__":
         sys.exit("Pass config file")
     config_file = sys.argv[1]
     params = read_config(config_file)
-    np.random.seed(params.get("random_state", 261))  # для воспроизводимости
+    random_state = params.get("random_state", [261])
+    if isinstance(random_state, str):
+        random_state = list(map(int, random_state.split(",")))
+        if "train_file" not in params:
+            random_state = random_state[:1]
+    elif isinstance(random_state, int):
+        random_state = [random_state]
     input_format = params["input_format"]
     read_func = (read_BMES if input_format == "types" else
                  read_lowresource_format if input_format == "low_resource" else
@@ -1038,7 +1072,7 @@ if __name__ == "__main__":
     # read_func = read_BMES if use_morpheme_types else read_splitted
     read_params = params.get("read_params", dict())
     if "train_file" in params:
-        n = params.get("n_train") # число слов в обучающей+развивающей выборке
+        n = params.get("n_train")  # число слов в обучающей+развивающей выборке
         if input_format == "low_resource":
             sents, inputs, targets = read_func(params["train_file"], n=n, **read_params)
         else:
@@ -1054,68 +1088,83 @@ if __name__ == "__main__":
         # inputs, targets = read_input(params["train_file"], n=n)
     else:
         inputs, targets, dev_inputs, dev_targets = None, None, None, None
-    if not "load_file" in params:
-        partitioner_params = params.get("model_params", dict())
-        # partitioner_params["use_morpheme_types"] = use_morpheme_types
-        cls = Partitioner(**partitioner_params)
-    else:
-        cls = load_cls(params["load_file"])
-    if inputs is not None:
-        cls.train(inputs, targets, dev_inputs, dev_targets, model_file=params.get("model_file"))
-    if "save_file" in params:
-        model_file = params.get("model_file")
-        cls.to_json(params["save_file"], model_file)
-    if "test_file" in params:
-        if input_format == "low_resource":
-            test_sents, inputs, targets = read_func(params["test_file"], shuffle=False)
+    for curr_random_state in random_state:
+        np.random.seed(curr_random_state)  # для воспроизводимости
+        if not "load_file" in params:
+            partitioner_params = params.get("model_params", dict())
+            # partitioner_params["use_morpheme_types"] = use_morpheme_types
+            cls = Partitioner(**partitioner_params)
         else:
-            inputs, targets = read_func(params["test_file"], shuffle=False, **read_params)
-            test_sents = None
-        # inputs, targets = read_input(params["test_file"])
-        predicted_targets = cls._predict_probs(inputs)
-        if params.get("measure_quality", True):
-            measure_last = params.get("measure_last", use_morpheme_types)
-            quality = measure_quality(targets, [elem[0] for elem in predicted_targets],
-                                      english_metrics=params.get("english_metrics", False),
-                                      measure_last=measure_last)
-            for key, value in sorted(quality):
-                print("{}={:.2f}".format(key, 100*value))
-        if "outfile" in params:
-            outfile = params["outfile"]
-            output_probs = params.get("output_probs", True)
-            format_string = "{}\t{}\t{}" if output_probs else "{}\t{}"
-            output_morpheme_types = params.get("output_morpheme_types", True)
-            morph_format_string = "{}-{}" if output_morpheme_types else "{}"
-            with open(outfile, "w", encoding="utf8") as fout:
-                morphs = [cls.labels_to_morphemes(word, labels, return_types=True) for word, labels in zip(inputs, targets)]
-                corr_segmentation_probs = cls.prob(inputs, morphs)
-                for r, (word, corr_labels, (labels, probs)) in enumerate(zip(inputs, targets, predicted_targets)):
-                    morphemes, morpheme_probs, morpheme_types = cls.labels_to_morphemes(
-                        word, labels, probs, return_probs=True, return_types=True)
-                    s = format_string.format(
-                        word, "/".join(morph_format_string.format(*elem)
-                                       for elem in zip(morphemes, morpheme_types)),
-                        " ".join("{:.2f}".format(100*x) for x in morpheme_probs))
-                    fout.write(s)
-                    if params.get("output_errors", True) and corr_labels != labels:
-                        fout.write("\tERROR")
+            cls = load_cls(params["load_file"])
+        if "save_file" in params:
+            save_file, model_file = params["save_file"], params.get("model_file")
+            if len(random_state) > 1:
+                save_file = make_state_filename(save_file, curr_random_state)
+                if model_file is not None:
+                    model_file = make_state_filename(model_file, curr_random_state)
+        else:
+            save_file, model_file = None, None
+        if inputs is not None:
+            cls.train(inputs, targets, dev_inputs, dev_targets, model_file=model_file,
+                      verbose=(len(random_state) == 1))
+        if "save_file" in params:
+            cls.to_json(save_file, model_file)
+        if "test_file" in params:
+            test_file = params["test_file"]
+            if input_format == "low_resource":
+                test_sents, test_inputs, test_targets = read_func(test_file, shuffle=False)
+            else:
+                test_inputs, test_targets = read_func(test_file, shuffle=False, **read_params)
+                test_sents = None
+            # inputs, targets = read_input(params["test_file"])
+            predicted_targets = cls._predict_probs(test_inputs)
+            if params.get("measure_quality", True):
+                measure_last = params.get("measure_last", use_morpheme_types)
+                quality = measure_quality(test_targets, [elem[0] for elem in predicted_targets],
+                                          english_metrics=params.get("english_metrics", False),
+                                          measure_last=measure_last)
+                for key, value in sorted(quality):
+                    print("{}={:.2f}".format(key, 100*value))
+            if "outfile" in params:
+                outfile = params["outfile"]
+                if len(random_state) > 1:
+                    outfile = make_state_filename(outfile, curr_random_state)
+                output_probs = params.get("output_probs", True)
+                format_string = "{}\t{}\t{}" if output_probs else "{}\t{}"
+                output_morpheme_types = params.get("output_morpheme_types", True)
+                morph_format_string = "{}-{}" if output_morpheme_types else "{}"
+                with open(outfile, "w", encoding="utf8") as fout:
+                    morphs = [cls.labels_to_morphemes(word, labels, return_types=True) for word, labels in zip(inputs, targets)]
+                    corr_segmentation_probs = cls.prob(inputs, morphs)
+                    for r, (word, corr_labels, (labels, probs)) in enumerate(zip(inputs, targets, predicted_targets)):
+                        morphemes, morpheme_probs, morpheme_types = cls.labels_to_morphemes(
+                            word, labels, probs, return_probs=True, return_types=True)
+                        s = format_string.format(
+                            word, "-".join(morph_format_string.format(*elem)
+                                           for elem in zip(morphemes, morpheme_types)),
+                            " ".join("{:.2f}".format(100*x) for x in morpheme_probs))
+                        fout.write(s)
+                        if params.get("output_errors", True) and corr_labels != labels:
+                            fout.write("\tERROR")
+                            fout.write("\n")
+                            fout.write(" ".join("{}-{}".format(*elem) for elem in zip(*morphs[r])) + "\t")
+                            fout.write(" ".join("{:.2f}".format(100 * x) for x in corr_segmentation_probs[r]))
                         fout.write("\n")
-                        fout.write(" ".join("{}-{}".format(*elem) for elem in zip(*morphs[r])) + "\t")
-                        fout.write(" ".join("{:.2f}".format(100 * x) for x in corr_segmentation_probs[r]))
-                    fout.write("\n")
-        if "predictions_file" in params:
-            predictions_file = params["predictions_file"]
-            with open(predictions_file, "w", encoding="utf8") as fout:
-                sent_index = 0
-                if test_sents is not None:
-                    sent_lengths = np.cumsum([len(sent) for sent in test_sents])
-                for r, (word, corr_labels, (labels, probs)) in enumerate(zip(inputs, targets, predicted_targets), 1):
-                    morphemes, morpheme_probs, morpheme_types = cls.labels_to_morphemes(
-                        word, labels, probs, return_probs=True, return_types=True)
-                    fout.write(word + "\t" + " ".join(morphemes) + "\n")
-                    if test_sents is not None and (sent_index < len(sent_lengths)) and r == sent_lengths[sent_index]:
-                        sent_index += 1
-                        fout.write("\n")
-                    # fout.write(format_string.format(
-                    #     word, "#".join(morphemes), "-".join(
-                    #         "{:.2f}/{}".format(100*x, y) for x, y in zip(morpheme_probs, morpheme_types))))
+            if "predictions_file" in params:
+                predictions_file = params["predictions_file"]
+                if len(random_state) > 1:
+                    predictions_file = make_state_filename(predictions_file, curr_random_state)
+                with open(predictions_file, "w", encoding="utf8") as fout:
+                    sent_index = 0
+                    if test_sents is not None:
+                        sent_lengths = np.cumsum([len(sent) for sent in test_sents])
+                    for r, (word, corr_labels, (labels, probs)) in enumerate(zip(inputs, targets, predicted_targets), 1):
+                        morphemes, morpheme_probs, morpheme_types = cls.labels_to_morphemes(
+                            word, labels, probs, return_probs=True, return_types=True)
+                        fout.write(word + "\t" + "-".join(morphemes) + "\n")
+                        if test_sents is not None and (sent_index < len(sent_lengths)) and r == sent_lengths[sent_index]:
+                            sent_index += 1
+                            fout.write("\n")
+                        # fout.write(format_string.format(
+                        #     word, "#".join(morphemes), "-".join(
+                        #         "{:.2f}/{}".format(100*x, y) for x, y in zip(morpheme_probs, morpheme_types))))

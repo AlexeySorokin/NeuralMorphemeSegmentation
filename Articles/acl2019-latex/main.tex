@@ -1,0 +1,47 @@
+%
+% File acl2019.tex
+%
+%% Based on the style files for ACL 2018, NAACL 2018/19, which were
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2019}
+\usepackage{times}
+\usepackage{latexsym}
+
+\usepackage{url}
+
+%\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{Convolutional network: baseline of state-of-the-art quality for low-resource morpheme segmentation.}
+
+\author{Intentionally anonymous}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+  We apply convolutional neural networks to the task of shallow morpheme segmentation using low-resource datasets for 5 different languages. We show that both in fully supervised and semi-supervised settings our model beats previous state-of-the-art approaches. We argue that convolutional neural networks reflect local nature of morpheme segmentation better than other semi-supervised approaches.
+\end{abstract}
+
+Morpheme segmentation consists in dividing a given word to meaningful individual units, morphemes. For example, a word \textit{unexpectedly} could be segmented as \textit{un-expect-ed-ly}. The generated segmentation may be used as input representation for machine translation \cite{Mager2018b} or morphological tagging \cite{Matteson2018} or for automatic annotation of digital linguistic resources. 
+
+
+\end{document}
