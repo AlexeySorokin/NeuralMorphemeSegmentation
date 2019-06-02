@@ -379,7 +379,7 @@ class NeuralLM:
                 self.label_counts_[key] = value / total_count
         return label_counts
 
-    def build(self, test=False):
+    def build(self, test=False, verbose=1):
         symbol_inputs = kl.Input(shape=(None,), dtype='int32')
         symbol_embeddings, mask = self._build_symbol_layer(symbol_inputs)
         memory, initial_encoder_states, final_encoder_states =\
@@ -403,7 +403,7 @@ class NeuralLM:
         compile_args = {"optimizer": ko.nadam(clipnorm=5.0), "loss": loss, "metrics": metrics}
         self.model_ = Model(inputs, outputs)
         self.model_.compile(**compile_args)
-        if self.verbose > 0:
+        if verbose > 0 and self.verbose > 0:
             print(self.model_.summary())
         step_func_inputs = inputs + initial_decoder_states + initial_encoder_states
         step_func_outputs = [lstm_outputs] + final_decoder_states + final_encoder_states
@@ -414,6 +414,7 @@ class NeuralLM:
         self._logit_step_func_ = kb.Function(step_func_inputs + [kb.learning_phase()], logit_func_outputs)
         self._state_func_ = kb.Function(inputs + [kb.learning_phase()], [lstm_outputs])
         self._logit_func_ = kb.Function(inputs + [kb.learning_phase()], [pre_outputs])
+        self._head_func = kb.Function([lstm_outputs], [outputs])
         self.built_ = "test" if test else "train"
         return self
 
@@ -723,7 +724,7 @@ def load_lm(infile):
         lm.tags_ = [tuple(x) for x in lm.tags_]
         lm.tag_codes_ = {tag: i for i, tag in enumerate(lm.tags_)}
     # модель
-    lm.build()  # не работает сохранение модели, приходится сохранять только веса
+    lm.build(verbose=0)  # не работает сохранение модели, приходится сохранять только веса
     lm.model_.load_weights(json_data['dump_file'])
     return lm
 

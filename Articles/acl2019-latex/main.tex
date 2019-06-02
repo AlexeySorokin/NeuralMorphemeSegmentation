@@ -15,8 +15,15 @@
 \usepackage[hyperref]{acl2019}
 \usepackage{times}
 \usepackage{latexsym}
-
+\usepackage{stmaryrd}
+\usepackage[safe]{tipa}
 \usepackage{url}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+
+%\makesavenoteenv{table}
+%\usepackage{hyperref}
+
 
 %\aclfinalcopy % Uncomment this line for the final submission
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
@@ -29,7 +36,7 @@
 
 \newcommand\BibTeX{B\textsc{ib}\TeX}
 
-\title{Convolutional network: baseline of state-of-the-art quality for low-resource morpheme segmentation.}
+\title{Convolutional neural networks: baseline of state-of-the-art quality for low-resource morpheme segmentation.}
 
 \author{Intentionally anonymous}
 
@@ -38,10 +45,170 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-  We apply convolutional neural networks to the task of shallow morpheme segmentation using low-resource datasets for 5 different languages. We show that both in fully supervised and semi-supervised settings our model beats previous state-of-the-art approaches. We argue that convolutional neural networks reflect local nature of morpheme segmentation better than other semi-supervised approaches.
+  We apply convolutional neural networks to the task of shallow morpheme segmentation using low-resource datasets for 5 different languages. We show that both in fully supervised and semi-supervised settings our model beats previous state-of-the-art approaches. We argue that convolutional neural networks reflect local nature of morpheme segmentation better than other neural approaches.
 \end{abstract}
 
-Morpheme segmentation consists in dividing a given word to meaningful individual units, morphemes. For example, a word \textit{unexpectedly} could be segmented as \textit{un-expect-ed-ly}. The generated segmentation may be used as input representation for machine translation \cite{Mager2018b} or morphological tagging \cite{Matteson2018} or for automatic annotation of digital linguistic resources. 
+Morpheme segmentation consists in dividing a given word to meaningful individual units, morphemes. For example, a word \textit{unexpectedly} could be segmented as \textit{un-expect-ed-ly}. The generated segmentation may be used as input representation for machine translation \newcite{mager2018lost} or morphological tagging \newcite{matteson2018rich} or for automatic annotation of digital linguistic resources. Briefly, information about internal morpheme structure makes the data less sparse since an out-of-vocabulary word may share its morphemes with other words already present in the training set. This helps to recover semantic and morphological properties of an unknown word, which otherwise will be unaccessible. The task of morpheme segmentation is especially important for agglutinative languages, such as Finnish or Turkish, where a word is formed by attaching a sequence of affixes to its stem. This affixes reflect both derivational and inflectional processes. A common example from Turkish is \textit{evlerinizden} `\textit{from your houses}', which is decomposed as: 
 
+\begin{center}
+	\begin{tabular}{cccc}
+		ev & ler & iniz & den \\
+		\textit{house} & \textsc{+pl} & \textit{your}\textsc{+pl} & \textsc{+abl}
+	\end{tabular}
+\end{center}
+
+The task of morpheme segmentation is even harder for polysynthetic languages: while in agglutinative languages morphemes are usually in one-to-one correspondence with morphological features, for polysynthetic languages this matching is more complex with no clear bound between compound words and sentences. For example, in Chuckchi language the whole phrase `\textit{The house broke}' can be expressed as
+
+\begin{center}
+	\begin{tabular}{cccc}
+\textipa{G}a & ra & semat & \textbeltl en \\
+\textsc{+pf} & house & break & \textsc{+pf+3sg}
+	\end{tabular}
+\end{center}
+
+Consequently, polysynthetic language demonstrate extremely high morpheme-to-word ratio, which leads to high type-token ratio, which makes their automatic processing harder. Even further, this processing is performed in low-resource setting since most polysynthetic languages have only few hundreds or thousands of speakers. Hence, the properties algorithms initially designed less complex languages with more data (mostly for English) may change significantly when applied to low-resource polysynthetic data. That is especially the case for neural methods, which are (often erroneously) believed to be more data-hungry than earlier approaches.
+
+However, in 2019 it is insufficient to just say ``neural networks'' in case of NLP, since there are various neural networks whose properties may differ significantly. Leaving aside the immense diversity of network 
+architectures, they can be separated in three main categories: the convolutional ones (CNNs), where convolutional windows capture local regularities; the recurrent ones, where GRUs and LSTMs memorize potentially onbounded context; and sequence-to-sequence (seq2seq) models, which perform string transductions using encoder-decoder approach. Among the three, convolutional neural networks are the least popular, however, we argue that they are the most suitable for surface morpheme segmentation, which is the main goal of our work. 
+
+In our work we prove two statements: 1) convolutional networks are better for neural morpheme segmentation than seq2seq approaches and 2) unlabeled data may be useful to further improve their performance. We test our approaches on $4$ indigenous languages, spoken in Mexico: Mexicanero, Nahuatl, Wixarika and Yorem Nokki, since the scores for them are available in recent studies \newcite{kann2018fortification}. We also test our approach on North S\'ami data from \newcite{gronroos2019}.
+
+\section{Related work.}
+
+Automatic morpheme segmentation was extensively studied in pre-neural years of modern NLP. The investigations had two principal directions: several researchers tried to implement the approach of Harris \newcite{harris1970morpheme} and \newcite{andreev1965} to find a quantitative counterpart of morpheme boundaries in terms of letter statistics. These methods were mainly unsupervised and include the well-known Morfessor system: \newcite{creutz2002unsupervised} and its successors \newcite{creutz2007unsupervised} and \newcite{virpioja2013morfessor} (the latter uses semi-supervised learning), there was also an extensive work in the field of adaptor grammars \newcite{johnson2007adaptor}, \newcite{sirts2013minimally}, \newcite{eskander2018automatically}. However, both these approaches are generative by their nature and are based on a probabilistic model of word structure. The most successful pure machine learning method was CRF-based model designed in \newcite{ruokolainen2013supervised}, \newcite{ruokolainen2014painless}, which still remains state-of-the-art on several morpheme segmentation datasets.
+
+There were several attempts to apply neural networks for morpheme segmentation and closely related problem of word segmentation, which is enevitable for Chinese, Japanese and other languages with similar graphics. The first one was probably \newcite{wang2016morphological}, which used window LSTMs, latter works include \newcite{kann2016neural} and \newcite{samardzic2017neural} which applied the sequence-to-sequence approach. Our study is conducted on the material from \newcite{kann2018fortification}, where the sequence-to-sequence model with attention was applied to the material of $4$ indigenous North-American languages, both is supervised and semi-supervised manner. All these studies solve morpheme segmentation as sequence transduction. In contrast, \newcite{shao2017cross} treated morpheme and word segmentation as sequence labeling task which can be solved with BiRNN-CRF network. 
+
+The work of \newcite{sorokin2018deep} demonstrated, that at least for Russian (a fusional language with lots of data available) convolutional neural networks significantly outperform all other approaches, also being the less data-consuming. The recent study of \newcite{gronroos2019} modified the decoder to make its independent of the previous timesteps, which makes their model essentially an LSTM-based sequence tagger. Both this approaches are computationally much simpler than encoder-decoder scheme. We hypothesize that morpheme segmentation does not require the full power of seq2seq models with attention and test this hypothesis in our present study.
+
+\section{Model architecture.}
+
+We reduce the morpheme segmentation task to sequence labeling problem and solve this problem using convolutional neural networks. Each segmentation in the training set is encoded using BMES-scheme as illustrated below. Thus, the task of the algorithm is to predict the sequence of labels given the sequence of letters (probably, encriched with special \textsc{begin} and \textsc{end} symbols). We argue that this task is essentially local since a morpheme boundary is triggered by distinguished symbol ngrams which usually correspond to affixes. Consequently, in most cases the algorithm does not need any global information to memorize these affixes.
+
+\begin{figure}
+	\begin{center}
+		\begin{tabular}{ccccccccc}
+			p & r & e & t & r & a & i & n & s \\
+			B & M & E & B & M & M & M & E & S
+		\end{tabular}
+	\end{center}
+	\caption{Morpheme segmentation of word \textit{pre-train-s} expressed with BMES scheme.}
+\end{figure}
+
+
+\subsection{Basic model.}
+
+Our basic architecture closely follows the model of \newcite{sorokin2018deep}. The input of the algorithm is a sequence of $0/1$-encodings, which are transformed to symbol embeddings by an embedding layer. These embeddings are passed through several stacked convolutional layers of different width, as, for example, in \newcite{kim2016character}, the final outputs of all layers are concatenated. For better convergence we insert batch normalization and dropout layers between consecutive convoluions. The obtained context encodings are passed through a dense layer with softmax activation which generates a probability distribution over possible tags. Since not every sequence of tags corresponds to a valid morpheme segmentation, we find the most probable segmentation using Viterbi algorithm. 
+
+\subsection{Multitask training and one-side convolutions.}
+
+\newcite{kann2018fortification} demonstrates that pretraining on auxiliary task of autoencoding, which is the restoration of original input sequence, can be beneficial for morpheme segmentation. Autoencoding is an appealing complementary task since it does not require additional labeled data. It is especially suitable for encoder-decoder architecture since the memorization of input sequence is the natural job of the encoder. However, this objective does not fit in our paradigm since we try to avoid global architectures, such as recurrent ones and especially seq2seq, in favor of the local ones. Following modern trends in NLP, we select language modelling as an auxiliary task, predicting not only the morpheme boundary of the current symbol but also the following symbol. However, this approach fails with basic CNN architecture since the convolutional window observes the next symbol and can easily memorize it.
+
+Therefore we slightly modify our model: instead of using a symmetric window around current symbol, we have two groups of convolutions: the left and right ones. The left observes the current symbols and also some symbols preceding it, while the right does not see preceding symbols, but only the current one and the ones following it. We again use windows of different size and concatenate their outputs, thus obtaining for each position $t$ two context embeddings $\vec{h}_t$ (left) and $\overleftarrow{h}_t$ (right). They are used to obtain the required distribution $\mathbf{p}_t$ over morphological labels as well as two auxiliary distribution $\mathbf{q}_{t-1}$ and $\mathbf{q}_{t+1}$ over preceding and following symbols, respectively:
+
+$$
+\begin{array}{rcl}
+	\mathbf{p}_t & = & \mathrm{softmax}_{morph}(U [\vec{h}_t, \overleftarrow{h}_t]), \\[4pt]
+	\mathbf{q}_{t-1}  & = & \mathrm{softmax}_{symb}(V_l \overleftarrow{h}_t), \\[4pt]
+	\mathbf{q}_{t+1}  & = & \mathrm{softmax}_{symb}(V_r \vec{h}_t).
+\end{array}
+$$
+
+Note that this architecture with ``unidirectional'' convolutions can be used without auxiliary objective as well.
+
+\section{Data.}
+
+We evaluate our model on two datasets: the dataset of $4$ indigenous North American languages from \newcite{kann2018fortification} and the North Sami dataset from \newcite{gronroos2019}. In this section we briefly characterize the languages, for more complete description we refer the reader to the cited papers or to linguistic resources such as WALS.
+
+\begin{enumerate}
+	\item The $4$ mexican languages: Mexicanero, Nahuatl, Wixarika and Yorem Nokki all belong to Yuta-Aztecan family. They are mostly agglutinative and have extremely complex verb morphology. Some stems and even affixes in case of Mexicanero are Spanish borrowings.
+	\item North S\'ami is a Finno-Ugric language spoken in the North of Finland, Sweden, Norway and Russia. It is morphologically complex, featuring derivational, inflectional and compounding processes. It also has regular but complicated morphonological variation.
+\end{enumerate}
+
+The quantitative characteristics of the datasets used in our study are given below. For mexican languages we used the same data as in \newcite{kann2018fortification}, however, our preprocessing differs which results in different number of unsegmented words.
+
+\begin{table*}[h!]
+	\centering
+	\begin{tabular}{|l|ccc|c|}
+		\hline
+		Language & Train & Dev & Test & Unlabeled \\
+		\hline
+		Mexicanero & 427 & 106 & 355 & 978\footnotemark[1]\\
+		Nahuatl & 540 & 134 & 449 &   36149 \\
+		Wixarika & 665 & 176 & 553 &  13092 \\
+		Yorem Nokki & 511 & 127 & 425 & 978\footnotemark[1] \\
+		\hline
+		North S\'ami & 1044 & 200 & 796 & 100000\footnotemark[2] \\
+		\hline
+	\end{tabular}
+	\caption{Size of the datasets used for evaluation.}
+	
+\end{table*}
+\footnotetext[1]{As in \newcite{kann2018fortification}, the same list of words is used for Mexicanero and Yorem Nokki due to their close relatedness.}
+\footnotetext[2]{Actual word lists are larger but we restrict it to random $100000$ words to speed up training.}
+\section{Experiments}
+
+\subsection{Model parameters.}
+
+We use symbol embeddings of size $32$. The basic model contains two parallel convolutional groups of width $5$ and $7$, each group having $2$ layers and $96$ neurons on each of the layers. The unidirectional convolutional model has $64$ filters for each window width from $1$ to $4$ and $2$ convolutional layers as well. Dropout rate was $0.2$.
+
+Neural networks are implemented using Keras framework with TensorFlow backend. They are trained with Adam optimizer for at most $50$ epochs, training is stopped when the accuracy on development set do not improve for $10$ epochs. In case of multitask training the language models are trained for $5$ epochs jointly with the main model, batches for different tasks are sampled in random order. The size of mini-batch is $32$ for all the runs.
+
+\subsection{Results.}
+
+Our first evaluation scores the basic model on datasets from \newcite{kann2018fortification} and \newcite{gronroos2019}. We compare our with their seq2seq model, the CRF model of \newcite{ruokolainen2013supervised} and the semi-supervised neural model (the one of \newcite{kann2018fortification} using autoencoding and the one of \newcite{gronroos2019} trained with Harris features). All the scores except our own are taken from the original papers. We report two metrics, boundary F1 and word accuracy, which is the fraction of correctly segmented words. All our scores are averaged over $5$ independent runs with different random initialization.
+
+\begin{table*}[h!]
+	\centering
+	\begin{tabular}{|l|cccc|cccc|}
+		\hline
+		& \multicolumn{4}{|c|}{Word accuracy} & \multicolumn{4}{|c|}{Boundary F1} \\
+		\hline
+		Language & CNN(our) & seq2seq & CRF & semi-sup & CNN(our) & seq2seq & CRF & semi-sup \\
+		\hline
+		Mexicanero & 80,0 & 75,0 & 78,4 & \textbf{80,5} & 89,7 & 86,2 & 86,4 & 87,9 \\
+		Nahuatl & 59,4	& 55,9 & \textbf{64,4} & 60,3 & 77,8 & 72,7 & 74,9 & 73,9 \\
+		Wixarika & 61,7 & 57,5 & 58,7 & \textbf{61,9} & 88,5 & 79,6 & 79,3 & 81,7 \\
+		Yorem Nokki & 70,8 & 65,7 & 66,0 & \textbf{71,0} & 83,0 & 77,3 & 77,4 & 80,8 \\
+		\hline
+		North S\'ami & \textbf{71,5} & 69,1 & 69,3 & 71,1 & 86,4 & 83,6 & 85,4 & 85,7 \\
+		\hline 
+	\end{tabular}
+	\caption{Results of our basic CNN segmentation model in comparison with sequence-to-sequence model (seq2seq), conditional random fields (CRF) and semi-supervised extension of seq2seq (semi-sup). Results for Yuto-Aztecan languages are from \newcite{kann2018fortification}, for North S\'ami from \newcite{gronroos2019}.}\label{table-res-1}
+\end{table*} 
+
+Analyzing the results in Table \ref{table-res-1}, we see that our basic model always outperforms sequence-to-sequence model by a huge margin, also being ahead of conditional random fields on $4$ datasets of $5$\footnote{It seems that \newcite{kann2018fortification} and we used different measures for boundary F1, but we were unable to uncover the difference. However, word accuracy metrics are reliable. On North S\'ami data we use the evaluation script from \newcite{ruokolainen2014painless}, so the F1 scores are also comparable.} . That answers our first question: convolutional neural networks are the best choice for supervised morpheme segmentation even in extremely low-resource setting. To compare with semi-supervised approach we present the results of our unidirectional model as well as its multitask extension trained on language modelling task.
+
+\begin{table*}[h!]
+	\centering
+	\begin{tabular}{|l|ccc|cc|}
+		\hline
+		& \multicolumn{3}{|c|}{Convolutional (our)} & \multicolumn{2}{|c|}{Other} \\
+		\hline
+		Language & basic & one-side & one-side+LM & best semi-sup & best \\
+		\hline
+		Mexicanero & 80,0 & 80,1 & \textbf{80,8} & 80,5 & 80,5 \\
+		Nahuatl & 59,4	& 61,7 & 63,4 & 60,3 & \textbf{64,4} \\
+		Wixarika & 61,7 & 62,9 & \textbf{64,4} & 61,9 & 61,0 \\
+		Yorem Nokki & 70,8 & 71,2 & \textbf{71,4} & 71,0 & 71,0 \\
+		\hline
+		North S\'ami & 71,5 & 72,0 & \textbf{73,9} & 71,1 & 71,1 \\
+		\hline 
+	\end{tabular}
+	\caption{Results of our extended CNN models in comparison with the basic one and state-of-the-art. Results for Yuto-Aztecan languages are from \newcite{kann2018fortification}, for North S\'ami from \newcite{gronroos2019}.}\label{table-res-2}
+\end{table*} 
+
+We conclude that the extended semi-supervised model outperform all the existing approaches setting a new state-of-the-art score. The only exception is the extremely high performance of CRFs on Nahuatl dataset. We also note that one-side CNNs are better than the basic ones, though they have $4$ times more parameters. However, basic CNNs of comparable size do not perform better than the smaller ones due to severe overfitting. Gains from semi-supervised training are the more substantial the more data we have, thus the effect on Mexicanero and Yorem Nokki with less than $1000$ unlabeled words is the most modest.
+
+\section{Conclusion and future work.}
+
+We demonstrate that convolutional neural networks are the most powerful model for morpheme segmentation in low-resource setting. We argue that this is due to their ability to capture local dependencies, while morpheme segmentation is essentially local by its nature. We hope that CNNs will replace encoder-decoder architectures in morpheme segmentation tasks, being more effective not only in terms of quality, but also in terms of training complexity.
+
+Nonetheless promising, our results still leave a huge room for improvement. First of all, the absolute numbers are quite low, only less than two thirds of the words are segmented correctly. The first thing to study is the learning curve of neural segmentation algorithm: it is not so important that a model achieves $60\%$ accuracy on $1000$ annotated words, more important is whether it may reach $80\%$ given another thousand of training examples. Another open direction is the incorporation of linguistic features, such as Harris-like distributional measures used in \newcite{ruokolainen2014painless} or intra-segment interactions regulated by adaptor grammars. 
+
+Sometimes morpheme segmentation also requires normalization of morphemes (e.g \textit{studied} $\mapsto$ \textit{study} + \textit{ed}). This task is not that straightforward to address with CNNs since the problem is no more reduced to sequence labeling. This is exactly the case for Semitic languages, where morpheme segmentation often depends not only from the word itself, but from wider context \newcite{zeldes2018characterwise}. Since neural networks can work with input vectors of any origin, CNN models have the potential for these tasks also and we hope to address some of these question in future research.
+
+\bibliographystyle{acl_natbib}
+\bibliography{morpheme_bib}
 
 \end{document}

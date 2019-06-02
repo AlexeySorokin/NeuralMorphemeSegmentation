@@ -215,3 +215,18 @@ def read_input(infile, transform_to_BMES=True, n=None, shuffle=True):
         source = [source[i] for i in indexes]
         targets = [targets[i] for i in indexes]
     return source, targets
+
+
+def read_words(infile, min_length=-1, n=None):
+    answer = []
+    with open(infile, "r", encoding="utf8") as fin:
+        for line in fin:
+            line = line.strip()
+            if "\t" in line and line.split("\t")[0].isdigit():
+                line = line.split("\t")[1]
+            if line != "" and len(line) >= min_length and all(not x.isdigit() for x in line) and any(x.isalpha() for x in line):
+                answer.append(line)
+    np.random.shuffle(answer)
+    if n is not None:
+        answer = answer[:n]
+    return answer

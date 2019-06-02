@@ -1,6 +1,7 @@
 {
     "train_file": "/home/alexeysorokin/data/Data/Morpheme/North Sami/sme_al_annotations_v2/train.full",
     "dev_file": "/home/alexeysorokin/data/Data/Morpheme/North Sami/sme_al_annotations_v2/development.analysis",
+    
     "input_format": "types",
     "random_state": 338,
     "read_params": {"morph_sep": " ", "sep": "/", "morph_aliases": {"SUF": "SUFF", "STM": "ROOT"}},
