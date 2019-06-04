@@ -7,6 +7,7 @@ import json
 import tensorflow as tf
 import keras.backend.tensorflow_backend as kbt
 
+from evaluate import measure_quality
 from network import Partitioner, MultitaskPartitioner
 from read import read_BMES, read_splitted, read_lowresource_format, read_words
 
@@ -52,42 +53,6 @@ def load_cls(infile):
     return inflector
 
 
-def measure_quality(targets, predicted_targets, english_metrics=False, measure_last=True):
-    """
-
-    targets: метки корректных ответов
-    predicted_targets: метки предсказанных ответов
-
-    Возвращает словарь со значениями основных метрик
-    """
-    measure_last = False
-    TP, FP, FN, equal, total = 0, 0, 0, 0, 0
-    SE = ['{}-{}'.format(x, y) for x in "SE" for y in ["ROOT", "PREF", "SUFF", "END", "LINK", "None"]]
-    # SE = ['S-ROOT', 'S-PREF', 'S-SUFF', 'S-END', 'S-LINK', 'E-ROOT', 'E-PREF', 'E-SUFF', 'E-END']
-    corr_words = 0
-    for corr, pred in zip(targets, predicted_targets):
-        corr_len = len(corr) + int(measure_last) - 1
-        pred_len = len(pred) + int(measure_last) - 1
-        boundaries = [i for i in range(corr_len) if corr[i] in SE]
-        pred_boundaries = [i for i in range(pred_len) if pred[i] in SE]
-        common = [x for x in boundaries if x in pred_boundaries]
-        TP += len(common)
-        FN += len(boundaries) - len(common)
-        FP += len(pred_boundaries) - len(common)
-        if len(pred_boundaries) == 0 and len(boundaries) == 0:
-            TP += 1
-        equal += sum(int(x==y) for x, y in zip(corr, pred))
-        total += len(corr)
-        corr_words += (corr == pred)
-    metrics = ["Точность", "Полнота", "F1-мера", "Корректность", "Точность по словам"]
-    if english_metrics:
-        metrics = ["Precision", "Recall", "F1", "Accuracy", "Word accuracy"]
-    results = [TP / (TP+FP), TP / (TP+FN), TP / (TP + 0.5*(FP+FN)),
-               equal / total, corr_words / len(targets)]
-    answer = list(zip(metrics, results))
-    return answer
-
-
 SHORT_ARGS = "a:"
 
 def make_state_filename(filename, state):
@@ -106,8 +71,8 @@ if __name__ == "__main__":
     random_state = params.get("random_state", [261])
     if isinstance(random_state, str):
         random_state = list(map(int, random_state.split(",")))
-        if "train_file" not in params:
-            random_state = random_state[:1]
+        # if "train_file" not in params:
+        #     random_state = random_state[:1]
     elif isinstance(random_state, int):
         random_state = [random_state]
     input_format = params["input_format"]
@@ -138,6 +103,7 @@ if __name__ == "__main__":
     else:
         inputs, targets, dev_inputs, dev_targets = None, None, None, None
         train_params = dict()
+    qualities = dict()
     for curr_random_state in random_state:
         np.random.seed(curr_random_state)  # для воспроизводимости
         if not "load_file" in params:
@@ -149,7 +115,10 @@ if __name__ == "__main__":
             cls = partitioner(**partitioner_params)
             # cls = MultitaskPartitioner(**partitioner_params)
         else:
-            cls = load_cls(params["load_file"])
+            load_file = params["load_file"]
+            if len(random_state) > 1:
+                load_file = make_state_filename(load_file, curr_random_state)
+            cls = load_cls(load_file)
         if "save_file" in params:
             save_file, model_file = params["save_file"], params.get("model_file")
             if len(random_state) > 1:
@@ -161,9 +130,8 @@ if __name__ == "__main__":
         if inputs is not None:
             cls.train(inputs, targets, dev_inputs, dev_targets, **train_params,
                       model_file=model_file, verbose=(len(random_state) == 1))
-
         if "save_file" in params:
-            cls.to_json(params["save_file"], **params["save_params"])
+            cls.to_json(save_file, model_file)
         if "test_file" in params:
             test_file = params["test_file"]
             if input_format == "low_resource":
@@ -180,6 +148,10 @@ if __name__ == "__main__":
                                           measure_last=measure_last)
                 for key, value in sorted(quality):
                     print("{}={:.2f}".format(key, 100*value))
+                    if key not in qualities:
+                        qualities[key] = [value]
+                    else:
+                        qualities[key].append(value)
             if "outfile" in params:
                 outfile = params["outfile"]
                 if len(random_state) > 1:
@@ -223,3 +195,7 @@ if __name__ == "__main__":
                         # fout.write(format_string.format(
                         #     word, "#".join(morphemes), "-".join(
                         #         "{:.2f}/{}".format(100*x, y) for x, y in zip(morpheme_probs, morpheme_types))))
+    if len(qualities) > 0:
+        for key, values in sorted(qualities.items()):
+            print("{}: {:.2f}({:.2f})".format(key, 100 * np.mean(values), 100 * np.std(values)), end="")
+            print("\t" + ",".join("{:.2f}".format(100*x) for x in values))

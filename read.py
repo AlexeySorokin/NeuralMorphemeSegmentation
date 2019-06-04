@@ -40,7 +40,7 @@ def read_splitted(infile, transform_to_BMES=True, make_morph_types=None,
             if transform_to_BMES:
                 target = generate_BMES(morphs, morph_types)
             else:
-                target = morph_types
+                target = morphs
             source.append(word)
             targets.append(target)
     indexes = list(range(len(source)))
