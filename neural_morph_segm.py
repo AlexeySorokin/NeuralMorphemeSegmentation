@@ -115,10 +115,11 @@ if __name__ == "__main__":
             cls = partitioner(**partitioner_params)
             # cls = MultitaskPartitioner(**partitioner_params)
         else:
-            load_file = params["load_file"]
-            if len(random_state) > 1:
-                load_file = make_state_filename(load_file, curr_random_state)
-            cls = load_cls(load_file)
+            if "load_file" in params:
+                load_file = params["load_file"]
+                if len(random_state) > 1:
+                    load_file = make_state_filename(load_file, curr_random_state)
+                cls = load_cls(load_file)
         if "save_file" in params:
             save_file, model_file = params["save_file"], params.get("model_file")
             if len(random_state) > 1:
