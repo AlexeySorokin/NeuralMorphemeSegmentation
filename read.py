@@ -227,6 +227,6 @@ def read_words(infile, min_length=-1, n=None):
             if line != "" and len(line) >= min_length and all(not x.isdigit() for x in line) and any(x.isalpha() for x in line):
                 answer.append(line)
     np.random.shuffle(answer)
-    if n is not None:
+    if n is not None and n >= 0:
         answer = answer[:n]
     return answer

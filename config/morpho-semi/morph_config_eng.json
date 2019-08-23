@@ -1,0 +1,12 @@
+{
+    "train_file": "data/eng.train",
+    "dev_file": "data/eng.dev",
+    "use_morpheme_types": false,
+    "use_oneside": true,
+    "random_state": "133,167,219,178,332",
+    "model_params": {"conv_layers": 2, "window_size": [5, 3], "filters_number": 64,
+                     "dense_output_units": 64, "nepochs": 75, "validation_split": 0.2,
+                     "early_stopping": 10, "to_memorize_morphemes": false, "dropout": 0.3,
+                     "to_memorize_ngram_counts": false, "context_dropout": 0.2, "models_number": 1},
+    "test_file": "data/eng.dev"
+}

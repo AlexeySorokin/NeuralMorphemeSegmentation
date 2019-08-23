@@ -1,0 +1,14 @@
+{
+    "train_file": "data/eng.train",
+    "dev_file": "data/eng.dev",
+    "lm_train_file": "morphochal10data/wordlist-2010.eng.utf-8",
+    "random_state": "133,167,219,178,332",
+    "use_morpheme_types": false,
+    "use_lm": true, "lm_words": 100000,
+    "model_params": {"conv_layers": 2, "window_size": [1, 2, 3, 4], "filters_number": 64,
+                     "dense_output_units": 64, "nepochs": 50, "lm_epochs": 5,
+                     "early_stopping": 10, "to_memorize_morphemes": false, "dropout": 0.2,
+                     "to_memorize_ngram_counts": false, "context_dropout": 0.2, "models_number": 1},
+    "test_file": "data/eng.dev",
+    "predictions_file": "results/sigmorphon/eng_lm.out"
+}

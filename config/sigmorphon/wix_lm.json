@@ -1,0 +1,18 @@
+{
+    "train_file": "data/indlangs/wixarika-train",
+    "dev_file": "data/indlangs/wixarika-dev",
+    "input_format": "splitted",
+    "random_state": "133,167,219,178,332",
+    "read_params": {"morph_sep": "-"},
+    "model_params": {"conv_layers": 2, "window_size": [5, 7], "filters_number": 96, "use_inputs": false,
+                     "lm_embedder_file": "models/sigmorphon/wixarika/embedder.json", "lm_state_size": 128,
+                     "use_lstm": false, "lstm_units": 64,
+                     "dense_output_units": 0, "nepochs": 40, "validation_split": 0.2,
+                     "early_stopping": 10, "to_memorize_morphemes": false, "dropout": 0.2,
+                     "to_memorize_ngram_counts": true, "context_dropout": 0.2, "models_number": 1},
+    "output_errors": true,
+    "save_file": "models/sigmorphon/wixarika-lm-357-2.json",
+    "model_file": "models/sigmorphon/wixarika-lm-357-2.hdf5",
+    "test_file": "data/indlangs/wixarika-test",
+    "outfile": "results/sigmorphon/wixarika-lm-357-2.out"
+}

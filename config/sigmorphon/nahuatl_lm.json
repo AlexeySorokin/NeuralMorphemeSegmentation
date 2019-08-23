@@ -1,0 +1,19 @@
+{
+    "train_file": "data/indlangs/nahuatl-train",
+    "dev_file": "data/indlangs/nahuatl-dev",
+    "input_format": "splitted",
+    "random_state": "133",
+    "read_params": {"morph_sep": "-"},
+    "model_params": {"conv_layers": 2, "window_size": [5, 7], "filters_number": 64, "use_inputs": false,
+                     "lm_embedder_file": "models/sigmorphon/nahuatl/embedder.json", "lm_state_size": 192,
+                     "use_lstm": false, "lstm_units": 64,
+                     "dense_output_units": 64, "nepochs": 50, "validation_split": 0.2,
+                     "early_stopping": 15, "to_memorize_morphemes": false, "dropout": 0.2,
+                     "to_memorize_ngram_counts": true, "context_dropout": 0.2, "models_number": 1,
+                     "use_morpheme_types": false},
+    "output_errors": true,
+    "save_file": "models/sigmorphon/nahuatl-lm-57-2.json",
+    "model_file": "models/sigmorphon/nahuatl-lm-57-2.hdf5",
+    "test_file": "data/indlangs/nahuatl-test",
+    "outfile": "results/sigmorphon/nahuatl-lm-57-2.out"
+}

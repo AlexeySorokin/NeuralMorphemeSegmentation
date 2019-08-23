@@ -180,7 +180,8 @@ class Partitioner:
             self.callbacks = []
         if (self.early_stopping is not None and
                 not any(isinstance(x, EarlyStopping) for x in self.callbacks)):
-            self.callbacks.append(EarlyStopping(patience=self.early_stopping, monitor="val_acc"))
+            self.callbacks.append(EarlyStopping(
+                patience=self.early_stopping, monitor="val_acc", restore_best_weights=True))
         if self.use_morpheme_types:
             self._morpheme_memo_func = self._make_morpheme_data
         else:
@@ -470,7 +471,6 @@ class Partitioner:
                     # все слои свёртки, кроме финального (после них возможен dropout)
                     curr_conv_input = kl.Conv1D(filters_number, window_size,
                                                 activation="relu", padding="same")(curr_conv_input)
-                    curr_conv_input = kl.BatchNormalization()(curr_conv_input)
                     if self.dropout > 0.0:
                         # между однотипными слоями рекомендуется вставить dropout
                         curr_conv_input = kl.Dropout(self.dropout)(curr_conv_input)
@@ -568,7 +568,7 @@ class Partitioner:
                 curr_callbacks = self.callbacks + [save_callback]
             else:
                 curr_callbacks = self.callbacks
-            model.fit_generator(train_gen, train_gen.steps_per_epoch, verbose=int(verbose),
+            model.fit_generator(train_gen, train_gen.steps_per_epoch, verbose=1,
                                 epochs=self.nepochs, callbacks=curr_callbacks,
                                 validation_data=val_gen, validation_steps=validation_steps)
             if model_file is not None:
@@ -1199,7 +1199,7 @@ class MultitaskPartitioner(Partitioner):
         dev_data, dev_targets = self._preprocess(dev_data, dev_targets)
         if lm_data is not None:
             lm_data = self._preprocess(lm_data)
-        self.build(verbose=verbose)
+        self.build(verbose=False)
         self._train_models(data, targets, dev_data, dev_targets, lm_data,
                            model_file=model_file, verbose=verbose)
         return self
@@ -1265,7 +1265,8 @@ class MultitaskPartitioner(Partitioner):
                     if direction == "right":
                         layer = Reversed(layer)
                     curr_conv_input = layer(curr_conv_input)
-                    # curr_conv_input = kl.BatchNormalization()(curr_conv_input)
+                    # if not self.use_lm:
+                    curr_conv_input = kl.BatchNormalization()(curr_conv_input)
                     if self.dropout > 0.0:
                         # между однотипными слоями рекомендуется вставить dropout
                         curr_conv_input = kl.Dropout(self.dropout)(curr_conv_input)

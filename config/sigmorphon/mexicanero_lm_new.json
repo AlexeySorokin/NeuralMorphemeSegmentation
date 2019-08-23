@@ -1,0 +1,21 @@
+{
+    "train_file": "data/indlangs/mexicanero-train",
+    "dev_file": "data/indlangs/mexicanero-dev",
+    "lm_train_file": "data/indlangs/word lists/yaqui.words",
+    "use_lm": true,
+    "input_format": "splitted",
+    "random_state": "133,167,219,178,332",
+    "read_params": {"morph_sep": "-"},
+    "model_params": {"conv_layers": 2, "window_size": [1, 2, 3, 4], "filters_number": 64,
+                     "dense_output_units": 64, "nepochs": 50, "lm_epochs": 5,
+                     "early_stopping": 20, "to_memorize_morphemes": false, "dropout": 0.2,
+                     "to_memorize_ngram_counts": true, "context_dropout": 0.2, "models_number": 1,
+                     "use_morpheme_types": false},
+    "output_errors": true,
+    "save_file": "models/sigmorphon/mexicanero/with_lm-1234.json",
+    "save_params": {
+      "model_file": "models/sigmorphon/mexicanero/with_lm-1234.hdf5",
+      "language_model_file": "models/sigmorphon/mayo/lm-1234.hdf5"
+    },
+    "test_file": "data/indlangs/mexicanero-test"
+}

@@ -1,0 +1,14 @@
+{
+    "train_file": "data/indlangs/nahuatl-train",
+    "dev_file": "data/indlangs/nahuatl-dev",
+    "input_format": "splitted",
+    "random_state": "133,167,219,178,332",
+    "read_params": {"morph_sep": "-"},
+    "model_params": {"conv_layers": 2, "window_size": [5, 7], "filters_number": 64,
+                     "dense_output_units": 0, "nepochs": 50, "validation_split": 0.2,
+                     "early_stopping": 20, "to_memorize_morphemes": false, "dropout": 0.2,
+                     "to_memorize_ngram_counts": true, "context_dropout": 0.2, "models_number": 1,
+                     "use_morpheme_types": false},
+    "output_errors": true,
+    "test_file": "data/indlangs/nahuatl-test"
+}

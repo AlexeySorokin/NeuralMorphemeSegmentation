@@ -1,0 +1,21 @@
+{
+    "train_file": "/home/alexeysorokin/data/Data/Morpheme/North Sami/sme_al_annotations_v2/train.full",
+    "dev_file": "/home/alexeysorokin/data/Data/Morpheme/North Sami/sme_al_annotations_v2/development.analysis",
+    "lm_train_file": "/home/alexeysorokin/data/Data/Morpheme/North Sami/unannotset.wordcounts",
+    "use_lm": true, "lm_words": 100000,
+    "input_format": "types",
+    "random_state": "133,167,219,178,332",
+    "read_params": {"morph_sep": " ", "sep": "/", "morph_aliases": {"SUF": "SUFF", "STM": "ROOT"}},
+    "model_params": {"conv_layers": 2, "window_size": [1, 2, 3, 4], "filters_number": 64,
+                     "dense_output_units": 64, "nepochs": 50, "lm_epochs": 5,
+                     "early_stopping": 20, "to_memorize_morphemes": false, "dropout": 0.2,
+                     "to_memorize_ngram_counts": true, "context_dropout": 0.2, "models_number": 1},
+    "output_errors": true,
+    "save_file": "models/sigmorphon/sami/with_lm-1234.json",
+    "save_params": {
+      "model_file": "models/sigmorphon/sami/with_lm-1234.hdf5",
+      "language_model_file": "models/sigmorphon/lm/sami-1234.hdf5"
+    },
+    "test_file": "/home/alexeysorokin/data/Data/Morpheme/North Sami/sme_al_annotations_v2/test.analysis",
+    "predictions_file": "results/sigmorphon/sami_basic_5-2.out"
+}

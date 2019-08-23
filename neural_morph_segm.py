@@ -62,7 +62,7 @@ def make_state_filename(filename, state):
 
 if __name__ == "__main__":
     config = tf.ConfigProto()
-    config.gpu_options.per_process_gpu_memory_fraction = 0.5
+    config.gpu_options.per_process_gpu_memory_fraction = 0.2
     kbt.set_session(tf.Session(config=config))
     if len(sys.argv) < 2:
         sys.exit("Pass config file")
@@ -97,9 +97,11 @@ if __name__ == "__main__":
         else:
             dev_inputs, dev_targets = None, None
         if "lm_train_file" in params:
-            train_params = {"lm_data": read_words(params["lm_train_file"], min_length=5, n=10000)}
+            train_params = {"lm_data": read_words(params["lm_train_file"], min_length=5, 
+                                                  n=params.get("lm_words", 10000))}
         else:
             train_params = dict()
+        print("lm_data" in train_params, len(train_params.get("lm_data", [])))
     else:
         inputs, targets, dev_inputs, dev_targets = None, None, None, None
         train_params = dict()
@@ -126,13 +128,14 @@ if __name__ == "__main__":
                 save_file = make_state_filename(save_file, curr_random_state)
                 if model_file is not None:
                     model_file = make_state_filename(model_file, curr_random_state)
+                    params["save_params"]["model_file"] = model_file
         else:
             save_file, model_file = None, None
         if inputs is not None:
             cls.train(inputs, targets, dev_inputs, dev_targets, **train_params,
                       model_file=model_file, verbose=(len(random_state) == 1))
         if "save_file" in params:
-            cls.to_json(save_file, model_file)
+            cls.to_json(save_file, **params["save_params"])
         if "test_file" in params:
             test_file = params["test_file"]
             if input_format == "low_resource":
